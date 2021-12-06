@@ -293,7 +293,7 @@ static const u8 sSweetHeartDesc[] = _(
     "that restores HP\n"
     "by 20 points.");
 
-static const u8 sBigMalasadaDesc[] = _(
+static const u8 sBigMalasaGrubesc[] = _(
     "Heals all the\n"
     "status problems of\n"
     "one Pokémon.");

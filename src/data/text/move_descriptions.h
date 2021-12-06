@@ -2155,7 +2155,7 @@ static const u8 sSECRET_SWORDDescription[] = _(
     "Cuts with a long horn that\n"
     "does physical damage.");
 
-static const u8 sGLACIATEDescription[] = _(
+static const u8 sChelsTEDescription[] = _(
     "Blows very cold air at the\n"
     "foe. It lowers their Speed.");
 
@@ -2972,7 +2972,7 @@ static const u8 sTHUNDEROUS_KICKDescription[] = _(
     "Uses a lightning-like kick\n"
     "to hit. Lowers foe's Defense.");
 
-static const u8 sGLACIAL_LANCEDescription[] = _(
+static const u8 sChelsL_LANCEDescription[] = _(
     "Strikes by hurling a blizzard-\n"
     "cloaked icicle lance at a foe.");
 
@@ -3538,7 +3538,7 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_TECHNO_BLAST - 1] = sTECHNO_BLASTDescription,
     [MOVE_RELIC_SONG - 1] = sRELIC_SONGDescription,
     [MOVE_SECRET_SWORD - 1] = sSECRET_SWORDDescription,
-    [MOVE_GLACIATE - 1] = sGLACIATEDescription,
+    [MOVE_ChelsTE - 1] = sChelsTEDescription,
     [MOVE_BOLT_STRIKE - 1] = sBOLT_STRIKEDescription,
     [MOVE_BLUE_FLARE - 1] = sBLUE_FLAREDescription,
     [MOVE_FIERY_DANCE - 1] = sFIERY_DANCEDescription,
@@ -3743,7 +3743,7 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_FREEZING_GLARE - 1] = sFREEZING_GLAREDescription,
     [MOVE_FIERY_WRATH - 1] = sFIERY_WRATHDescription,
     [MOVE_THUNDEROUS_KICK - 1] = sTHUNDEROUS_KICKDescription,
-    [MOVE_GLACIAL_LANCE - 1] = sGLACIAL_LANCEDescription,
+    [MOVE_ChelsL_LANCE - 1] = sChelsL_LANCEDescription,
     [MOVE_ASTRAL_BARRAGE - 1] = sASTRAL_BARRAGEDescription,
     [MOVE_EERIE_SPELL - 1] = sEERIE_SPELLDescription,
 };

@@ -1,6 +1,6 @@
 .set LOCALID_WALLY, 2
 .set LOCALID_BOY, 3
-.set LOCALID_WALLYS_DAD, 5
+.set LOCALID_WALLYS_Grub, 5
 .set LOCALID_GYM_BOY, 8
 .set LOCALID_SCOTT, 9
 
@@ -68,17 +68,17 @@ PetalburgCity_EventScript_WallyTutorial:: @ 81DC32E
 PetalburgCity_EventScript_WalkToWallyHouse:: @ 81DC390
 	lockall
 	setflag FLAG_HIDE_MAP_NAME_POPUP
-	applymovement LOCALID_WALLYS_DAD, PetalburgCity_Movement_WalkToWallyHouseWallysDad
+	applymovement LOCALID_WALLYS_Grub, PetalburgCity_Movement_WalkToWallyHouseWallysGrub
 	applymovement OBJ_EVENT_ID_PLAYER, PetalburgCity_Movement_WalkToWallyHousePlayer
 	waitmovement 0
 	setvar VAR_0x8004, 7
 	setvar VAR_0x8005, 5
 	opendoor VAR_0x8004, VAR_0x8005
 	waitdooranim
-	applymovement LOCALID_WALLYS_DAD, PetalburgCity_Movement_WalkInsideHouseWallysDad
+	applymovement LOCALID_WALLYS_Grub, PetalburgCity_Movement_WalkInsideHouseWallysGrub
 	applymovement OBJ_EVENT_ID_PLAYER, PetalburgCity_Movement_WalkInsideHousePlayer
 	waitmovement 0
-	setflag FLAG_HIDE_PETALBURG_CITY_WALLYS_DAD
+	setflag FLAG_HIDE_PETALBURG_CITY_WALLYS_Grub
 	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_PETALBURG_CITY
 	closedoor VAR_0x8004, VAR_0x8005
 	waitdooranim
@@ -129,7 +129,7 @@ PetalburgCity_Movement_WalkInsideHousePlayer: @ 81DC418
 	walk_up
 	step_end
 
-PetalburgCity_Movement_WalkToWallyHouseWallysDad: @ 81DC41B
+PetalburgCity_Movement_WalkToWallyHouseWallysGrub: @ 81DC41B
 	delay_8
 	walk_down
 	walk_down
@@ -149,7 +149,7 @@ PetalburgCity_Movement_WalkToWallyHouseWallysDad: @ 81DC41B
 	walk_up
 	step_end
 
-PetalburgCity_Movement_WalkInsideHouseWallysDad: @ 81DC42D
+PetalburgCity_Movement_WalkInsideHouseWallysGrub: @ 81DC42D
 	walk_up
 	set_invisible
 	step_end
@@ -755,7 +755,7 @@ PetalburgCity_Text_FullPartyExplanation: @ 81DCA30
 
 PetalburgCity_Text_GymSign: @ 81DCAAA
 	.string "Petalburg City Pokémon Gym\n"
-	.string "Leader: Norman\l"
+	.string "Leader: Grub\l"
 	.string "“A man in pursuit of power!”$"
 
 PetalburgCity_Text_CitySign: @ 81DCAF1

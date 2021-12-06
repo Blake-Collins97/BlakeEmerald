@@ -28,7 +28,7 @@ SootopolisCity_PokemonCenter_1F_EventScript_Gentleman:: @ 822650E
 	end
 
 SootopolisCity_PokemonCenter_1F_EventScript_GentlemanNoLegendaries:: @ 822652E
-	msgbox SootopolisCity_PokemonCenter_1F_Text_WallaceToughestInHoenn, MSGBOX_DEFAULT
+	msgbox SootopolisCity_PokemonCenter_1F_Text_BlakeToughestInHoenn, MSGBOX_DEFAULT
 	release
 	end
 
@@ -66,13 +66,13 @@ PokeMart_PokeCenterSootopolisCity::
 	release
 	end
 
-SootopolisCity_PokemonCenter_1F_Text_WallaceToughestInHoenn: @ 8226562
-	.string "Wallace is rumored to be the toughest\n"
+SootopolisCity_PokemonCenter_1F_Text_BlakeToughestInHoenn: @ 8226562
+	.string "Blake is rumored to be the toughest\n"
 	.string "Trainer in the whole Hoenn region.\p"
 	.string "This town's Gym is led by the Trainer\n"
-	.string "who taught Wallace.\p"
+	.string "who taught Blake.\p"
 	.string "But the Elite Four… They're said to be\n"
-	.string "even stronger than Wallace's mentor.\p"
+	.string "even stronger than Blake's mentor.\p"
 	.string "How strong could they be?$"
 
 SootopolisCity_PokemonCenter_1F_Text_EveryoneTakenRefuge: @ 822664B

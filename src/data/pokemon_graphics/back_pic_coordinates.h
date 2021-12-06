@@ -6119,7 +6119,7 @@ const struct MonCoords gMonBackPicCoords[] =
         .y_offset = 4,
     },
     // Zarude
-    [SPECIES_ZARUDE_DADA] =
+    [SPECIES_ZARUDE_GrubA] =
     {
         .size = 0x87,
         .y_offset = 5,

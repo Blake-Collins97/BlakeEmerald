@@ -95,7 +95,7 @@ LilycoveCity_LilycoveMuseum_1F_EventScript_OldPainting:: @ 8218DA4
 	msgbox LilycoveCity_LilycoveMuseum_1F_Text_VeryOldPainting, MSGBOX_SIGN
 	end
 
-LilycoveCity_LilycoveMuseum_1F_EventScript_FantasyPainting:: @ 8218DAD
+LilycoveCity_LilycoveMuseum_1F_EventScript_FantasyPainting:: @ 8218Grub
 	msgbox LilycoveCity_LilycoveMuseum_1F_Text_OddLandscapeFantasticScenery, MSGBOX_SIGN
 	end
 

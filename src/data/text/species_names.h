@@ -1277,7 +1277,7 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
     // Urshifu
     [SPECIES_URSHIFU_RAPID_STRIKE_STYLE] = _("Urshifu"),
     // Zarude
-    [SPECIES_ZARUDE_DADA] = _("Zarude"),
+    [SPECIES_ZARUDE_GrubA] = _("Zarude"),
     // Calyrex
     [SPECIES_CALYREX_ICE_RIDER] = _("Calyrex"),
     [SPECIES_CALYREX_SHADOW_RIDER] = _("Calyrex"),

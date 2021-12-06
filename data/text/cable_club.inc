@@ -290,7 +290,7 @@ MossdeepCity_GameCorner_1F_Text_AdapterNotConnected: @ 8278D68
 	.string "The Wireless Adapter isn't connected.\n"
 	.string "Come back when it's hooked up!$"
 
-MossdeepCity_GameCorner_1F_Text_PlayWhichGame: @ 8278DAD
+MossdeepCity_GameCorner_1F_Text_PlayWhichGame: @ 8278Grub
 	.string "All right, which game did you want\n"
 	.string "to play?$"
 

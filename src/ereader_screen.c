@@ -81,7 +81,7 @@ static u8 sub_81D4DE8(struct Unk03006370 *arg0)
     if (arg0->unk0 & 0x4)
         var0 = 3;
 
-    gShouldAdvanceLinkState = 0;
+    gShoulGrubvanceLinkState = 0;
     return var0;
 }
 
@@ -154,7 +154,7 @@ static u32 sub_81D4EE4(u8 *arg0, u16 *arg1)
         if (GetLinkPlayerCount_2() == 2)
         {
             PlaySE(SE_DING_DONG);
-            CheckShouldAdvanceLinkState();
+            CheckShoulGrubvanceLinkState();
             *arg1 = 0;
             *arg0 = 3;
         }

@@ -1,16 +1,16 @@
-.set LOCALID_WALDAS_DAD, 6
+.set LOCALID_WALDAS_Grub, 6
 
 RustboroCity_Flat1_2F_MapScripts:: @ 8215139
 	.byte 0
 
-RustboroCity_Flat1_2F_EventScript_WaldasDad:: @ 821513A
+RustboroCity_Flat1_2F_EventScript_WaldasGrub:: @ 821513A
 	lock
 	faceplayer
 	specialvar VAR_RESULT, TryBufferWaldaPhrase
 	compare VAR_RESULT, FALSE
-	goto_if_eq RustboroCity_Flat1_2F_EventScript_WaldasDadFirstPhrase
+	goto_if_eq RustboroCity_Flat1_2F_EventScript_WaldasGrubFirstPhrase
 	compare VAR_RESULT, TRUE
-	goto_if_eq RustboroCity_Flat1_2F_EventScript_WaldasDadNewPhrase
+	goto_if_eq RustboroCity_Flat1_2F_EventScript_WaldasGrubNewPhrase
 
 RustboroCity_Flat1_2F_EventScript_GivePhrase:: @ 8215157
 	special DoWaldaNamingScreen
@@ -23,17 +23,17 @@ RustboroCity_Flat1_2F_EventScript_GivePhrase:: @ 8215157
 	compare VAR_RESULT, TRUE
 	goto_if_eq RustboroCity_Flat1_2F_EventScript_WaldaLikesPhrase
 	compare VAR_RESULT, FALSE
-	goto_if_eq RustboroCity_Flat1_2F_EventScript_WaldaDoesntLikePhrase
+	goto_if_eq RustboroCity_Flat1_2F_EventScript_WalGruboesntLikePhrase
 	end
 
-RustboroCity_Flat1_2F_EventScript_WaldasDadFirstPhrase:: @ 821518D
+RustboroCity_Flat1_2F_EventScript_WaldasGrubFirstPhrase:: @ 821518D
 	msgbox RustboroCity_Flat1_2F_Text_HelloDoYouKnowFunnyPhrase, MSGBOX_YESNO
 	compare VAR_RESULT, NO
 	goto_if_eq RustboroCity_Flat1_2F_EventScript_DeclineGivePhrase
 	msgbox RustboroCity_Flat1_2F_Text_WonderfulLetsHearSuggestion, MSGBOX_DEFAULT
 	goto RustboroCity_Flat1_2F_EventScript_GivePhrase
 
-RustboroCity_Flat1_2F_EventScript_WaldasDadNewPhrase:: @ 82151AD
+RustboroCity_Flat1_2F_EventScript_WaldasGrubNewPhrase:: @ 82151AD
 	msgbox RustboroCity_Flat1_2F_Text_BeenSayingXDoYouKnowBetterPhrase, MSGBOX_YESNO
 	compare VAR_RESULT, NO
 	goto_if_eq RustboroCity_Flat1_2F_EventScript_DeclineGivePhrase
@@ -52,30 +52,30 @@ RustboroCity_Flat1_2F_EventScript_CancelGivePhrase:: @ 82151D7
 
 RustboroCity_Flat1_2F_EventScript_CancelGiveFirstPhrase:: @ 82151E1
 	msgbox RustboroCity_Flat1_2F_Text_ThinkOfMyOwnPhrase, MSGBOX_DEFAULT
-	call RustboroCity_Flat1_2F_EventScript_WaldasDadFaceWalda
+	call RustboroCity_Flat1_2F_EventScript_WaldasGrubFaceWalda
 	msgbox RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll2, MSGBOX_DEFAULT
 	release
 	end
 
 RustboroCity_Flat1_2F_EventScript_WaldaLikesPhrase:: @ 82151F8
 	msgbox RustboroCity_Flat1_2F_Text_LetsGiveItATry2, MSGBOX_DEFAULT
-	call RustboroCity_Flat1_2F_EventScript_WaldasDadFaceWalda
+	call RustboroCity_Flat1_2F_EventScript_WaldasGrubFaceWalda
 	msgbox RustboroCity_Flat1_2F_Text_OhShesLaughing, MSGBOX_DEFAULT
-	applymovement LOCALID_WALDAS_DAD, Common_Movement_FacePlayer
+	applymovement LOCALID_WALDAS_Grub, Common_Movement_FacePlayer
 	waitmovement 0
 	msgbox RustboroCity_Flat1_2F_Text_ThankYouIllGiveYouWallpaper, MSGBOX_DEFAULT
 	release
 	end
 
-RustboroCity_Flat1_2F_EventScript_WaldaDoesntLikePhrase:: @ 8215221
+RustboroCity_Flat1_2F_EventScript_WalGruboesntLikePhrase:: @ 8215221
 	msgbox RustboroCity_Flat1_2F_Text_LetsGiveItATry, MSGBOX_DEFAULT
-	call RustboroCity_Flat1_2F_EventScript_WaldasDadFaceWalda
+	call RustboroCity_Flat1_2F_EventScript_WaldasGrubFaceWalda
 	msgbox RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll, MSGBOX_DEFAULT
 	release
 	end
 
-RustboroCity_Flat1_2F_EventScript_WaldasDadFaceWalda:: @ 8215238
-	turnobject LOCALID_WALDAS_DAD, DIR_EAST
+RustboroCity_Flat1_2F_EventScript_WaldasGrubFaceWalda:: @ 8215238
+	turnobject LOCALID_WALDAS_Grub, DIR_EAST
 	return
 
 RustboroCity_Flat1_2F_EventScript_WaldasMom:: @ 821523D

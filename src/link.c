@@ -86,7 +86,7 @@ u8 gSavedMultiplayerId;
 bool8 gReceivedRemoteLinkPlayers;
 struct LinkTestBGInfo gLinkTestBGInfo;
 void (*gLinkCallback)(void);
-u8 gShouldAdvanceLinkState;
+u8 gShoulGrubvanceLinkState;
 u16 gLinkTestBlockChecksums[MAX_LINK_PLAYERS];
 u8 gBlockRequestType;
 u32 gLinkFiller3;
@@ -352,7 +352,7 @@ static void Task_TriggerHandshake(u8 taskId)
 {
     if (++gTasks[taskId].data[0] == 5)
     {
-        gShouldAdvanceLinkState = 1;
+        gShoulGrubvanceLinkState = 1;
         DestroyTask(taskId);
     }
 }
@@ -442,7 +442,7 @@ static void LinkTestProcessKeyInput(void)
 {
     if (JOY_NEW(A_BUTTON))
     {
-        gShouldAdvanceLinkState = 1;
+        gShoulGrubvanceLinkState = 1;
     }
     if (JOY_HELD(B_BUTTON))
     {
@@ -1111,10 +1111,10 @@ void ResetBlockReceivedFlag(u8 who)
     }
 }
 
-void CheckShouldAdvanceLinkState(void)
+void CheckShoulGrubvanceLinkState(void)
 {
     if ((gLinkStatus & LINK_STAT_MASTER) && EXTRACT_PLAYER_COUNT(gLinkStatus) > 1)
-        gShouldAdvanceLinkState = 1;
+        gShoulGrubvanceLinkState = 1;
 }
 
 static u16 LinkTestCalcBlockChecksum(const u16 *src, u16 size)
@@ -1228,7 +1228,7 @@ static void Task_PrintTestData(u8 taskId)
 
     strcpy(testTitle, sASCIITestPrint);
     LinkTest_PrintString(testTitle, 5, 2);
-    LinkTest_PrintHex(gShouldAdvanceLinkState, 2, 1, 2);
+    LinkTest_PrintHex(gShoulGrubvanceLinkState, 2, 1, 2);
     LinkTest_PrintHex(gLinkStatus, 15, 1, 8);
     LinkTest_PrintHex(gLink.state, 2, 10, 2);
     LinkTest_PrintHex(EXTRACT_PLAYER_COUNT(gLinkStatus), 15, 10, 2);
@@ -1789,7 +1789,7 @@ bool8 HandleLinkConnection(void)
 
     if (gWirelessCommType == 0)
     {
-        gLinkStatus = LinkMain1(&gShouldAdvanceLinkState, gSendCmd, gRecvCmds);
+        gLinkStatus = LinkMain1(&gShoulGrubvanceLinkState, gSendCmd, gRecvCmds);
         LinkMain2(&gMain.heldKeys);
         if ((gLinkStatus & LINK_STAT_RECEIVED_NOTHING) && IsSendingKeysOverCable() == TRUE)
             return TRUE;
@@ -1890,7 +1890,7 @@ void ResetSerial(void)
 
 // link_main1.c
 
-u32 LinkMain1(u8 *shouldAdvanceLinkState, u16 *sendCmd, u16 (*recvCmds)[CMD_LENGTH])
+u32 LinkMain1(u8 *shoulGrubvanceLinkState, u16 *sendCmd, u16 (*recvCmds)[CMD_LENGTH])
 {
     u32 retVal;
     u32 retVal2;
@@ -1902,14 +1902,14 @@ u32 LinkMain1(u8 *shouldAdvanceLinkState, u16 *sendCmd, u16 (*recvCmds)[CMD_LENG
             gLink.state = 1;
             break;
         case LINK_STATE_START1:
-            if (*shouldAdvanceLinkState == 1)
+            if (*shoulGrubvanceLinkState == 1)
             {
                 EnableSerial();
                 gLink.state = 2;
             }
             break;
         case LINK_STATE_HANDSHAKE:
-            switch (*shouldAdvanceLinkState)
+            switch (*shoulGrubvanceLinkState)
             {
                 default:
                     CheckMasterOrSlave();
@@ -1935,7 +1935,7 @@ u32 LinkMain1(u8 *shouldAdvanceLinkState, u16 *sendCmd, u16 (*recvCmds)[CMD_LENG
             DequeueRecvCmds(recvCmds);
             break;
     }
-    *shouldAdvanceLinkState = 0;
+    *shoulGrubvanceLinkState = 0;
     retVal = gLink.localId;
     retVal |= (gLink.playerCount << LINK_STAT_PLAYER_COUNT_SHIFT);
     if (gLink.isMaster == LINK_MASTER)

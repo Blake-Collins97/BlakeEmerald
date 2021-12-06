@@ -443,7 +443,7 @@ static void CB2_CreateTradeMenu(void)
             {
                 if (++sTradeMenuData->timer > 30)
                 {
-                    CheckShouldAdvanceLinkState();
+                    CheckShoulGrubvanceLinkState();
                     gMain.state++;
                 }
             }
@@ -2841,7 +2841,7 @@ void CB2_LinkTrade(void)
             {
                 if (++sTradeData->timer > 30)
                 {
-                    CheckShouldAdvanceLinkState();
+                    CheckShoulGrubvanceLinkState();
                     gMain.state++;
                 }
             }

@@ -22,7 +22,7 @@ RustboroCity_Flat2_2F_EventScript_NinjaBoy:: @ 8215FE1
 	lock
 	faceplayer
 	goto_if_set FLAG_RECEIVED_PREMIER_BALL_RUSTBORO, RustboroCity_Flat2_2F_EventScript_GavePremierBall
-	msgbox RustboroCity_Flat2_2F_Text_MyDaddyMadeThisYouCanHaveIt, MSGBOX_DEFAULT
+	msgbox RustboroCity_Flat2_2F_Text_MyGrubdyMadeThisYouCanHaveIt, MSGBOX_DEFAULT
 	giveitem ITEM_PREMIER_BALL
 	compare VAR_RESULT, FALSE
 	goto_if_eq Common_EventScript_ShowBagIsFull
@@ -39,7 +39,7 @@ RustboroCity_Flat2_2F_EventScript_GiveFloatStone::
 	lock
 	faceplayer
 	goto_if_set FLAG_ITEM_RUSTBORO_FLOAT_STONE, RustboroCity_Flat2_2F_EventScript_GaveFloatStone
-	msgbox RustboroCity_Flat2_2F_Text_MyDadsAceAtDevon, MSGBOX_DEFAULT
+	msgbox RustboroCity_Flat2_2F_Text_MyGrubsAceAtDevon, MSGBOX_DEFAULT
 	giveitem ITEM_FLOAT_STONE
 	msgbox RustboroCity_Flat2_2F_Text_PokemonHoldFloatStone, MSGBOX_DEFAULT
 	setflag FLAG_ITEM_RUSTBORO_FLOAT_STONE
@@ -64,18 +64,18 @@ RustboroCity_Flat2_2F_Text_DevonWasTinyInOldDays: @ 821601A
 	.string "Way back in the old days, Devon was just\n"
 	.string "a teeny, tiny company.$"
 
-RustboroCity_Flat2_2F_Text_MyDaddyMadeThisYouCanHaveIt: @ 821605A
-	.string "My daddy's working at the Corporation.\p"
-	.string "My daddy made this!\n"
+RustboroCity_Flat2_2F_Text_MyGrubdyMadeThisYouCanHaveIt: @ 821605A
+	.string "My Grubdy's working at the Corporation.\p"
+	.string "My Grubdy made this!\n"
 	.string "But I can't use it, so you can have it.$"
 
 RustboroCity_Flat2_2F_Text_GoingToWorkAtDevonToo: @ 82160BD
-	.string "My daddy's working at the Corporation.\p"
+	.string "My Grubdy's working at the Corporation.\p"
 	.string "When I grow up, I'm going to work for\n"
 	.string "Devon, too.$"
 
-RustboroCity_Flat2_2F_Text_MyDadsAceAtDevon:
-	.string "My dad's a real ace in the Devon\n"
+RustboroCity_Flat2_2F_Text_MyGrubsAceAtDevon:
+	.string "My Grub's a real ace in the Devon\n"
 	.string "Corporation, I'll have you know!\p"
 	.string "It's no wonder I'm an ace myself!\p"
 	.string "Here. I'll give you something that\n"

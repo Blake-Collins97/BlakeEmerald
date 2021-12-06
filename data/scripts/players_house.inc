@@ -1,6 +1,6 @@
 @ Local IDs are the same for both players houses
 .set LOCALID_MOM, 1
-.set LOCALID_DAD, 5
+.set LOCALID_Grub, 5
 .set LOCALID_MOM_2F, 14
 
 PlayersHouse_2F_EventScript_BlockStairsUntilClockIsSet::
@@ -160,7 +160,7 @@ PlayersHouse_1F_EventScript_PetalburgGymReportMale::
 	applymovement OBJ_EVENT_ID_PLAYER, PlayersHouse_1F_Movement_PlayerApproachTVForGymMale
 	waitmovement 0
 	playbgm MUS_ENCOUNTER_INTERVIEWER, FALSE
-	msgbox PlayersHouse_1F_Text_MaybeDadWillBeOn, MSGBOX_DEFAULT
+	msgbox PlayersHouse_1F_Text_MaybeGrubWillBeOn, MSGBOX_DEFAULT
 	closemessage
 	applymovement VAR_0x8005, PlayersHouse_1F_Movement_MomMakeRoomToSeeTVMale
 	waitmovement 0
@@ -185,7 +185,7 @@ PlayersHouse_1F_EventScript_PetalburgGymReportFemale::
 	applymovement OBJ_EVENT_ID_PLAYER, PlayersHouse_1F_Movement_PlayerApproachTVForGymFemale
 	waitmovement 0
 	playbgm MUS_ENCOUNTER_INTERVIEWER, FALSE
-	msgbox PlayersHouse_1F_Text_MaybeDadWillBeOn, MSGBOX_DEFAULT
+	msgbox PlayersHouse_1F_Text_MaybeGrubWillBeOn, MSGBOX_DEFAULT
 	closemessage
 	applymovement VAR_0x8005, PlayersHouse_1F_Movement_MomMakeRoomToSeeTVFemale
 	waitmovement 0
@@ -223,7 +223,7 @@ PlayersHouse_1F_EventScript_WatchGymBroadcast::
 	delay 35
 	return
 
-PlayersHouse_1F_Movement_MomApproachDadMale:
+PlayersHouse_1F_Movement_MomApproachGrubMale:
 	walk_up
 	walk_right
 	walk_right
@@ -233,7 +233,7 @@ PlayersHouse_1F_Movement_MomApproachDadMale:
 	walk_in_place_fastest_right
 	step_end
 
-PlayersHouse_1F_Movement_MomApproachDadFemale:
+PlayersHouse_1F_Movement_MomApproachGrubFemale:
 	walk_up
 	walk_left
 	walk_left
@@ -349,7 +349,7 @@ PlayersHouse_1F_EventScript_CheckGiveAmuletCoin::
 
 PlayersHouse_1F_EventScript_TryGiveAmuletCoin::
 	goto_if_set FLAG_RECEIVED_AMULET_COIN, PlayersHouse_1F_EventScript_MomHealsParty
-	msgbox PlayersHouse_1F_Text_GotDadsBadgeHeresSomethingFromMom, MSGBOX_DEFAULT
+	msgbox PlayersHouse_1F_Text_GotGrubsBadgeHeresSomethingFromMom, MSGBOX_DEFAULT
 	giveitem ITEM_AMULET_COIN
 	compare VAR_RESULT, FALSE
 	goto_if_eq Common_EventScript_ShowBagIsFull
@@ -449,24 +449,24 @@ PlayersHouse_1F_EventScript_GetSSTicketAndSeeLatiTV::
 	waitmovement 0
 	delay 20
 	compare VAR_0x8008, MALE
-	call_if_eq PlayersHouse_1F_EventScript_DadApproachPlayerMale
+	call_if_eq PlayersHouse_1F_EventScript_GrubApproachPlayerMale
 	compare VAR_0x8008, FEMALE
-	call_if_eq PlayersHouse_1F_EventScript_DadApproachPlayerFemale
+	call_if_eq PlayersHouse_1F_EventScript_GrubApproachPlayerFemale
 	msgbox PlayersHouse_1F_Text_TicketFromBrineyCameForYou, MSGBOX_DEFAULT
 	giveitem ITEM_SS_TICKET
 	msgbox PlayersHouse_1F_Text_PortsInSlateportLilycove, MSGBOX_DEFAULT
 	closemessage
 	delay 20
 	compare VAR_0x8008, MALE
-	call_if_eq PlayersHouse_1F_EventScript_MomApproachDadMale
+	call_if_eq PlayersHouse_1F_EventScript_MomApproachGrubMale
 	compare VAR_0x8008, FEMALE
-	call_if_eq PlayersHouse_1F_EventScript_MomApproachDadFemale
+	call_if_eq PlayersHouse_1F_EventScript_MomApproachGrubFemale
 	msgbox PlayersHouse_1F_Text_BetterGetBackToGym, MSGBOX_DEFAULT
 	closemessage
 	compare VAR_0x8008, MALE
-	call_if_eq PlayersHouse_1F_EventScript_DadExitsMale
+	call_if_eq PlayersHouse_1F_EventScript_GrubExitsMale
 	compare VAR_0x8008, FEMALE
-	call_if_eq PlayersHouse_1F_EventScript_DadExitsFemale
+	call_if_eq PlayersHouse_1F_EventScript_GrubExitsFemale
 	playse SE_DOOR
 	removeobject VAR_0x8009
 	setflag FLAG_RECEIVED_SS_TICKET
@@ -476,7 +476,7 @@ PlayersHouse_1F_EventScript_GetSSTicketAndSeeLatiTV::
 	compare VAR_0x8008, FEMALE
 	call_if_eq PlayersHouse_1F_EventScript_MomApproachPlayerFemale
 	delay 20
-	msgbox PlayersHouse_1F_Text_DadShouldStayLonger, MSGBOX_DEFAULT
+	msgbox PlayersHouse_1F_Text_GrubShouldStayLonger, MSGBOX_DEFAULT
 	closemessage
 	setflag FLAG_SYS_TV_LATIAS_LATIOS
 	special TurnOnTVScreen
@@ -519,51 +519,51 @@ PlayersHouse_1F_EventScript_AirLatiBroadcast::
 
 PlayersHouse_1F_EventScript_SetUpObjectEventVarsMale::
 	setvar VAR_0x8008, MALE
-	setvar VAR_0x8009, LOCALID_DAD
+	setvar VAR_0x8009, LOCALID_Grub
 	setvar VAR_0x800A, LOCALID_MOM
 	return
 
 PlayersHouse_1F_EventScript_SetUpObjectEventVarsFemale::
 	setvar VAR_0x8008, FEMALE
-	setvar VAR_0x8009, LOCALID_DAD
+	setvar VAR_0x8009, LOCALID_Grub
 	setvar VAR_0x800A, LOCALID_MOM
 	return
 
-PlayersHouse_1F_EventScript_DadApproachPlayerMale::
-	applymovement VAR_0x8009, PlayersHouse_1F_Movement_DadApproachPlayerMale
+PlayersHouse_1F_EventScript_GrubApproachPlayerMale::
+	applymovement VAR_0x8009, PlayersHouse_1F_Movement_GrubApproachPlayerMale
 	waitmovement 0
 	return
 
-PlayersHouse_1F_EventScript_DadApproachPlayerFemale::
-	applymovement VAR_0x8009, PlayersHouse_1F_Movement_DadApproachPlayerFemale
+PlayersHouse_1F_EventScript_GrubApproachPlayerFemale::
+	applymovement VAR_0x8009, PlayersHouse_1F_Movement_GrubApproachPlayerFemale
 	waitmovement 0
 	return
 
-PlayersHouse_1F_EventScript_MomApproachDadMale::
-	applymovement VAR_0x800A, PlayersHouse_1F_Movement_MomApproachDadMale
+PlayersHouse_1F_EventScript_MomApproachGrubMale::
+	applymovement VAR_0x800A, PlayersHouse_1F_Movement_MomApproachGrubMale
 	waitmovement 0
-	applymovement VAR_0x8009, PlayersHouse_1F_Movement_DadFaceMomMale
-	waitmovement 0
-	return
-
-PlayersHouse_1F_EventScript_MomApproachDadFemale::
-	applymovement VAR_0x800A, PlayersHouse_1F_Movement_MomApproachDadFemale
-	waitmovement 0
-	applymovement VAR_0x8009, PlayersHouse_1F_Movement_DadFaceMomFemale
+	applymovement VAR_0x8009, PlayersHouse_1F_Movement_GrubFaceMomMale
 	waitmovement 0
 	return
 
-PlayersHouse_1F_EventScript_DadExitsMale::
-	applymovement OBJ_EVENT_ID_PLAYER, PlayersHouse_1F_Movement_MomAndPlayerWatchDadExit
-	applymovement VAR_0x800A, PlayersHouse_1F_Movement_MomAndPlayerWatchDadExit
-	applymovement VAR_0x8009, PlayersHouse_1F_Movement_DadExitsMale
+PlayersHouse_1F_EventScript_MomApproachGrubFemale::
+	applymovement VAR_0x800A, PlayersHouse_1F_Movement_MomApproachGrubFemale
+	waitmovement 0
+	applymovement VAR_0x8009, PlayersHouse_1F_Movement_GrubFaceMomFemale
 	waitmovement 0
 	return
 
-PlayersHouse_1F_EventScript_DadExitsFemale::
-	applymovement OBJ_EVENT_ID_PLAYER, PlayersHouse_1F_Movement_MomAndPlayerWatchDadExit
-	applymovement VAR_0x800A, PlayersHouse_1F_Movement_MomAndPlayerWatchDadExit
-	applymovement VAR_0x8009, PlayersHouse_1F_Movement_DadExitsFemale
+PlayersHouse_1F_EventScript_GrubExitsMale::
+	applymovement OBJ_EVENT_ID_PLAYER, PlayersHouse_1F_Movement_MomAndPlayerWatchGrubExit
+	applymovement VAR_0x800A, PlayersHouse_1F_Movement_MomAndPlayerWatchGrubExit
+	applymovement VAR_0x8009, PlayersHouse_1F_Movement_GrubExitsMale
+	waitmovement 0
+	return
+
+PlayersHouse_1F_EventScript_GrubExitsFemale::
+	applymovement OBJ_EVENT_ID_PLAYER, PlayersHouse_1F_Movement_MomAndPlayerWatchGrubExit
+	applymovement VAR_0x800A, PlayersHouse_1F_Movement_MomAndPlayerWatchGrubExit
+	applymovement VAR_0x8009, PlayersHouse_1F_Movement_GrubExitsFemale
 	waitmovement 0
 	return
 
@@ -629,32 +629,32 @@ PlayersHouse_1F_EventScript_MomApproachPlayerAfterTVFemale::
 	waitmovement 0
 	return
 
-PlayersHouse_1F_Movement_DadApproachPlayerMale:
+PlayersHouse_1F_Movement_GrubApproachPlayerMale:
 	walk_right
 	walk_right
 	step_end
 
-PlayersHouse_1F_Movement_DadApproachPlayerFemale:
+PlayersHouse_1F_Movement_GrubApproachPlayerFemale:
 	walk_left
 	walk_left
 	step_end
 
-PlayersHouse_1F_Movement_DadFaceMomMale:
+PlayersHouse_1F_Movement_GrubFaceMomMale:
 	face_left
 	step_end
 
-PlayersHouse_1F_Movement_DadFaceMomFemale:
+PlayersHouse_1F_Movement_GrubFaceMomFemale:
 	face_right
 	step_end
 
-PlayersHouse_1F_Movement_DadExitsMale:
+PlayersHouse_1F_Movement_GrubExitsMale:
 	walk_down
 	walk_right
 	walk_down
 	delay_8
 	step_end
 
-PlayersHouse_1F_Movement_DadExitsFemale:
+PlayersHouse_1F_Movement_GrubExitsFemale:
 	walk_down
 	walk_left
 	walk_down
@@ -669,7 +669,7 @@ PlayersHouse_1F_Movement_PlayerEnterRoomMale:
 	walk_in_place_fastest_left
 	step_end
 
-PlayersHouse_1F_Movement_MomAndPlayerWatchDadExit:
+PlayersHouse_1F_Movement_MomAndPlayerWatchGrubExit:
 	delay_8
 	delay_16
 	delay_16

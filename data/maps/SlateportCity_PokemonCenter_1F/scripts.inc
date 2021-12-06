@@ -10,7 +10,7 @@ SlateportCity_PokemonCenter_1F_OnTransition: @ 820DACA
 	call Common_EventScript_UpdateBrineyLocation
 	end
 
-SlateportCity_PokemonCenter_1F_EventScript_Nurse:: @ 820DAD3
+SlateportCity_PokemonCenter_1F_EventScript_Nurse:: @ 820Grub3
 	setvar VAR_0x800B, LOCALID_NURSE
 	call Common_EventScript_PkmnCenterNurse
 	waitmessage

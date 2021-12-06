@@ -313,10 +313,10 @@ gStdScripts_End::
 	.include "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc"
 	.include "data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc"
 	.include "data/maps/SootopolisCity_MysteryEventsHouse_B1F/scripts.inc"
-	.include "data/maps/EverGrandeCity_SidneysRoom/scripts.inc"
-	.include "data/maps/EverGrandeCity_PhoebesRoom/scripts.inc"
-	.include "data/maps/EverGrandeCity_GlaciasRoom/scripts.inc"
-	.include "data/maps/EverGrandeCity_DrakesRoom/scripts.inc"
+	.include "data/maps/EverGrandeCity_DansRoom/scripts.inc"
+	.include "data/maps/EverGrandeCity_SharnisRoom/scripts.inc"
+	.include "data/maps/EverGrandeCity_ChelssRoom/scripts.inc"
+	.include "data/maps/EverGrandeCity_RaysRoom/scripts.inc"
 	.include "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc"
 	.include "data/maps/EverGrandeCity_Hall1/scripts.inc"
 	.include "data/maps/EverGrandeCity_Hall2/scripts.inc"
@@ -627,10 +627,10 @@ EventScript_MoveMrBrineyToRoute109:: @ 82718B3
 	end
 
 EverGrandeCity_HallOfFame_EventScript_ResetEliteFour:: @ 82718CC
-	clearflag FLAG_DEFEATED_ELITE_4_SIDNEY
-	clearflag FLAG_DEFEATED_ELITE_4_PHOEBE
-	clearflag FLAG_DEFEATED_ELITE_4_GLACIA
-	clearflag FLAG_DEFEATED_ELITE_4_DRAKE
+	clearflag FLAG_DEFEATED_ELITE_4_Dan
+	clearflag FLAG_DEFEATED_ELITE_4_Sharni
+	clearflag FLAG_DEFEATED_ELITE_4_Chels
+	clearflag FLAG_DEFEATED_ELITE_4_Ray
 	setvar VAR_ELITE_4_STATE, 0
 	return
 
@@ -863,7 +863,7 @@ gText_PokemonCenterSign:: @ 8272B9E
 	.string "“Rejuvenate your tired partners!”\n"
 	.string "Pokémon Center$"
 
-gText_MomOrDadMightLikeThisProgram:: @ 8272BCF
+gText_MomOrGrubMightLikeThisProgram:: @ 8272BCF
 	.string "{STR_VAR_1} might like this program.\n"
 	.string "… … … … … … … … … … … … … … … …\p"
 	.string "Better get going!$"

@@ -325,12 +325,12 @@
 #define FLAG_HAS_MATCH_CALL                  0x12F
 #define FLAG_ADDED_MATCH_CALL_TO_POKENAV     0x130
 #define FLAG_REGISTERED_STEVEN_POKENAV       0x131
-#define FLAG_ENABLE_NORMAN_MATCH_CALL        0x132
+#define FLAG_ENABLE_Grub_MATCH_CALL        0x132
 #define FLAG_STEVEN_GUIDES_TO_CAVE_OF_ORIGIN 0x133 // Set after you follow Steven to the entrance of the Cave of Origin.
 #define FLAG_MET_ARCHIE_SOOTOPOLIS           0x134
 #define FLAG_MET_MAXIE_SOOTOPOLIS            0x135
 #define FLAG_MET_SCOTT_RUSTBORO              0x136
-#define FLAG_WALLACE_GOES_TO_SKY_PILLAR      0x137 // Set after speaking to Wallace within the Cave of Origin.
+#define FLAG_Blake_GOES_TO_SKY_PILLAR      0x137 // Set after speaking to Blake within the Cave of Origin.
 #define FLAG_RECEIVED_HM07                   0x138
 #define FLAG_BEAT_MAGMA_GRUNT_JAGGED_PASS    0x139
 #define FLAG_RECEIVED_AURORA_TICKET          0x13A
@@ -442,15 +442,15 @@
 #define FLAG_REMATCH_BRAWLY                  0x19F
 #define FLAG_REMATCH_WATTSON                 0x1A0
 #define FLAG_REMATCH_FLANNERY                0x1A1
-#define FLAG_REMATCH_NORMAN                  0x1A2
+#define FLAG_REMATCH_Grub                  0x1A2
 #define FLAG_REMATCH_WINONA                  0x1A3
 #define FLAG_REMATCH_TATE_AND_LIZA           0x1A4
-// Note: FLAG_REMATCH_JUAN is handled by FLAG_ENABLE_JUAN_MATCH_CALL instead.
-#define FLAG_REMATCH_SIDNEY                  0x1A5
-#define FLAG_REMATCH_PHOEBE                  0x1A6
-#define FLAG_REMATCH_GLACIA                  0x1A7
-#define FLAG_REMATCH_DRAKE                   0x1A8
-#define FLAG_REMATCH_WALLACE                 0x1A9
+// Note: FLAG_REMATCH_Cody is handled by FLAG_ENABLE_Cody_MATCH_CALL instead.
+#define FLAG_REMATCH_Dan                  0x1A5
+#define FLAG_REMATCH_Sharni                  0x1A6
+#define FLAG_REMATCH_Chels                  0x1A7
+#define FLAG_REMATCH_Ray                   0x1A8
+#define FLAG_REMATCH_Blake                 0x1A9
 
 #define FLAG_SANDSTREWN_RUINS_LEECH_LIFE     0x1AA
 #define FLAG_LAVARIDGE_GYM_ENERGY_ROOTS      0x1AB
@@ -499,7 +499,7 @@
 #define FLAG_ENABLE_FLANNERY_MATCH_CALL      0x1D6
 #define FLAG_ENABLE_WINONA_MATCH_CALL        0x1D7
 #define FLAG_ENABLE_TATE_AND_LIZA_MATCH_CALL 0x1D8
-#define FLAG_ENABLE_JUAN_MATCH_CALL          0x1D9
+#define FLAG_ENABLE_Cody_MATCH_CALL          0x1D9
 
 #define FLAG_ROUTE_131_SPLASH_PLATE          0x1DA
 
@@ -770,7 +770,7 @@
 #define FLAG_HIDE_RUSTBORO_CITY_AQUA_GRUNT                          0x2DB
 #define FLAG_HIDE_RUSTBORO_CITY_DEVON_EMPLOYEE_1                    0x2DC
 #define FLAG_HIDE_SEAFLOOR_CAVERN_ROOM_9_KYOGRE_ASLEEP              0x2DD
-#define FLAG_HIDE_PLAYERS_HOUSE_DAD                                 0x2DE
+#define FLAG_HIDE_PLAYERS_HOUSE_Grub                                 0x2DE
 #define FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_SIBLING      0x2DF
 #define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_SIBLING          0x2E0
 #define FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_MAGMA_NOTE             0x2E1
@@ -808,7 +808,7 @@
 #define FLAG_HIDE_ROUTE_111_VICTORIA_WINSTRATE                      0x301
 #define FLAG_HIDE_ROUTE_111_VIVI_WINSTRATE                          0x302
 #define FLAG_HIDE_ROUTE_111_VICKY_WINSTRATE                         0x303
-#define FLAG_HIDE_PETALBURG_GYM_NORMAN                              0x304
+#define FLAG_HIDE_PETALBURG_GYM_Grub                              0x304
 #define FLAG_HIDE_SKY_PILLAR_TOP_RAYQUAZA                           0x305
 #define FLAG_HIDE_LILYCOVE_CONTEST_HALL_CONTEST_ATTENDANT_1         0x306
 #define FLAG_HIDE_LILYCOVE_MUSEUM_CURATOR                           0x307
@@ -852,21 +852,21 @@
 #define FLAG_HIDE_ROUTE_116_DROPPED_GLASSES_MAN                     0x32D
 #define FLAG_HIDE_RUSTBORO_CITY_RIVAL                               0x32E
 #define FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F_SWABLU_DOLL     0x32F
-#define FLAG_HIDE_SOOTOPOLIS_CITY_WALLACE                           0x330
+#define FLAG_HIDE_SOOTOPOLIS_CITY_Blake                           0x330
 #define FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F_POKE_BALL       0x331
 #define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_2F_POKE_BALL           0x332
 #define FLAG_HIDE_ROUTE_112_TEAM_MAGMA                              0x333
-#define FLAG_HIDE_CAVE_OF_ORIGIN_B1F_WALLACE                        0x334
+#define FLAG_HIDE_CAVE_OF_ORIGIN_B1F_Blake                        0x334
 #define FLAG_HIDE_AQUA_HIDEOUT_1F_GRUNT_1_BLOCKING_ENTRANCE         0x335
 #define FLAG_HIDE_AQUA_HIDEOUT_1F_GRUNT_2_BLOCKING_ENTRANCE         0x336
 #define FLAG_HIDE_MOSSDEEP_CITY_TEAM_MAGMA                          0x337
-#define FLAG_HIDE_PETALBURG_GYM_WALLYS_DAD                          0x338
+#define FLAG_HIDE_PETALBURG_GYM_WALLYS_Grub                          0x338
 #define FLAG_MIRAGE_TOWER_4F_AERODACTYLITE                          0x339
 #define FLAG_HIDE_SOOTOPOLIS_CITY_ARCHIE                            0x33A
 #define FLAG_HIDE_SOOTOPOLIS_CITY_MAXIE                             0x33B
 #define FLAG_HIDE_SEAFLOOR_CAVERN_ROOM_9_ARCHIE                     0x33C
 #define FLAG_HIDE_SEAFLOOR_CAVERN_ROOM_9_MAXIE                      0x33D
-#define FLAG_HIDE_PETALBURG_CITY_WALLYS_DAD                         0x33E
+#define FLAG_HIDE_PETALBURG_CITY_WALLYS_Grub                         0x33E
 #define FLAG_HIDE_SEAFLOOR_CAVERN_ROOM_9_MAGMA_GRUNTS               0x33F
 #define FLAG_HIDE_LILYCOVE_CONTEST_HALL_BLEND_MASTER                0x340
 #define FLAG_HIDE_GRANITE_CAVE_STEVEN                               0x341
@@ -891,7 +891,7 @@
 #define FLAG_HIDE_LILYCOVE_CITY_AQUA_GRUNTS                         0x354
 #define FLAG_HIDE_MAGMA_HIDEOUT_4F_GROUDON                          0x355
 #define FLAG_HIDE_SOOTOPOLIS_CITY_RESIDENTS                         0x356
-#define FLAG_HIDE_SKY_PILLAR_WALLACE                                0x357
+#define FLAG_HIDE_SKY_PILLAR_Blake                                0x357
 #define FLAG_HIDE_MT_PYRE_SUMMIT_MAXIE                              0x358
 #define FLAG_HIDE_MAGMA_HIDEOUT_GRUNTS                              0x359
 #define FLAG_HIDE_VICTORY_ROAD_ENTRANCE_WALLY                       0x35A
@@ -1316,10 +1316,10 @@
 #define FLAG_UNUSED_0x4F9                                           0x4F9 // Unused Flag
 #define FLAG_UNUSED_0x4FA                                           0x4FA // Unused Flag
 
-#define FLAG_DEFEATED_ELITE_4_SIDNEY                                0x4FB
-#define FLAG_DEFEATED_ELITE_4_PHOEBE                                0x4FC
-#define FLAG_DEFEATED_ELITE_4_GLACIA                                0x4FD
-#define FLAG_DEFEATED_ELITE_4_DRAKE                                 0x4FE
+#define FLAG_DEFEATED_ELITE_4_Dan                                0x4FB
+#define FLAG_DEFEATED_ELITE_4_Sharni                                0x4FC
+#define FLAG_DEFEATED_ELITE_4_Chels                                0x4FD
+#define FLAG_DEFEATED_ELITE_4_Ray                                 0x4FE
 
 #define FLAG_UNUSED_0x4FF                                           0x4FF // Unused Flag
 
@@ -1583,10 +1583,10 @@
 #define FLAG_DAILY_REMATCH_BRAWLY                   (DAILY_FLAGS_START + 0x17)
 #define FLAG_DAILY_REMATCH_WATTSON                  (DAILY_FLAGS_START + 0x18)
 #define FLAG_DAILY_REMATCH_FLANNERY                 (DAILY_FLAGS_START + 0x19)
-#define FLAG_DAILY_REMATCH_NORMAN                   (DAILY_FLAGS_START + 0x1A)
+#define FLAG_DAILY_REMATCH_Grub                   (DAILY_FLAGS_START + 0x1A)
 #define FLAG_DAILY_REMATCH_WINONA                   (DAILY_FLAGS_START + 0x1B)
 #define FLAG_DAILY_REMATCH_TATE_AND_LIZA            (DAILY_FLAGS_START + 0x1C)
-#define FLAG_DAILY_REMATCH_JUAN                     (DAILY_FLAGS_START + 0x1D)
+#define FLAG_DAILY_REMATCH_Cody                     (DAILY_FLAGS_START + 0x1D)
 #define FLAG_DAILY_REMATCH_RIVAL                    (DAILY_FLAGS_START + 0x1E)
 #define FLAG_DAILY_REMATCH_STEVEN                   (DAILY_FLAGS_START + 0x1F)
 #define FLAG_DAILY_REMATCH_CYNTHIA                  (DAILY_FLAGS_START + 0x20)

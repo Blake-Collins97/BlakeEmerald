@@ -1335,7 +1335,7 @@
 #define SPECIES_URSHIFU_RAPID_STRIKE_STYLE   FORMS_START + 305
 
 // Zarude
-#define SPECIES_ZARUDE_DADA                  FORMS_START + 306
+#define SPECIES_ZARUDE_GrubA                  FORMS_START + 306
 
 // Calyrex
 #define SPECIES_CALYREX_ICE_RIDER            FORMS_START + 307

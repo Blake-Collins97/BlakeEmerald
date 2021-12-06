@@ -1,5 +1,5 @@
 PetalburgCity_Gym_Text_GiveEnigmaBerry: @ 82A6D3D
-	.string "Dad: Hi, {PLAYER}!\p"
+	.string "Grub: Hi, {PLAYER}!\p"
 	.string "I just received a very rare Berry.\n"
 	.string "I'd like you to have it.$"
 
@@ -204,7 +204,7 @@ SootopolisCity_Text_NameIsKiriHaveOneOfThese: @ 82A7BB0
 	.string "… … …  … … …  … … …\n"
 	.string "Okay. That's nice!\p"
 	.string "My name is Kiri.\p"
-	.string "My mommy and daddy named me that so\n"
+	.string "My mommy and Grubdy named me that so\n"
 	.string "I would grow healthy and warmhearted.\l"
 	.string "That's what they wished.\p"
 	.string "You can have one of these.$"

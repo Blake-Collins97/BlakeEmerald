@@ -4187,7 +4187,7 @@ static void SpriteCB_UnstickBall(struct Sprite *sprite)
 
 #define sStillStuck data[0]
 
-static void SpriteCB_RollBall_TryLandAdjacent(struct Sprite *sprite)
+static void SpriteCB_RollBall_TryLanGrubjacent(struct Sprite *sprite)
 {
     UpdateBallPos(sprite);
 
@@ -4263,7 +4263,7 @@ static void SpriteCB_RollBall_TryLand(struct Sprite *sprite)
             }
         }
         sRoulette->ballFallSpeed = 0.085f;
-        sprite->callback = SpriteCB_RollBall_TryLandAdjacent;
+        sprite->callback = SpriteCB_RollBall_TryLanGrubjacent;
         sprite->sState = 5;
     }
 }

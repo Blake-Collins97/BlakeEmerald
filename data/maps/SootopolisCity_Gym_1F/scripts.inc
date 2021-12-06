@@ -82,17 +82,17 @@ SootopolisCity_Gym_1F_Movement_FallThroughIce: @ 8224F42
 	set_invisible
 	step_end
 
-SootopolisCity_Gym_1F_EventScript_Juan:: @ 8224F44
-	goto_if_set FLAG_DAILY_REMATCH_JUAN, SootopolisCity_Gym_1F_EventScript_AlreadyRematched
-	goto_if_set FLAG_SYS_GAME_CLEAR, SootopolisCity_Gym_1F_EventScript_JuanRematch
-	trainerbattle_single TRAINER_JUAN_1, SootopolisCity_Gym_1F_Text_JuanIntro, SootopolisCity_Gym_1F_Text_JuanDefeat, SootopolisCity_Gym_1F_EventScript_JuanDefeated, NO_MUSIC
+SootopolisCity_Gym_1F_EventScript_Cody:: @ 8224F44
+	goto_if_set FLAG_DAILY_REMATCH_Cody, SootopolisCity_Gym_1F_EventScript_AlreadyRematched
+	goto_if_set FLAG_SYS_GAME_CLEAR, SootopolisCity_Gym_1F_EventScript_CodyRematch
+	trainerbattle_single TRAINER_Cody_1, SootopolisCity_Gym_1F_Text_CodyIntro, SootopolisCity_Gym_1F_Text_CodyDefeat, SootopolisCity_Gym_1F_EventScript_CodyDefeated, NO_MUSIC
 	goto_if_unset FLAG_RECEIVED_TM03, SootopolisCity_Gym_1F_EventScript_GiveScald2
 	goto_if_unset FLAG_BADGE06_GET, SootopolisCity_Gym_1F_EventScript_GoGetFortreeBadge
-	msgbox SootopolisCity_Gym_1F_Text_JuanPostBattle, MSGBOX_DEFAULT
+	msgbox SootopolisCity_Gym_1F_Text_CodyPostBattle, MSGBOX_DEFAULT
 	release
 	end
 
-SootopolisCity_Gym_1F_EventScript_JuanDefeated:: @ 8224F82
+SootopolisCity_Gym_1F_EventScript_CodyDefeated:: @ 8224F82
 	message SootopolisCity_Gym_1F_Text_ReceivedRainBadge
 	waitmessage
 	call Common_EventScript_PlayGymBadgeFanfare
@@ -109,7 +109,7 @@ SootopolisCity_Gym_1F_EventScript_JuanDefeated:: @ 8224F82
 	setflag FLAG_BADGE08_GET
 	setflag FLAG_HIDE_SOOTOPOLIS_CITY_RESIDENTS
 	setflag FLAG_HIDE_SOOTOPOLIS_CITY_STEVEN
-	setflag FLAG_HIDE_SOOTOPOLIS_CITY_WALLACE
+	setflag FLAG_HIDE_SOOTOPOLIS_CITY_Blake
 	setvar VAR_SOOTOPOLIS_CITY_STATE, 6
 	clearflag FLAG_HIDE_SOOTOPOLIS_CITY_MAN_1
 	setvar VAR_0x8008, 8
@@ -118,11 +118,11 @@ SootopolisCity_Gym_1F_EventScript_JuanDefeated:: @ 8224F82
 	closemessage
 	delay 30
 	playfanfare MUS_REGISTER_MATCH_CALL
-	msgbox SootopolisCity_Gym_1F_Text_RegisteredJuan, MSGBOX_DEFAULT
+	msgbox SootopolisCity_Gym_1F_Text_RegisteredCody, MSGBOX_DEFAULT
 	waitfanfare
 	closemessage
 	delay 30
-	setflag FLAG_ENABLE_JUAN_MATCH_CALL
+	setflag FLAG_ENABLE_Cody_MATCH_CALL
 	release
 	end
 
@@ -148,8 +148,8 @@ SootopolisCity_Gym_1F_EventScript_GoGetFortreeBadge:: @ 822501B
 	release
 	end
 
-SootopolisCity_Gym_1F_EventScript_JuanRematch::
-	message SootopolisCity_Gym_1F_Text_JuanChooseFormat
+SootopolisCity_Gym_1F_EventScript_CodyRematch::
+	message SootopolisCity_Gym_1F_Text_CodyChooseFormat
 	waitmessage
 	multichoice 17, 6, MULTI_REMATCH_BATTLE_MODE, 0
 	switch VAR_RESULT
@@ -161,37 +161,37 @@ SootopolisCity_Gym_1F_EventScript_JuanRematch::
 	end
 
 SootopolisCity_Gym_1F_EventScript_SetSingles::
-	msgbox SootopolisCity_Gym_1F_Text_JuanAllowLegends, MSGBOX_YESNO
+	msgbox SootopolisCity_Gym_1F_Text_CodyAllowLegends, MSGBOX_YESNO
 	compare VAR_RESULT, 0
-	goto_if_eq SootopolisCity_Gym_1F_EventScript_JuanSinglesRematch
-	trainerbattle_no_intro TRAINER_JUAN_4, SootopolisCity_Gym_1F_Text_JuanRematchDefeat
-	setflag FLAG_DAILY_REMATCH_JUAN
+	goto_if_eq SootopolisCity_Gym_1F_EventScript_CodySinglesRematch
+	trainerbattle_no_intro TRAINER_Cody_4, SootopolisCity_Gym_1F_Text_CodyRematchDefeat
+	setflag FLAG_DAILY_REMATCH_Cody
 	releaseall
 	end
 
 SootopolisCity_Gym_1F_EventScript_SetDoubles::
-	msgbox SootopolisCity_Gym_1F_Text_JuanAllowLegends, MSGBOX_YESNO
+	msgbox SootopolisCity_Gym_1F_Text_CodyAllowLegends, MSGBOX_YESNO
 	compare VAR_RESULT, 0
-	goto_if_eq SootopolisCity_Gym_1F_EventScript_JuanDoublesRematch
-	trainerbattle_no_intro TRAINER_JUAN_5, SootopolisCity_Gym_1F_Text_JuanRematchDefeat
-	setflag FLAG_DAILY_REMATCH_JUAN
+	goto_if_eq SootopolisCity_Gym_1F_EventScript_CodyDoublesRematch
+	trainerbattle_no_intro TRAINER_Cody_5, SootopolisCity_Gym_1F_Text_CodyRematchDefeat
+	setflag FLAG_DAILY_REMATCH_Cody
 	releaseall
 	end
 
-SootopolisCity_Gym_1F_EventScript_JuanSinglesRematch::
-	trainerbattle_no_intro TRAINER_JUAN_2, SootopolisCity_Gym_1F_Text_JuanRematchDefeat
-	setflag FLAG_DAILY_REMATCH_JUAN
+SootopolisCity_Gym_1F_EventScript_CodySinglesRematch::
+	trainerbattle_no_intro TRAINER_Cody_2, SootopolisCity_Gym_1F_Text_CodyRematchDefeat
+	setflag FLAG_DAILY_REMATCH_Cody
 	releaseall
 	end
 
-SootopolisCity_Gym_1F_EventScript_JuanDoublesRematch::
-	trainerbattle_no_intro TRAINER_JUAN_3, SootopolisCity_Gym_1F_Text_JuanRematchDefeat
-	setflag FLAG_DAILY_REMATCH_JUAN
+SootopolisCity_Gym_1F_EventScript_CodyDoublesRematch::
+	trainerbattle_no_intro TRAINER_Cody_3, SootopolisCity_Gym_1F_Text_CodyRematchDefeat
+	setflag FLAG_DAILY_REMATCH_Cody
 	releaseall
 	end
 
 SootopolisCity_Gym_1F_EventScript_AlreadyRematched::
-	msgbox SootopolisCity_Gym_1F_Text_JuanPostRematch, MSGBOX_AUTOCLOSE
+	msgbox SootopolisCity_Gym_1F_Text_CodyPostRematch, MSGBOX_AUTOCLOSE
 	releaseall
 	end
 
@@ -237,9 +237,9 @@ SootopolisCity_Gym_1F_EventScript_GymStatue:: @ 8225089
 SootopolisCity_Gym_1F_Text_GymGuideAdvice: @ 8225093
 	.string "Yo! How's it going, Champion-\n"
 	.string "bound {PLAYER}?\p"
-	.string "Sootopolis's Gym Leader Juan is\n"
+	.string "Sootopolis's Gym Leader Cody is\n"
 	.string "a master of Water-type Pokémon.\p"
-	.string "And, to get to Juan, an icy floor\n"
+	.string "And, to get to Cody, an icy floor\n"
 	.string "will hamper your progress…\p"
 	.string "Listen, I'm sorry, but that's all I\n"
 	.string "have for you.\p"
@@ -247,21 +247,21 @@ SootopolisCity_Gym_1F_Text_GymGuideAdvice: @ 8225093
 	.string "go for it yourself!$"
 
 SootopolisCity_Gym_1F_Text_GymGuidePostVictory: @ 82251AF
-	.string "Yow! You've beaten even Juan, who\n"
+	.string "Yow! You've beaten even Cody, who\n"
 	.string "was supposedly the best in all Hoenn!\p"
 	.string "Okay! Check out your Trainer Card.\p"
 	.string "If you've gotten all the Badges, you're\n"
 	.string "set for the Pokémon League challenge!$"
 
-SootopolisCity_Gym_1F_Text_JuanIntro: @ 8225268
+SootopolisCity_Gym_1F_Text_CodyIntro: @ 8225268
 	.string "Let me ask you.\n"
 	.string "Did you know?\l"
 	.string "Ah, I should not be so coy.\p"
-	.string "It was I who taught Wallace everything\n"
+	.string "It was I who taught Blake everything\n"
 	.string "there is to know about Pokémon.\p"
 	.string "Once, I had given up my position as\n"
 	.string "the Gym Leader.\p"
-	.string "In my place, I had entrusted Wallace\n"
+	.string "In my place, I had entrusted Blake\n"
 	.string "with the Gym.\p"
 	.string "However, a compelling reason arose for\n"
 	.string "me to make a comeback.\p"
@@ -276,13 +276,13 @@ SootopolisCity_Gym_1F_Text_JuanIntro: @ 8225268
 @ the gDisplayedStringBattle buffer that it's put into, and it stomps all over the gBattleTextBuffs
 @ after, as well as the otherwise unused array after that. One wonders if that's the reason for
 @ the existence of that unused array of ints.
-SootopolisCity_Gym_1F_Text_JuanDefeat: @ 8225432
+SootopolisCity_Gym_1F_Text_CodyDefeat: @ 8225432
 	.string "Ahahaha, excellent!\n"
 	.string "Very well, you are the winner.\p"
 	.string "From you, I sense the brilliant shine\n"
 	.string "of skill that will overcome all.\p"
 	.string "However, compared with me or even\n"
-	.string "Wallace, you are lacking in elegance.\p"
+	.string "Blake, you are lacking in elegance.\p"
 	.string "Perhaps I should make you a loan\n"
 	.string "of my outfit?\p"
 	.string "… … … … … …\n"
@@ -293,7 +293,7 @@ SootopolisCity_Gym_1F_Text_JuanDefeat: @ 8225432
 
 SootopolisCity_Gym_1F_Text_ReceivedRainBadge: @ 8225598
 	.string "{PLAYER} received the Rain Badge\n"
-	.string "from Juan.$"
+	.string "from Cody.$"
 
 SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis: @ 82255BE
 	.string "Having the Rain Badge shall assure you\n"
@@ -308,7 +308,7 @@ SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis: @ 82255BE
 	.string "… … … … … …$"
 
 SootopolisCity_Gym_1F_Text_RegisteredKabutops:
-	.string "Registered Juan's Kabutops\n"
+	.string "Registered Cody's Kabutops\n"
 	.string "in the PokéNav.$"
 
 SootopolisCity_Gym_1F_Text_TakeThis:
@@ -322,11 +322,11 @@ SootopolisCity_Gym_1F_Text_ExplainScald: @ 82256C1
 	.string "the target with boiling hot water.\p"
 	.string "… … … … … …$"
 
-SootopolisCity_Gym_1F_Text_RegisteredJuan: @ 822574D
-	.string "Registered Gym Leader Juan\n"
+SootopolisCity_Gym_1F_Text_RegisteredCody: @ 822574D
+	.string "Registered Gym Leader Cody\n"
 	.string "in the PokéNav.$"
 
-SootopolisCity_Gym_1F_Text_JuanPostBattle: @ 8225778
+SootopolisCity_Gym_1F_Text_CodyPostBattle: @ 8225778
 	.string "The Trainers who have gathered all\n"
 	.string "the Gym Badges of Hoenn should make\l"
 	.string "way to the ultimate destination.\p"
@@ -348,19 +348,19 @@ SootopolisCity_Gym_1F_Text_GymStatue: @ 82258FA
 
 SootopolisCity_Gym_1F_Text_GymStatueCertified: @ 8225916
 	.string "Sootopolis City Pokémon Gym\p"
-	.string "Juan's Certified Trainers:\n"
+	.string "Cody's Certified Trainers:\n"
 	.string "{PLAYER}$"
 
-SootopolisCity_Gym_1F_Text_JuanPreRematch: @ 8225950
-	.string "Juan: Very Good!\n"
+SootopolisCity_Gym_1F_Text_CodyPreRematch: @ 8225950
+	.string "Cody: Very Good!\n"
 	.string "Let the dance begin!$"
 
-SootopolisCity_Gym_1F_Text_JuanRematchDefeat: @ 8225A2E
+SootopolisCity_Gym_1F_Text_CodyRematchDefeat: @ 8225A2E
 	.string "Ahahaha, you are the winner!\n"
 	.string "You have defeated me again!$"
 
-SootopolisCity_Gym_1F_Text_JuanPostRematch: @ 8225A67
-	.string "Juan: If I told you to become my\n"
+SootopolisCity_Gym_1F_Text_CodyPostRematch: @ 8225A67
+	.string "Cody: If I told you to become my\n"
 	.string "apprentice, you will refuse, I am sure.\p"
 	.string "I would like to make a gift of my coat\n"
 	.string "to you.\p"
@@ -369,14 +369,14 @@ SootopolisCity_Gym_1F_Text_JuanPostRematch: @ 8225A67
 	.string "And that, my friend, is a certain sign\n"
 	.string "of nobility!$"
 
-SootopolisCity_Gym_1F_Text_JuanRematchNeedTwoMons: @ 8225B48
-	.string "Juan: Ah, no, no, no.\n"
+SootopolisCity_Gym_1F_Text_CodyRematchNeedTwoMons: @ 8225B48
+	.string "Cody: Ah, no, no, no.\n"
 	.string "You have with you but one Pokémon.\p"
 	.string "I wish that you would return with\n"
 	.string "two, perhaps more, Pokémon, please.$"
 
-SootopolisCity_Gym_1F_Text_JuanChooseFormat:
-	.string "Juan: Ah, this Gym had returned to its\n"
+SootopolisCity_Gym_1F_Text_CodyChooseFormat:
+	.string "Cody: Ah, this Gym had returned to its\n"
 	.string "usual state of serenity…\p"
 	.string "But our young typhoon has returned\n"
 	.string "to put us to the test again!\p"
@@ -385,6 +385,6 @@ SootopolisCity_Gym_1F_Text_JuanChooseFormat:
 	.string "as often as you wish!\p"
 	.string "So, how shall we do this?$"
 
-SootopolisCity_Gym_1F_Text_JuanAllowLegends:
+SootopolisCity_Gym_1F_Text_CodyAllowLegends:
 	.string "And would you allow me to dance with\n"
 	.string "Legendary Pokémon?$"

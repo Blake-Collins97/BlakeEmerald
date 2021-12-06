@@ -82,10 +82,10 @@ Route105_EventScript_AndresRematch:: @ 81EE31F
 	msgbox Route105_Text_AndresRematchPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-Route104_Text_DadPokenavCall: @ 81EE336
+Route104_Text_GrubPokenavCall: @ 81EE336
 	.string "… … … … … …\n"
 	.string "… … … … … Beep!\p"
-	.string "Dad: Oh, {PLAYER}?\p"
+	.string "Grub: Oh, {PLAYER}?\p"
 	.string "… … … … … …\n"
 	.string "Where are you now?\l"
 	.string "It sounds windy wherever you are.\p"
@@ -98,6 +98,6 @@ Route104_Text_DadPokenavCall: @ 81EE336
 	.string "… … … … … …\n"
 	.string "… … … … … Click!$"
 
-Route104_Text_RegisteredDadInPokenav: @ 81EE463
-	.string "Registered Dad Norman\n"
+Route104_Text_RegisteredGrubInPokenav: @ 81EE463
+	.string "Registered Grub Grub\n"
 	.string "in the PokéNav.$"

@@ -18,7 +18,7 @@ RustboroCity_CuttersHouse_EventScript_ExplainCut:: @ 8215C00
 	end
 
 RustboroCity_CuttersHouse_EventScript_Lass:: @ 8215C0A
-	msgbox RustboroCity_CuttersHouse_Text_DadHelpedClearLandOfTrees, MSGBOX_NPC
+	msgbox RustboroCity_CuttersHouse_Text_GrubHelpedClearLandOfTrees, MSGBOX_NPC
 	end
 
 RustboroCity_CuttersHouse_Text_YouCanPutThisHMToGoodUse: @ 8215C13
@@ -44,9 +44,9 @@ RustboroCity_CuttersHouse_Text_ExplainCut: @ 8215D33
 	.string "And, like a TM, an HM can be used\n"
 	.string "more than once.$"
 
-RustboroCity_CuttersHouse_Text_DadHelpedClearLandOfTrees: @ 8215E39
+RustboroCity_CuttersHouse_Text_GrubHelpedClearLandOfTrees: @ 8215E39
 	.string "When they were expanding the city of\n"
-	.string "Rustboro, my dad helped out.\p"
+	.string "Rustboro, my Grub helped out.\p"
 	.string "He made his Pokémon use Cut to clear\n"
 	.string "the land of trees.$"
 

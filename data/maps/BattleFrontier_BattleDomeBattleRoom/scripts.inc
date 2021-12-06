@@ -330,7 +330,7 @@ BattleFrontier_BattleDomeBattleRoom_EventScript_AnnouncePlayerBrokenStreakRound2
 	return
 
 BattleFrontier_BattleDomeBattleRoom_EventScript_AnnouncePlayerBrokenStreakSemifinal:: @ 824C1AF
-	message BattleFrontier_BattleDomeBattleRoom_Text_WillDoExpectedAdvanceToFinals
+	message BattleFrontier_BattleDomeBattleRoom_Text_WillDoExpecteGrubvanceToFinals
 	waitmessage
 	return
 
@@ -1073,7 +1073,7 @@ BattleFrontier_BattleDomeBattleRoom_Text_FormerToughnessReturned: @ 824CE33
 	.string "The former toughness has returned!\p"
 	.string "$"
 
-BattleFrontier_BattleDomeBattleRoom_Text_WillDoExpectedAdvanceToFinals: @ 824CE57
+BattleFrontier_BattleDomeBattleRoom_Text_WillDoExpecteGrubvanceToFinals: @ 824CE57
 	.string "Will this Trainer do as expected\n"
 	.string "and advance to the finals?\p"
 	.string "$"

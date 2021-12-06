@@ -9837,7 +9837,7 @@ static const struct TrainerMonItemCustomMoves sParty_Berke[] = { // OHKO Room
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Norman1[] = {
+static const struct TrainerMonItemCustomMoves sParty_Grub1[] = {
     {
     .lvl = 0,
     .species = SPECIES_SWELLOW,
@@ -9886,7 +9886,7 @@ static const struct TrainerMonItemCustomMoves sParty_Norman1[] = {
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Norman2[] = { // singles
+static const struct TrainerMonItemCustomMoves sParty_Grub2[] = { // singles
     {
     .lvl = 0,
     .species = SPECIES_SWELLOW,
@@ -9936,7 +9936,7 @@ static const struct TrainerMonItemCustomMoves sParty_Norman2[] = { // singles
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Norman3[] = { // Doubles
+static const struct TrainerMonItemCustomMoves sParty_Grub3[] = { // Doubles
     {
     .lvl = 2,
     .species = SPECIES_SLAKING,
@@ -9983,7 +9983,7 @@ static const struct TrainerMonItemCustomMoves sParty_Norman3[] = { // Doubles
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Norman4[] = { // Singles with legendaries
+static const struct TrainerMonItemCustomMoves sParty_Grub4[] = { // Singles with legendaries
     {
     .lvl = 0,
     .species = SPECIES_SWELLOW,
@@ -10031,7 +10031,7 @@ static const struct TrainerMonItemCustomMoves sParty_Norman4[] = { // Singles wi
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Norman5[] = { // doubles with legendaries
+static const struct TrainerMonItemCustomMoves sParty_Grub5[] = { // doubles with legendaries
     {
     .lvl = 2,
     .species = SPECIES_SLAKING,
@@ -17484,7 +17484,7 @@ static const struct TrainerMonItemCustomMoves sParty_TateAndLiza3[] = { // legen
     .species = SPECIES_CALYREX_ICE_RIDER,
     .heldItem = ITEM_WEAKNESS_POLICY,
     .spread = SPREAD_31_IV_HP_ATK_BRAVE,
-    .moves = MOVE_GLACIAL_LANCE, MOVE_ZEN_HEADBUTT, MOVE_MEGAHORN, MOVE_TRICK_ROOM
+    .moves = MOVE_ChelsL_LANCE, MOVE_ZEN_HEADBUTT, MOVE_MEGAHORN, MOVE_TRICK_ROOM
     }
 };
 
@@ -18528,7 +18528,7 @@ static const struct TrainerMonItemCustomMoves sParty_Bridget[] = {
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Juan1[] = {
+static const struct TrainerMonItemCustomMoves sParty_Cody1[] = {
     {
     .lvl = 1,
     .species = SPECIES_POLITOED,
@@ -18579,7 +18579,7 @@ static const struct TrainerMonItemCustomMoves sParty_Juan1[] = {
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Juan2[] = { // singles
+static const struct TrainerMonItemCustomMoves sParty_Cody2[] = { // singles
     {
     .lvl = 0,
     .species = SPECIES_POLITOED,
@@ -18630,7 +18630,7 @@ static const struct TrainerMonItemCustomMoves sParty_Juan2[] = { // singles
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Juan3[] = { // Doubles
+static const struct TrainerMonItemCustomMoves sParty_Cody3[] = { // Doubles
     {
     .lvl = 0,
     .species = SPECIES_POLITOED,
@@ -18680,7 +18680,7 @@ static const struct TrainerMonItemCustomMoves sParty_Juan3[] = { // Doubles
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Juan4[] = { // singles legendaries
+static const struct TrainerMonItemCustomMoves sParty_Cody4[] = { // singles legendaries
     {
     .lvl = 0,
     .species = SPECIES_KYOGRE,
@@ -18728,7 +18728,7 @@ static const struct TrainerMonItemCustomMoves sParty_Juan4[] = { // singles lege
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Juan5[] = { // doubles legendaries
+static const struct TrainerMonItemCustomMoves sParty_Cody5[] = { // doubles legendaries
     {
     .lvl = 0,
     .species = SPECIES_KYOGRE,
@@ -19906,7 +19906,7 @@ static const struct TrainerMonItemCustomMoves sParty_Leonard[] = { // with Phill
 
 // Ever Grande/Pokemon League
 
-static const struct TrainerMonItemCustomMoves sParty_Sidney[] = {
+static const struct TrainerMonItemCustomMoves sParty_Dan[] = {
     {
     .lvl = 1,
     .species = SPECIES_TYRANITAR,
@@ -19956,7 +19956,7 @@ static const struct TrainerMonItemCustomMoves sParty_Sidney[] = {
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Phoebe[] = {
+static const struct TrainerMonItemCustomMoves sParty_Sharni[] = {
     {
     .lvl = 1,
     .species = SPECIES_MISMAGIUS,
@@ -20005,7 +20005,7 @@ static const struct TrainerMonItemCustomMoves sParty_Phoebe[] = {
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Glacia[] = {
+static const struct TrainerMonItemCustomMoves sParty_Chels[] = {
     {
     .lvl = 1,
     .species = SPECIES_ABOMASNOW,
@@ -20055,7 +20055,7 @@ static const struct TrainerMonItemCustomMoves sParty_Glacia[] = {
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Drake[] = {
+static const struct TrainerMonItemCustomMoves sParty_Ray[] = {
     {
     .lvl = 1,
     .species = SPECIES_DRAGALGE,
@@ -20106,53 +20106,53 @@ static const struct TrainerMonItemCustomMoves sParty_Drake[] = {
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Wallace[] = {
+static const struct TrainerMonItemCustomMoves sParty_Blake[] = {
     {
     .lvl = 2,
-    .species = SPECIES_WAILORD,
-    .heldItem = ITEM_CHOICE_SCARF,
-    .ability = 2, // Drizzle
-    .spread = SPREAD_31_IV_SPATK_SPEED_HASTY,
-    .moves = MOVE_WATER_SPOUT, MOVE_ICE_BEAM, MOVE_WEATHER_BALL, MOVE_EARTHQUAKE
+    .species = SPECIES_REGIROCK,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .ability = 2, // Sand Stream
+    .spread = SPREAD_31_IV_HP_ATK_ADAMANT,
+    .moves = MOVE_ROCK_SLIDE, MOVE_HAMMER_ARM, MOVE_CURSE, MOVE_ANCIENT_POWER
     },
     {
     .lvl = 2,
-    .species = SPECIES_LATIOS,
-    .heldItem = ITEM_SOUL_DEW,
+    .species = SPECIES_CLAYDOL,
+    .heldItem = ITEM_LEFTOVERS,
+    .spread = SPREAD_31_IV_HP_SPATK_QUIET,
+    .moves = MOVE_TRICK_ROOM, MOVE_PSYCHIC, MOVE_SCORCHING_SANDS, MOVE_TOXIC
+    },
+    {
+    .lvl = 2,
+    .species = SPECIES_HELIOLISK,
+    .heldItem = ITEM_FOCUS_SASH,
+    .ability = 1, // Sand Veil
     .spread = SPREAD_31_IV_SPATK_SPEED_TIMID,
-    .moves = MOVE_PSYSHOCK, MOVE_DRACO_METEOR, MOVE_THUNDER, MOVE_AURA_SPHERE
+    .moves = MOVE_HYPER_VOICE, MOVE_DISCHARGE, MOVE_ELECTROWEB, MOVE_WEATHER_BALL
     },
     {
     .lvl = 2,
-    .species = SPECIES_LUDICOLO,
-    .heldItem = ITEM_SHELL_BELL,
-    .ability = 0, // Swift Swim
-    .spread = SPREAD_31_IV_SPATK_SPEED_MODEST,
-    .moves = MOVE_SCALD, MOVE_GIGA_DRAIN, MOVE_ICE_BEAM, MOVE_QUIVER_DANCE
-    },
-    {
-    .lvl = 2,
-    .species = SPECIES_WHISCASH,
-    .heldItem = ITEM_SALAC_BERRY,
-    .ability = 0, // Adaptability
-    .spread = SPREAD_31_IV_ATK_SPEED_JOLLY,
-    .moves = MOVE_LIQUIDATION, MOVE_EARTHQUAKE, MOVE_SUBSTITUTE, MOVE_DRAGON_DANCE
-    },
-    {
-    .lvl = 2,
-    .species = SPECIES_VIKAVOLT,
+    .species = SPECIES_AGGRON,
     .heldItem = ITEM_LIFE_ORB,
-    .ability = 0, // Levitate
+    .ability = 1, // Rock Head
+    .spread = SPREAD_31_IV_HP_ATK_ADAMANT,
+    .moves = MOVE_IRON_TAIL, MOVE_FIRE_PUNCH, MOVE_ICE_PUNCH, MOVE_HEAD_SMASH
+    },
+    {
+    .lvl = 2,
+    .species = SPECIES_REGIGIGAS,
+    .heldItem = ITEM_LUM_BERRY,
+    .ability = 0, // Speed Boost
     .spread = SPREAD_31_IV_SPATK_SPEED_TIMID,
-    .moves = MOVE_THUNDER, MOVE_HURRICANE, MOVE_BUG_BUZZ, MOVE_ENERGY_BALL
+    .moves = MOVE_POWER_UP_PUNCH, MOVE_DRAIN_PUNCH, MOVE_BODY_SLAM, MOVE_KNOCK_OFF
     },
     {
     .lvl = 3,
-    .species = SPECIES_MILOTIC,
-    .heldItem = ITEM_MILOTICITE,
-    .ability = 1, // Competitive -> Prism Scales
+    .species = SPECIES_FLYGON,
+    .heldItem = ITEM_FLYGONITE,
+    .ability = 1, // Levitate -> Levitate
     .spread = SPREAD_31_IV_HP_DEF_BOLD,
-    .moves = MOVE_SCALD, MOVE_MOONBLAST, MOVE_CALM_MIND, MOVE_RECOVER
+    .moves = MOVE_DRACO_METEOR, MOVE_GIGA_DRAIN, MOVE_EARTH_POWER, MOVE_BUG_BUZZ
     }
 };
 
@@ -20442,7 +20442,7 @@ static const struct TrainerMonItemCustomMoves sParty_Buffel[] = {
 };
 
 // League rematches
-static const struct TrainerMonItemCustomMoves sParty_Sidney2[] = { // doubles
+static const struct TrainerMonItemCustomMoves sParty_Dan2[] = { // doubles
     {
     .lvl = 1,
     .species = SPECIES_TYRANITAR,
@@ -20492,7 +20492,7 @@ static const struct TrainerMonItemCustomMoves sParty_Sidney2[] = { // doubles
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Sidney3[] = { // legendaries
+static const struct TrainerMonItemCustomMoves sParty_Dan3[] = { // legendaries
     {
     .lvl = 1,
     .species = SPECIES_YVELTAL,
@@ -20539,7 +20539,7 @@ static const struct TrainerMonItemCustomMoves sParty_Sidney3[] = { // legendarie
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Sidney4[] = { // doubles legendaries
+static const struct TrainerMonItemCustomMoves sParty_Dan4[] = { // doubles legendaries
     {
     .lvl = 1,
     .species = SPECIES_DARKRAI,
@@ -20586,7 +20586,7 @@ static const struct TrainerMonItemCustomMoves sParty_Sidney4[] = { // doubles le
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Phoebe2[] = { // doubles
+static const struct TrainerMonItemCustomMoves sParty_Sharni2[] = { // doubles
     {
     .lvl = 1,
     .species = SPECIES_COFAGRIGUS,
@@ -20636,7 +20636,7 @@ static const struct TrainerMonItemCustomMoves sParty_Phoebe2[] = { // doubles
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Phoebe3[] = { // legendaries
+static const struct TrainerMonItemCustomMoves sParty_Sharni3[] = { // legendaries
     {
     .lvl = 1,
     .species = SPECIES_MAROWAK_ALOLAN,
@@ -20682,7 +20682,7 @@ static const struct TrainerMonItemCustomMoves sParty_Phoebe3[] = { // legendarie
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Phoebe4[] = { // legendaries doubles
+static const struct TrainerMonItemCustomMoves sParty_Sharni4[] = { // legendaries doubles
     {
     .lvl = 1,
     .species = SPECIES_MAROWAK_ALOLAN,
@@ -20728,7 +20728,7 @@ static const struct TrainerMonItemCustomMoves sParty_Phoebe4[] = { // legendarie
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Glacia2[] = { // Doubles
+static const struct TrainerMonItemCustomMoves sParty_Chels2[] = { // Doubles
     {
     .lvl = 1,
     .species = SPECIES_ABOMASNOW,
@@ -20778,7 +20778,7 @@ static const struct TrainerMonItemCustomMoves sParty_Glacia2[] = { // Doubles
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Glacia3[] = { // legendaries
+static const struct TrainerMonItemCustomMoves sParty_Chels3[] = { // legendaries
     {
     .lvl = 1,
     .species = SPECIES_NINETALES_ALOLAN,
@@ -20828,7 +20828,7 @@ static const struct TrainerMonItemCustomMoves sParty_Glacia3[] = { // legendarie
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Glacia4[] = {
+static const struct TrainerMonItemCustomMoves sParty_Chels4[] = {
     {
     .lvl = 1,
     .species = SPECIES_NINETALES_ALOLAN,
@@ -20878,7 +20878,7 @@ static const struct TrainerMonItemCustomMoves sParty_Glacia4[] = {
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Drake2[] = { // Doubles
+static const struct TrainerMonItemCustomMoves sParty_Ray2[] = { // Doubles
     {
     .lvl = 1,
     .species = SPECIES_DRAGALGE,
@@ -20929,7 +20929,7 @@ static const struct TrainerMonItemCustomMoves sParty_Drake2[] = { // Doubles
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Drake3[] = { // Legendaries
+static const struct TrainerMonItemCustomMoves sParty_Ray3[] = { // Legendaries
     {
     .lvl = 1,
     .species = SPECIES_DIALGA,
@@ -20977,7 +20977,7 @@ static const struct TrainerMonItemCustomMoves sParty_Drake3[] = { // Legendaries
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Drake4[] = { // Legendaries doubles
+static const struct TrainerMonItemCustomMoves sParty_Ray4[] = { // Legendaries doubles
     {
     .lvl = 1,
     .species = SPECIES_DIALGA,
@@ -21025,7 +21025,7 @@ static const struct TrainerMonItemCustomMoves sParty_Drake4[] = { // Legendaries
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_WallaceDoubles[] = { // Doubles
+static const struct TrainerMonItemCustomMoves sParty_BlakeDoubles[] = { // Doubles
     {
     .lvl = 2,
     .species = SPECIES_WAILORD,
@@ -21075,7 +21075,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallaceDoubles[] = { // Dou
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_WallaceLegends[] = { // Legendaries
+static const struct TrainerMonItemCustomMoves sParty_BlakeLegends[] = { // Legendaries
     {
     .lvl = 2,
     .species = SPECIES_KYOGRE,
@@ -21123,7 +21123,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallaceLegends[] = { // Leg
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_WallaceDoublesLegends[] = { // Legendaries doubles
+static const struct TrainerMonItemCustomMoves sParty_BlakeDoublesLegends[] = { // Legendaries doubles
     {
     .lvl = 2,
     .species = SPECIES_KYOGRE,

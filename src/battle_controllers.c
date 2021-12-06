@@ -777,7 +777,7 @@ static void Task_HandleSendLinkBuffersData(u8 taskId)
             {
                 if (IsLinkMaster())
                 {
-                    CheckShouldAdvanceLinkState();
+                    CheckShoulGrubvanceLinkState();
                     gTasks[taskId].data[11]++;
                 }
                 else

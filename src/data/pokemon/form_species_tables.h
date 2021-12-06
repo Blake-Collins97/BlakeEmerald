@@ -1012,7 +1012,7 @@ static const u16 sUrshifuFormSpeciesIdTable[] = {
 
 static const u16 sZarudeFormSpeciesIdTable[] = {
     SPECIES_ZARUDE,
-    SPECIES_ZARUDE_DADA,
+    SPECIES_ZARUDE_GrubA,
     FORM_SPECIES_END,
 };
 

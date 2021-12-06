@@ -3354,7 +3354,7 @@ u8 CheckForPlayersHouseNews(void)
     return PLAYERS_HOUSE_TV_LATI;
 }
 
-void GetMomOrDadStringForTVMessage(void)
+void GetMomOrGrubStringForTVMessage(void)
 {
     if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(LITTLEROOT_TOWN_BRENDANS_HOUSE_1F))
     {
@@ -3381,14 +3381,14 @@ void GetMomOrDadStringForTVMessage(void)
     }
     else if (VarGet(VAR_TEMP_3) == 2)
     {
-        StringCopy(gStringVar1, gText_Dad);
+        StringCopy(gStringVar1, gText_Grub);
     }
     else if (VarGet(VAR_TEMP_3) > 2)
     {
         if (VarGet(VAR_TEMP_3) % 2 == 0)
             StringCopy(gStringVar1, gText_Mom);
         else
-            StringCopy(gStringVar1, gText_Dad);
+            StringCopy(gStringVar1, gText_Grub);
     }
     else
     {
@@ -3399,7 +3399,7 @@ void GetMomOrDadStringForTVMessage(void)
         }
         else
         {
-            StringCopy(gStringVar1, gText_Dad);
+            StringCopy(gStringVar1, gText_Grub);
             VarSet(VAR_TEMP_3, 2);
         }
     }

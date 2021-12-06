@@ -421,7 +421,7 @@ static void Task_MixingRecordsRecv(u8 taskId)
         // We're the link master. Delay for 30 frames per connected player.
         if (GetSavedPlayerCount() == GetLinkPlayerCount_2() && ++task->data[12] > (GetLinkPlayerCount_2() * 30))
         {
-            CheckShouldAdvanceLinkState();
+            CheckShoulGrubvanceLinkState();
             task->data[0] = 1;
         }
         break;

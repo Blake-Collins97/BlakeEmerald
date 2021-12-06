@@ -1,6 +1,6 @@
 #include "global.h"
 
-const u8 gText_MysteryGiftBerry[] = _("Obtained a {STR_VAR_2} Berry!\nDad has it at Petalburg Gym.");
+const u8 gText_MysteryGiftBerry[] = _("Obtained a {STR_VAR_2} Berry!\nGrub has it at Petalburg Gym.");
 const u8 gText_MysteryGiftBerryTransform[] = _("The {STR_VAR_1} Berry transformed into\none {STR_VAR_2} Berry.");
 const u8 gText_MysteryGiftBerryObtained[] = _("The {STR_VAR_1} Berry has already been\nobtained.");
 const u8 gText_MysteryGiftSpecialRibbon[] = _("A special RIBBON was awarded to\nyour party Pokémon.");

@@ -446,7 +446,7 @@ LavaridgeTown_Gym_1F_Text_RegisteredArcanine: @ 81FF517
 
 LavaridgeTown_Gym_1F_Text_FlanneryPostBattle: @ 81FF546
 	.string "Your power reminds me of someone…\p"
-	.string "Oh! I know! You battle like Norman,\n"
+	.string "Oh! I know! You battle like Grub,\n"
 	.string "the Gym Leader of Petalburg.$"
 
 LavaridgeTown_Gym_1F_Text_GymStatue: @ 81FF5A9

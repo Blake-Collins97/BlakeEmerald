@@ -1374,7 +1374,7 @@ static void NamingScreen_NoIcon(void);
 static void NamingScreen_CreatePlayerIcon(void);
 static void NamingScreen_CreatePCIcon(void);
 static void NamingScreen_CreateMonIcon(void);
-static void NamingScreen_CreateWaldaDadIcon(void);
+static void NamingScreen_CreateWalGrubadIcon(void);
 
 static void (*const sIconFunctions[])(void) =
 {
@@ -1382,7 +1382,7 @@ static void (*const sIconFunctions[])(void) =
     NamingScreen_CreatePlayerIcon,
     NamingScreen_CreatePCIcon,
     NamingScreen_CreateMonIcon,
-    NamingScreen_CreateWaldaDadIcon,
+    NamingScreen_CreateWalGrubadIcon,
 };
 
 static void CreateInputTargetIcon(void)
@@ -1424,7 +1424,7 @@ static void NamingScreen_CreateMonIcon(void)
     gSprites[spriteId].oam.priority = 3;
 }
 
-static void NamingScreen_CreateWaldaDadIcon(void)
+static void NamingScreen_CreateWalGrubadIcon(void)
 {
     u8 spriteId;
 

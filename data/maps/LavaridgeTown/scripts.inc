@@ -77,7 +77,7 @@ LavaridgeTown_EventScript_MayGiveGoGoggles:: @ 81EA5B5
 	setflag FLAG_RECEIVED_GO_GOGGLES
 	msgbox LavaridgeTown_Text_MayExplainGoGoggles, MSGBOX_DEFAULT
 	giveitem ITEM_SAFETY_GOGGLES
-	msgbox LavaridgeTown_Text_MayGiveSafetyGogglesChallengeDad, MSGBOX_DEFAULT
+	msgbox LavaridgeTown_Text_MayGiveSafetyGogglesChallengeGrub, MSGBOX_DEFAULT
 	goto LavaridgeTown_EventScript_RivalExit
 	end
 
@@ -87,7 +87,7 @@ LavaridgeTown_EventScript_BrendanGiveGoGoggles:: @ 81EA5DA
 	setflag FLAG_RECEIVED_GO_GOGGLES
 	msgbox LavaridgeTown_Text_BrendanExplainGoGoggles, MSGBOX_DEFAULT
 	giveitem ITEM_SAFETY_GOGGLES
-	msgbox LavaridgeTown_Text_BrendanExplainSafetyGogglesChallengeDad, MSGBOX_DEFAULT
+	msgbox LavaridgeTown_Text_BrendanExplainSafetyGogglesChallengeGrub, MSGBOX_DEFAULT
 	goto LavaridgeTown_EventScript_RivalExit
 	end
 
@@ -313,7 +313,7 @@ LavaridgeTown_Text_MayExplainGoGoggles: @ 81EA897
 	.string "Oh, and you might want a pair of these\n"
 	.string "for your Pokémon.$"
 
-LavaridgeTown_Text_MayGiveSafetyGogglesChallengeDad:
+LavaridgeTown_Text_MayGiveSafetyGogglesChallengeGrub:
 	.string "May: Safety Goggles are like Go-Goggles\n"
 	.string "for Pokémon - they'll protect them from\l"
 	.string "weather and Powder moves.\p"
@@ -322,7 +322,7 @@ LavaridgeTown_Text_MayGiveSafetyGogglesChallengeDad:
 	.string "You're trying hard because you don't\n"
 	.string "want to lose to me, I bet!\p"
 	.string "{PLAYER}{KUN}, I think I should challenge\n"
-	.string "your dad in Petalburg Gym.\p"
+	.string "your Grub in Petalburg Gym.\p"
 	.string "See you again!$"
 
 LavaridgeTown_Text_BrendanNiceBadgesTakeThis: @ 81EA9A2
@@ -340,7 +340,7 @@ LavaridgeTown_Text_BrendanExplainGoGoggles:
 	.string "You should take a pair of these for\n"
 	.string "your Pokémon, too.$"
 
-LavaridgeTown_Text_BrendanExplainSafetyGogglesChallengeDad:
+LavaridgeTown_Text_BrendanExplainSafetyGogglesChallengeGrub:
 	.string "Brendan: If you let a Pokémon hold\n"
 	.string "those Safety Goggles, they won't be\l"
 	.string "hurt by the desert's sandstorm.\p"
@@ -348,9 +348,9 @@ LavaridgeTown_Text_BrendanExplainSafetyGogglesChallengeDad:
 	.string "are exclusively desert-dwellers.\l"
 	.string "You might look around for those.\p"
 	.string "As for me…\n"
-	.string "I'm considering challenging Norman,\l"
+	.string "I'm considering challenging Grub,\l"
 	.string "the Gym Leader of Petalburg.\p"
-	.string "Unlike you, {PLAYER}, your dad looks like\n"
+	.string "Unlike you, {PLAYER}, your Grub looks like\n"
 	.string "he really is tough.\p"
 	.string "See you around!$"
 

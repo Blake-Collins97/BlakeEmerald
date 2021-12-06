@@ -41,7 +41,7 @@ VerdanturfTown_WandasHouse_EventScript_WandasBoyfriend:: @ 8202913
 VerdanturfTown_WandasHouse_EventScript_Wanda::
 	lock
 	faceplayer
-	goto_if_set FLAG_DEFEATED_LAVARIDGE_GYM, VerdanturfTown_WandasHouse_EventScript_WandaDontWorry
+	goto_if_set FLAG_DEFEATED_LAVARIDGE_GYM, VerdanturfTown_WandasHouse_EventScript_WanGrubontWorry
 	goto_if_set FLAG_DEFEATED_WALLY_MAUVILLE, VerdanturfTown_WandasHouse_EventScript_MeetWanda
 	msgbox VerdanturfTown_WandasHouse_Text_DontWorryAboutWally, MSGBOX_DEFAULT
 	release
@@ -53,7 +53,7 @@ VerdanturfTown_WandasHouse_EventScript_MeetWanda::
 	release
 	end
 
-VerdanturfTown_WandasHouse_EventScript_WandaDontWorry::
+VerdanturfTown_WandasHouse_EventScript_WanGrubontWorry::
 	msgbox VerdanturfTown_WandasHouse_Text_DontWorryAboutWally, MSGBOX_DEFAULT
 	goto_if_set FLAG_RECEIVED_HM04, VerdanturfTown_WandasHouse_EventScript_WandaGardevoirite
 	release

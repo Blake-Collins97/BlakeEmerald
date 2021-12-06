@@ -2736,7 +2736,7 @@ Route119_Text_DougIntro: @ 829DA7D
 Route119_Text_DougDefeat: @ 829DABC
 	.string "Whoop, that was a great match!$"
 
-Route119_Text_DougPostBattle: @ 829DADB
+Route119_Text_DougPostBattle: @ 829GrubB
 	.string "We're the Mimic Circle!\n"
 	.string "I hope you enjoyed our performance.$"
 
@@ -3959,7 +3959,7 @@ Route126_Text_BrendaIntro: @ 82A1E3E
 	.string "Hello, kiddo!\n"
 	.string "Want a battle with me?$"
 
-Route126_Text_BrendaDefeat: @ 82A1E63
+Route126_Text_BrenGrubefeat: @ 82A1E63
 	.string "Oh, noooooh!$"
 
 Route126_Text_BrendaPostBattle: @ 82A1E70
@@ -4613,7 +4613,7 @@ Route133_Text_LindaIntro: @ 82A4236
 	.string "Welcome!\n"
 	.string "I've been expecting you!$"
 
-Route133_Text_LindaDefeat: @ 82A4258
+Route133_Text_LinGrubefeat: @ 82A4258
 	.string "No! Please!$"
 
 Route133_Text_LindaPostBattle: @ 82A4264
