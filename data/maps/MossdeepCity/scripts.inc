@@ -452,7 +452,7 @@ MossdeepCity_Text_SootopolisNewGymLeader: @ 81E5581
 	.string "I think the Gym there had a new\n"
 	.string "Leader come in.\p"
 	.string "People tell me the new Leader once\n"
-	.string "mentored Blake.$"
+	.string "mentored Wallace.$"
 
 MossdeepCity_Text_AvalancheNonsense:
 	.string "You Trainer?\p"

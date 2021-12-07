@@ -250,9 +250,9 @@ MossdeepCity_Gym_EventScript_Virgil:: @ 8220B14
 	msgbox MossdeepCity_Gym_Text_VirgilPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-MossdeepCity_Gym_EventScript_Blake:: @ 8220B2B
-	trainerbattle_single TRAINER_BLAKE, MossdeepCity_Gym_Text_BlakeIntro, MossdeepCity_Gym_Text_BlakeDefeat
-	msgbox MossdeepCity_Gym_Text_BlakePostBattle, MSGBOX_AUTOCLOSE
+MossdeepCity_Gym_EventScript_Wallace:: @ 8220B2B
+	trainerbattle_single TRAINER_Wallace, MossdeepCity_Gym_Text_WallaceIntro, MossdeepCity_Gym_Text_WallaceDefeat
+	msgbox MossdeepCity_Gym_Text_WallacePostBattle, MSGBOX_AUTOCLOSE
 	end
 
 MossdeepCity_Gym_EventScript_Hannah:: @ 8220B42
@@ -454,18 +454,18 @@ MossdeepCity_Gym_Text_VirgilPostBattle: @ 8220F3A
 	.string "However, you may be even more talented\n"
 	.string "than them…$"
 
-MossdeepCity_Gym_Text_BlakeIntro: @ 8220FB0
+MossdeepCity_Gym_Text_WallaceIntro: @ 8220FB0
 	.string "Fufufufu… Watch me levitate a Poké\n"
 	.string "Ball telekinetically!\p"
 	.string "Wrooooooooaaaar!\n"
 	.string "… … … … … … …\p"
 	.string "Sometimes, I'm out of sync…$"
 
-MossdeepCity_Gym_Text_BlakeDefeat: @ 8221024
+MossdeepCity_Gym_Text_WallaceDefeat: @ 8221024
 	.string "My Pokémon battling skills are out\n"
 	.string "of sync, too!$"
 
-MossdeepCity_Gym_Text_BlakePostBattle: @ 8221055
+MossdeepCity_Gym_Text_WallacePostBattle: @ 8221055
 	.string "A Poké Ball was too heavy to lift\n"
 	.string "psychically. But this dust bunny…\p"
 	.string "Whoooooooooooooooh!\n"

@@ -110,7 +110,7 @@ EverGrandeCity_DansRoom_EventScript_DefeatedRematch::
 
 EverGrandeCity_DansRoom_Text_IntroSpeech: @ 8227FA7
 	.string "Welcome, challenger!\n"
-	.string "I'm Dan of the Elite Four.\p"
+	.string "I'm Sidney of the Elite Four.\p"
 	.string "I like that look you're giving me.\n"
 	.string "I guess you'll give me a good match.\l"
 	.string "That's good! Looking real good!\p"

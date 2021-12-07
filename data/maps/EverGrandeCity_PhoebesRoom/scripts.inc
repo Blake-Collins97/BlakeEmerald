@@ -104,7 +104,7 @@ EverGrandeCity_SharnisRoom_EventScript_DefeatedRematch::
 
 EverGrandeCity_SharnisRoom_Text_IntroSpeech: @ 822820E
 	.string "Ahahaha!\p"
-	.string "I'm Sharni of the Elite Four.\n"
+	.string "I'm Phoebe of the Elite Four.\n"
 	.string "I did my training on Mt. Pyre.\p"
 	.string "While I trained, I gained the ability\n"
 	.string "to commune with Ghost-type Pokémon.\p"

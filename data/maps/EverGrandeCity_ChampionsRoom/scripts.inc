@@ -1,4 +1,4 @@
-.set LOCALID_Blake, 1
+.set LOCALID_Wallace, 1
 .set LOCALID_RIVAL, 2
 .set LOCALID_BIRCH, 3
 
@@ -29,51 +29,51 @@ EverGrandeCity_ChampionsRoom_EventScript_EnterRoom:: @ 8228A1E
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp4
 	waitmovement 0
 	delay 40
-	applymovement OBJ_EVENT_ID_PLAYER, EverGrandeCity_ChampionsRoom_Movement_PlayerApproachBlake
+	applymovement OBJ_EVENT_ID_PLAYER, EverGrandeCity_ChampionsRoom_Movement_PlayerApproachWallace
 	waitmovement 0
 	setvar VAR_TEMP_1, 1
-	goto EverGrandeCity_ChampionsRoom_EventScript_Blake
+	goto EverGrandeCity_ChampionsRoom_EventScript_Wallace
     releaseall
     end
 
-EverGrandeCity_ChampionsRoom_Movement_PlayerApproachBlake: @ 8228A42
+EverGrandeCity_ChampionsRoom_Movement_PlayerApproachWallace: @ 8228A42
 	walk_up
 	walk_up
 	step_end
 
-EverGrandeCity_ChampionsRoom_EventScript_Blake:: @ 8228A45
+EverGrandeCity_ChampionsRoom_EventScript_Wallace:: @ 8228A45
 	playbgm MUS_ENCOUNTER_CHAMPION, FALSE
 	msgbox EverGrandeCity_ChampionsRoom_Text_IntroSpeech, MSGBOX_DEFAULT
-	goto_if_set FLAG_SYS_GAME_CLEAR, EverGrandeCity_BlakesRoom_EventScript_BlakeRematch
-	trainerbattle_no_intro TRAINER_Blake, EverGrandeCity_ChampionsRoom_Text_Defeat
+	goto_if_set FLAG_SYS_GAME_CLEAR, EverGrandeCity_WallacesRoom_EventScript_WallaceRematch
+	trainerbattle_no_intro TRAINER_Wallace, EverGrandeCity_ChampionsRoom_Text_Defeat
 	goto EverGrandeCity_ChampionsRoom_EventScript_Defeated
 	end
 
-EverGrandeCity_BlakesRoom_EventScript_BlakeRematch::
+EverGrandeCity_WallacesRoom_EventScript_WallaceRematch::
 	switch VAR_ELITE_4_MODE
-	case 0, EverGrandeCity_BlakesRoom_EventScript_BlakeSingles
-	case 1, EverGrandeCity_BlakesRoom_EventScript_BlakeSinglesLegends
-	case 2, EverGrandeCity_BlakesRoom_EventScript_BlakeDoubles
-	case 3, EverGrandeCity_BlakesRoom_EventScript_BlakeDoublesLegends
+	case 0, EverGrandeCity_WallacesRoom_EventScript_WallaceSingles
+	case 1, EverGrandeCity_WallacesRoom_EventScript_WallaceSinglesLegends
+	case 2, EverGrandeCity_WallacesRoom_EventScript_WallaceDoubles
+	case 3, EverGrandeCity_WallacesRoom_EventScript_WallaceDoublesLegends
 	end
 
-EverGrandeCity_BlakesRoom_EventScript_BlakeSingles::
-	trainerbattle_no_intro TRAINER_Blake, EverGrandeCity_ChampionsRoom_Text_Defeat
+EverGrandeCity_WallacesRoom_EventScript_WallaceSingles::
+	trainerbattle_no_intro TRAINER_Wallace, EverGrandeCity_ChampionsRoom_Text_Defeat
 	goto EverGrandeCity_ChampionsRoom_EventScript_Defeated
 	end
 
-EverGrandeCity_BlakesRoom_EventScript_BlakeSinglesLegends::
-	trainerbattle_no_intro TRAINER_Blake_LEGENDS, EverGrandeCity_ChampionsRoom_Text_Defeat
+EverGrandeCity_WallacesRoom_EventScript_WallaceSinglesLegends::
+	trainerbattle_no_intro TRAINER_Wallace_LEGENDS, EverGrandeCity_ChampionsRoom_Text_Defeat
 	goto EverGrandeCity_ChampionsRoom_EventScript_Defeated
 	end
 
-EverGrandeCity_BlakesRoom_EventScript_BlakeDoubles::
-	trainerbattle_no_intro TRAINER_Blake_DOUBLES, EverGrandeCity_ChampionsRoom_Text_Defeat
+EverGrandeCity_WallacesRoom_EventScript_WallaceDoubles::
+	trainerbattle_no_intro TRAINER_Wallace_DOUBLES, EverGrandeCity_ChampionsRoom_Text_Defeat
 	goto EverGrandeCity_ChampionsRoom_EventScript_Defeated
 	end
 
-EverGrandeCity_BlakesRoom_EventScript_BlakeDoublesLegends::
-	trainerbattle_no_intro TRAINER_Blake_DOUBLES_LEGENDS, EverGrandeCity_ChampionsRoom_Text_Defeat
+EverGrandeCity_WallacesRoom_EventScript_WallaceDoublesLegends::
+	trainerbattle_no_intro TRAINER_Wallace_DOUBLES_LEGENDS, EverGrandeCity_ChampionsRoom_Text_Defeat
 	goto EverGrandeCity_ChampionsRoom_EventScript_Defeated
 	end
 
@@ -143,15 +143,15 @@ EverGrandeCity_ChampionsRoom_EventScript_BirchArrivesExitForHoF:: @ 8228B30
 	msgbox EverGrandeCity_ChampionsRoom_Text_BirchArriveRatePokedex, MSGBOX_DEFAULT
 	call ProfBirch_EventScript_RatePokedex
 	msgbox EverGrandeCity_ChampionsRoom_Text_BirchCongratulations, MSGBOX_DEFAULT
-	applymovement LOCALID_Blake, Common_Movement_WalkInPlaceFastestUp
+	applymovement LOCALID_Wallace, Common_Movement_WalkInPlaceFastestUp
 	waitmovement 0
 	delay 20
-	applymovement LOCALID_Blake, Common_Movement_WalkInPlaceFastestDown
+	applymovement LOCALID_Wallace, Common_Movement_WalkInPlaceFastestDown
 	waitmovement 0
-	msgbox EverGrandeCity_ChampionsRoom_Text_BlakeComeWithMe, MSGBOX_DEFAULT
+	msgbox EverGrandeCity_ChampionsRoom_Text_WallaceComeWithMe, MSGBOX_DEFAULT
 	closemessage
 	delay 30
-	applymovement LOCALID_Blake, EverGrandeCity_ChampionsRoom_Movement_BlakeExitStart
+	applymovement LOCALID_Wallace, EverGrandeCity_ChampionsRoom_Movement_WallaceExitStart
 	applymovement OBJ_EVENT_ID_PLAYER, EverGrandeCity_ChampionsRoom_Movement_PlayerExitStart
 	applymovement LOCALID_BIRCH, Common_Movement_WalkInPlaceFastestUp
 	applymovement LOCALID_RIVAL, EverGrandeCity_ChampionsRoom_Movement_RivalFollows
@@ -159,14 +159,14 @@ EverGrandeCity_ChampionsRoom_EventScript_BirchArrivesExitForHoF:: @ 8228B30
 	delay 20
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFastestDown
 	waitmovement 0
-	msgbox EverGrandeCity_ChampionsRoom_Text_BlakeWaitOutside, MSGBOX_DEFAULT
+	msgbox EverGrandeCity_ChampionsRoom_Text_WallaceWaitOutside, MSGBOX_DEFAULT
 	checkplayergender
 	compare VAR_RESULT, MALE
 	call_if_eq EverGrandeCity_ChampionsRoom_EventScript_MayCongratulations
 	compare VAR_RESULT, FEMALE
 	call_if_eq EverGrandeCity_ChampionsRoom_EventScript_BrendanCongratulations
 	closemessage
-	applymovement LOCALID_Blake, EverGrandeCity_ChampionsRoom_Movement_BlakeExit
+	applymovement LOCALID_Wallace, EverGrandeCity_ChampionsRoom_Movement_WallaceExit
 	applymovement OBJ_EVENT_ID_PLAYER, EverGrandeCity_ChampionsRoom_Movement_PlayerExit
 	waitmovement 0
 	setflag FLAG_HIDE_PETALBURG_GYM_GREETER
@@ -235,13 +235,13 @@ EverGrandeCity_ChampionsRoom_Movement_RivalFollows: @ 8228C38
 	walk_up
 	step_end
 
-EverGrandeCity_ChampionsRoom_Movement_BlakeExitStart: @ 8228C3B
+EverGrandeCity_ChampionsRoom_Movement_WallaceExitStart: @ 8228C3B
 	walk_up
 	walk_up
 	walk_in_place_fastest_down
 	step_end
 
-EverGrandeCity_ChampionsRoom_Movement_BlakeExit: @ 8228C3F
+EverGrandeCity_ChampionsRoom_Movement_WallaceExit: @ 8228C3F
 	walk_up
 	delay_8
 	set_invisible
@@ -259,7 +259,7 @@ EverGrandeCity_ChampionsRoom_Movement_BirchArrives: @ 8228C43
 	step_end
 
 EverGrandeCity_ChampionsRoom_Text_IntroSpeech: @ 8228C4C
-	.string "Blake: Welcome, {PLAYER}{KUN}.\p"
+	.string "Wallace: Welcome, {PLAYER}{KUN}.\p"
 	.string "That incident in Sootopolis City…\n"
 	.string "That was superb work, putting an end\l"
 	.string "to that crisis all by yourself.\p"
@@ -291,7 +291,7 @@ EverGrandeCity_ChampionsRoom_Text_Defeat: @ 8228EAC
 	.string "Trainer!$"
 
 EverGrandeCity_ChampionsRoom_Text_PostBattleSpeech: @ 8228F66
-	.string "Blake: The Pokémon you sent into\n"
+	.string "Wallace: The Pokémon you sent into\n"
 	.string "battle…\p"
 	.string "At times they danced like a spring\n"
 	.string "breeze, and at times they struck\l"
@@ -348,14 +348,14 @@ EverGrandeCity_ChampionsRoom_Text_BirchCongratulations: @ 822934D
 	.string "congratulations!\p"
 	.string "Now, go proudly into the final room!$"
 
-EverGrandeCity_ChampionsRoom_Text_BlakeComeWithMe: @ 8229399
-	.string "Blake: {PLAYER}{KUN}…\p"
+EverGrandeCity_ChampionsRoom_Text_WallaceComeWithMe: @ 8229399
+	.string "Wallace: {PLAYER}{KUN}…\p"
 	.string "No, let me rephrase that properly.\p"
 	.string "The new Champion!\p"
 	.string "Come with me.$"
 
-EverGrandeCity_ChampionsRoom_Text_BlakeWaitOutside: @ 82293EB
-	.string "Blake: I'm sorry, but…\p"
+EverGrandeCity_ChampionsRoom_Text_WallaceWaitOutside: @ 82293EB
+	.string "Wallace: I'm sorry, but…\p"
 	.string "From here on, only those Trainers who\n"
 	.string "have become Champions may enter.\p"
 	.string "You'll have to wait outside with\n"

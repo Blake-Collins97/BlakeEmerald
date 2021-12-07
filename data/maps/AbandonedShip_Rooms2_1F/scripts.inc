@@ -52,19 +52,19 @@ AbandonedShip_Rooms2_1F_EventScript_Garrison:: @ 8238186
 	end
 
 AbandonedShip_Rooms2_1F_Text_DanIntro: @ 823819D
-	.string "Dan: While searching for treasures,\n"
+	.string "Sidney: While searching for treasures,\n"
 	.string "we discovered a Trainer!$"
 
 AbandonedShip_Rooms2_1F_Text_DanDefeat: @ 82381DA
-	.string "Dan: We couldn't win even though\n"
+	.string "Sidney: We couldn't win even though\n"
 	.string "we worked together…$"
 
 AbandonedShip_Rooms2_1F_Text_DanPostBattle: @ 823820F
-	.string "Dan: We can't find any treasures…\n"
+	.string "Sidney: We can't find any treasures…\n"
 	.string "I wonder if someone got them already?$"
 
 AbandonedShip_Rooms2_1F_Text_DanNotEnoughMons: @ 8238257
-	.string "Dan: You don't even have two Pokémon.\n"
+	.string "Sidney: You don't even have two Pokémon.\n"
 	.string "You can't expect to beat us like that.$"
 
 AbandonedShip_Rooms2_1F_Text_KiraIntro: @ 82382A4
@@ -89,22 +89,22 @@ AbandonedShip_Rooms2_1F_Text_KiraRegister: @ 82383BB
 	.string "I'm going to register you for that!$"
 
 AbandonedShip_Rooms2_1F_Text_DanRematchIntro: @ 82383FF
-	.string "Dan: We've been searching for\n"
+	.string "Sidney: We've been searching for\n"
 	.string "treasures all this time.\p"
 	.string "Our Pokémon have grown stronger, too.\n"
 	.string "Let us show you, okay?$"
 
 AbandonedShip_Rooms2_1F_Text_DanRematchDefeat: @ 8238473
-	.string "Dan: You're strong, as usual!$"
+	.string "Sidney: You're strong, as usual!$"
 
 AbandonedShip_Rooms2_1F_Text_DanPostRematch: @ 8238491
-	.string "Dan: We can't find any treasures,\n"
+	.string "Sidney: We can't find any treasures,\n"
 	.string "we lose at Pokémon…\p"
 	.string "I want to go home… But if I say that,\n"
 	.string "she gets all angry with me…$"
 
 AbandonedShip_Rooms2_1F_Text_DanRematchNotEnoughMons: @ 8238509
-	.string "Dan: You don't even have two Pokémon.\n"
+	.string "Sidney: You don't even have two Pokémon.\n"
 	.string "You can't expect to beat us like that.$"
 
 AbandonedShip_Rooms2_1F_Text_KiraRematchIntro: @ 8238556

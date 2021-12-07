@@ -236,7 +236,7 @@
 #define TRAINER_EDWARD                      232
 #define TRAINER_PRESTON                     233
 #define TRAINER_VIRGIL                      234
-#define TRAINER_BLAKE                       235
+#define TRAINER_Wallace                       235
 #define TRAINER_WILLIAM                     236
 #define TRAINER_JOSHUA                      237
 #define TRAINER_CAMERON_1                   238
@@ -273,7 +273,7 @@
 #define TRAINER_Grub_1                    269
 #define TRAINER_WINONA_1                    270
 #define TRAINER_TATE_AND_LIZA_1             271
-#define TRAINER_Cody_1                      272
+#define TRAINER_Juan_1                      272
 #define TRAINER_JERRY_1                     273
 #define TRAINER_TED                         274
 #define TRAINER_PAUL                        275
@@ -292,7 +292,7 @@
 #define TRAINER_ANNA_AND_MEG_2              288
 #define TRAINER_ANNA_AND_MEG_3              289
 #define TRAINER_ANNA_AND_MEG_4              290
-#define TRAINER_Blake_DOUBLES             291
+#define TRAINER_Wallace_DOUBLES             291
 #define TRAINER_VICTOR                      292
 #define TRAINER_MIGUEL_1                    293
 #define TRAINER_COLTON                      294
@@ -336,7 +336,7 @@
 #define TRAINER_EDDIE                       332
 #define TRAINER_ALLEN                       333
 #define TRAINER_TIMMY                       334
-#define TRAINER_Blake                     335
+#define TRAINER_Wallace                     335
 #define TRAINER_ANDREW                      336
 #define TRAINER_IVAN                        337
 #define TRAINER_CLAUDE                      338
@@ -545,14 +545,14 @@
 #define TRAINER_ISAAC_2                     541
 #define TRAINER_ISAAC_3                     542
 #define TRAINER_ISAAC_4                     543
-#define TRAINER_Blake_LEGENDS             544
+#define TRAINER_Wallace_LEGENDS             544
 #define TRAINER_LYDIA_1                     545
 #define TRAINER_HALLE                       546
 #define TRAINER_GARRISON                    547
 #define TRAINER_LYDIA_2                     548
 #define TRAINER_LYDIA_3                     549
 #define TRAINER_LYDIA_4                     550
-#define TRAINER_Blake_DOUBLES_LEGENDS     551
+#define TRAINER_Wallace_DOUBLES_LEGENDS     551
 #define TRAINER_JACKSON_1                   552
 #define TRAINER_LORENZO                     553
 #define TRAINER_SEBASTIAN                   554
@@ -799,10 +799,10 @@
 #define TRAINER_TATE_AND_LIZA_3             795
 #define TRAINER_TATE_AND_LIZA_4             796
 #define TRAINER_TATE_AND_LIZA_5             797
-#define TRAINER_Cody_2                      798
-#define TRAINER_Cody_3                      799
-#define TRAINER_Cody_4                      800
-#define TRAINER_Cody_5                      801
+#define TRAINER_Juan_2                      798
+#define TRAINER_Juan_3                      799
+#define TRAINER_Juan_4                      800
+#define TRAINER_Juan_5                      801
 #define TRAINER_ANGELO                      802
 #define TRAINER_DARIUS                      803
 #define TRAINER_STEVEN                      804

@@ -15,7 +15,7 @@
   "connections": 0,
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_Blake",
+      "graphics_id": "OBJ_EVENT_GFX_Wallace",
       "x": 13,
       "y": 7,
       "elevation": 3,
@@ -24,8 +24,8 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SkyPillar_Outside_EventScript_Blake",
-      "flag": "FLAG_HIDE_SKY_PILLAR_Blake"
+      "script": "SkyPillar_Outside_EventScript_Wallace",
+      "flag": "FLAG_HIDE_SKY_PILLAR_Wallace"
     }
   ],
   "warp_events": [

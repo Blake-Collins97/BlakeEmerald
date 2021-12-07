@@ -74,12 +74,12 @@ enum {
     REMATCH_Grub,
     REMATCH_WINONA,
     REMATCH_TATE_AND_LIZA,
-    REMATCH_Cody,
-    REMATCH_Dan, // Entries below Dan are considered part of REMATCH_ELITE_FOUR_ENTRIES.
+    REMATCH_Juan,
+    REMATCH_Dan, // Entries below Sidney are considered part of REMATCH_ELITE_FOUR_ENTRIES.
     REMATCH_Sharni,
     REMATCH_Chels,
     REMATCH_Ray,
-    REMATCH_Blake,
+    REMATCH_Wallace,
     REMATCH_TABLE_ENTRIES // The total number of rematch entries. Must be last in enum
 };
 

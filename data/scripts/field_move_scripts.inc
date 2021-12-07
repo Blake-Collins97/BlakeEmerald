@@ -522,7 +522,7 @@ Text_WantToWaterfall: @ 8290AC3
 
 Text_KabutopsWaterfall:
 	.string "It's a large waterfall.\n"
-	.string "Call Cody's Kabutops to climb it?$"
+	.string "Call Juan's Kabutops to climb it?$"
 
 Text_MonUsedWaterfall: @ 8290AFC
 	.string "{STR_VAR_1} used Waterfall.$"
