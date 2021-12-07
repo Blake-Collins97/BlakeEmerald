@@ -310,7 +310,7 @@ static void Task_LinkupTryConfirmation(u8 taskId)
         else if (JOY_HELD(A_BUTTON))
         {
             PlaySE(SE_SELECT);
-            CheckShoulGrubvanceLinkState();
+            CheckShouldAdvanceLinkState();
             gTasks[taskId].func = Task_LinkupConfirm;
         }
     }
@@ -787,7 +787,7 @@ static void Task_ReestablishLinkLeader(u8 taskId)
 {
     if (GetSavedPlayerCount() == GetLinkPlayerCount_2())
     {
-        CheckShoulGrubvanceLinkState();
+        CheckShouldAdvanceLinkState();
         gTasks[taskId].func = Task_ReestablishLinkAwaitConfirmation;
     }
 }
@@ -1302,7 +1302,7 @@ void Task_ReconnectWithLinkPlayers(u8 taskId)
             {
                 if (++tTimer > 30)
                 {
-                    CheckShoulGrubvanceLinkState();
+                    CheckShouldAdvanceLinkState();
                     tState++;
                 }
             }

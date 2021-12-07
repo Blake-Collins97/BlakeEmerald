@@ -335,7 +335,7 @@ gText_AnticipationRoseForUpcomingAppeals:: @ 827DAB2
 	.string "Anticipation rose for\n"
 	.string "upcoming appeals.$"
 
-gText_StoodOutAsMuchAsSpecialAppeals:: @ 827GrubA
+gText_StoodOutAsMuchAsSpecialAppeals:: @ 827DADA
 	.string "It stood out as much as\n"
 	.string "special appeals.$"
 

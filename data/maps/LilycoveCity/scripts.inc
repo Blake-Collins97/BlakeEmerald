@@ -497,7 +497,7 @@ LilycoveCity_Text_MayGoingBackToLittleroot: @ 81E32FB
 	.string "Littleroot soon.\p"
 	.string "I've caught a decent group of Pokémon,\n"
 	.string "and my Pokédex is coming along, so\l"
-	.string "I'm going home to show my Grub.$"
+	.string "I'm going home to show my dad.$"
 
 LilycoveCity_Text_MayYouGoingToCollectBadges: @ 81E3398
 	.string "{PLAYER}{KUN}, what are you going to do?\p"
@@ -530,7 +530,7 @@ LilycoveCity_Text_MayYouGoingToBattleFrontier: @ 81E353A
 
 LilycoveCity_Text_BrendanShoppingLetsBattle: @ 81E3608
 	.string "Brendan: Oh, hey, it's {PLAYER}.\p"
-	.string "I'm running an errand for my Grub.\n"
+	.string "I'm running an errand for my dad.\n"
 	.string "No, I'm not buying any Dolls.\p"
 	.string "Anyways, it's been a while.\p"
 	.string "Want to have a battle to see who's been\n"
@@ -557,7 +557,7 @@ LilycoveCity_Text_BrendanDefeat: @ 81E3777
 LilycoveCity_Text_BrendanGoingBackToLittleroot: @ 81E37D7
 	.string "Brendan: I…\n"
 	.string "I plan on going home to Littleroot.\p"
-	.string "You know I'm helping out my Grub on his\n"
+	.string "You know I'm helping out my dad on his\n"
 	.string "Pokédex. It's coming together pretty\l"
 	.string "decently, so I should go show him.$"
 

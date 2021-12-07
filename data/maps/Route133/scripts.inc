@@ -31,7 +31,7 @@ Route133_EventScript_Debra:: @ 81F75BA
 	end
 
 Route133_EventScript_Linda:: @ 81F75D1
-	trainerbattle_single TRAINER_LINDA, Route133_Text_LindaIntro, Route133_Text_LinGrubefeat
+	trainerbattle_single TRAINER_LINDA, Route133_Text_LindaIntro, Route133_Text_LindaDefeat
 	msgbox Route133_Text_LindaPostBattle, MSGBOX_AUTOCLOSE
 	end
 

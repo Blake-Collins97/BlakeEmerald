@@ -1274,7 +1274,7 @@ const struct CompressedSpriteSheet gMonFrontPicTable[] =
 
     SPECIES_SPRITE(URSHIFU_RAPID_STRIKE_STYLE, gMonFrontPic_UrshifuRapidStrikeStyle),
 
-    SPECIES_SPRITE(ZARUDE_GrubA, gMonFrontPic_ZarudeGruba),
+    SPECIES_SPRITE(ZARUDE_DADA, gMonFrontPic_ZarudeDada),
 
     SPECIES_SPRITE(CALYREX_ICE_RIDER, gMonFrontPic_CalyrexIceRider),
     SPECIES_SPRITE(CALYREX_SHADOW_RIDER, gMonFrontPic_CalyrexShadowRider),

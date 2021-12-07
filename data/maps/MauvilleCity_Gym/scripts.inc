@@ -370,7 +370,7 @@ MauvilleCity_Gym_Text_ShawnPostBattle: @ 820E3C1
 	.string "Wattson, our Gym Leader, has been\n"
 	.string "around for a long, long time.\p"
 	.string "He was battling even before your\n"
-	.string "Grubdy was born, that tough coot.$"
+	.string "daddy was born, that tough coot.$"
 
 MauvilleCity_Gym_Text_BenIntro: @ 820E443
 	.string "This Gym's got puzzles!\n"

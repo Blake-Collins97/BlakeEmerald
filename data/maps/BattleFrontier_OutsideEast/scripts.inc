@@ -91,12 +91,12 @@ BattleFrontier_OutsideEast_EventScript_TriathleteF:: @ 8242CC4
 	end
 
 BattleFrontier_OutsideEast_EventScript_Twin:: @ 8242CCD
-	msgbox BattleFrontier_OutsideEast_Text_BetterThanGrubdyAtPokemon, MSGBOX_NPC
+	msgbox BattleFrontier_OutsideEast_Text_BetterThanDaddyAtPokemon, MSGBOX_NPC
 	end
 
 BattleFrontier_OutsideEast_EventScript_Man2:: @ 8242CD6
 	lock
-	msgbox BattleFrontier_OutsideEast_Text_GoRackUpSomeWinsForGrubdy, MSGBOX_DEFAULT
+	msgbox BattleFrontier_OutsideEast_Text_GoRackUpSomeWinsForDaddy, MSGBOX_DEFAULT
 	release
 	end
 
@@ -335,13 +335,13 @@ BattleFrontier_OutsideEast_Text_FastOnBikeAndBattles: @ 82434A0
 	.string "I win matches in the blink of\n"
 	.string "an eye!$"
 
-BattleFrontier_OutsideEast_Text_BetterThanGrubdyAtPokemon: @ 8243504
-	.string "I'm better than my Grubdy\n"
+BattleFrontier_OutsideEast_Text_BetterThanDaddyAtPokemon: @ 8243504
+	.string "I'm better than my daddy\n"
 	.string "at Pokémon.$"
 
-BattleFrontier_OutsideEast_Text_GoRackUpSomeWinsForGrubdy: @ 8243529
+BattleFrontier_OutsideEast_Text_GoRackUpSomeWinsForDaddy: @ 8243529
 	.string "Go on, my baby sweetie!\n"
-	.string "Go rack up some wins for Grubdy!\p"
+	.string "Go rack up some wins for Daddy!\p"
 	.string "You're just like your mother,\n"
 	.string "so you'll be dominating!$"
 

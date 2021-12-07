@@ -22,7 +22,7 @@ Route126_EventScript_Nikki:: @ 81F6904
 	end
 
 Route126_EventScript_Brenda:: @ 81F691B
-	trainerbattle_single TRAINER_BRENDA, Route126_Text_BrendaIntro, Route126_Text_BrenGrubefeat
+	trainerbattle_single TRAINER_BRENDA, Route126_Text_BrendaIntro, Route126_Text_BrendaDefeat
 	msgbox Route126_Text_BrendaPostBattle, MSGBOX_AUTOCLOSE
 	end
 

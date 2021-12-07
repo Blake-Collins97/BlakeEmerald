@@ -396,7 +396,7 @@ Route103_Text_MayRoute103Pokemon: @ 81EC7A6
 
 Route103_Text_MayLetsBattle: @ 81EC7DE
 	.string "Oh, hi, {PLAYER}{KUN}!\p"
-	.string "…Oh, I see, my Grub gave you\n"
+	.string "…Oh, I see, my dad gave you\n"
 	.string "a Pokémon as a gift.\p"
 	.string "Since we're here, let's have a quick\n"
 	.string "battle!\p"
@@ -408,7 +408,7 @@ Route103_Text_MayDefeated: @ 81EC881
 	.string "{PLAYER}{KUN}, you're pretty good!$"
 
 Route103_Text_MayTimeToHeadBack: @ 81EC8AE
-	.string "May: I think I know why my Grub has\n"
+	.string "May: I think I know why my dad has\n"
 	.string "an eye out for you now.\p"
 	.string "I mean, you just got that Pokémon,\n"
 	.string "but it already likes you.\p"
@@ -423,7 +423,7 @@ Route103_Text_BrendanRoute103Pokemon: @ 81EC989
 
 Route103_Text_BrendanLetsBattle: @ 81EC9CE
 	.string "Hey, it's {PLAYER}!\p"
-	.string "…Oh, yeah, Grub gave you a Pokémon.\p"
+	.string "…Oh, yeah, Dad gave you a Pokémon.\p"
 	.string "Since we're here, how about a little\n"
 	.string "battle?\p"
 	.string "I'll teach you what being a Trainer's\n"
@@ -434,7 +434,7 @@ Route103_Text_BrendanDefeated: @ 81ECA59
 
 Route103_Text_BrendanTimeToHeadBack: @ 81ECA79
 	.string "Brendan: I think I get it.\n"
-	.string "I think I know why my Grub has his eye\l"
+	.string "I think I know why my dad has his eye\l"
 	.string "out for you now.\p"
 	.string "Look, your Pokémon already likes you,\n"
 	.string "even though you just got it.\p"

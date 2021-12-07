@@ -979,7 +979,7 @@ LittlerootTown_Text_WearTheseRunningShoes: @ 81E87F0
 	.string "You're your father's child, all right.\n"
 	.string "You look good together with Pokémon!\p"
 	.string "Here, honey! If you're going out on an\n"
-	.string "adventure, take Grub's old Fishing Rod.\p"
+	.string "adventure, take Dad's old Fishing Rod.\p"
 	.string "He never uses it anyway!$"
 
 LittlerootTown_Text_ComeHomeIfAnythingHappens: @ 81E8A03

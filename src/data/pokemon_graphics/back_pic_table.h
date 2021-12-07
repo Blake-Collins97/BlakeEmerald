@@ -1274,7 +1274,7 @@ const struct CompressedSpriteSheet gMonBackPicTable[] =
 
     SPECIES_SPRITE(URSHIFU_RAPID_STRIKE_STYLE, gMonBackPic_UrshifuRapidStrikeStyle),
 
-    SPECIES_SPRITE(ZARUDE_GrubA, gMonBackPic_ZarudeGruba),
+    SPECIES_SPRITE(ZARUDE_DADA, gMonBackPic_ZarudeDada),
 
     SPECIES_SPRITE(CALYREX_ICE_RIDER, gMonBackPic_CalyrexIceRider),
     SPECIES_SPRITE(CALYREX_SHADOW_RIDER, gMonBackPic_CalyrexShadowRider),

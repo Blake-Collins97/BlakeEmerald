@@ -188,7 +188,7 @@ GameCubeMultiBoot_ExecuteProgram: @ 82DEE84
 	ldr r3, pool_InterruptRegs
 	movs r1, #0
 	strh r1, [r3, #OFFSET_REG_IME - 0x200]
-	ldr r1, pool_MultiBootLoaGrubdr
+	ldr r1, pool_MultiBootLoadAddr
 	adds r1, 0xC0
 	bx r1
 GameCubeMultiBoot_ExecuteProgram_Fail:
@@ -318,7 +318,7 @@ GameCubeMultiBoot_BeginHandshake:
 	ldrb r1, [r0, 0x2]
 	cmp r1, 0
 	bne GcMbIntrHandler_Stop
-	ldr r1, pool_MultiBootLoaGrubdr
+	ldr r1, pool_MultiBootLoadAddr
 	str r1, [r0, #GCMB_STRUCT_BASE_DEST_PTR]
 	str r1, [r0, #GCMB_STRUCT_CUR_DEST_PTR]
 	adr r2, GcMbIntrHandler_CheckGameCodeSent
@@ -416,7 +416,7 @@ _082DEF94:
 	cmp r1, 0
 _082DEFA6:
 	bne GcMbIntrHandler_Stop
-	ldr r1, pool_MultiBootLoaGrubdr
+	ldr r1, pool_MultiBootLoadAddr
 	str r1, [r0, #GCMB_STRUCT_BASE_DEST_PTR]
 	str r1, [r0, #GCMB_STRUCT_CUR_DEST_PTR]
 	adr r2, GcMbIntrHandler_82DEFB4
@@ -545,6 +545,6 @@ pool_RegDispstat: .4byte REG_DISPSTAT
 
 pool_RubyUSAGameCode: .ascii "AXVE"
 
-pool_MultiBootLoaGrubdr: .4byte EWRAM_START
+pool_MultiBootLoadAddr: .4byte EWRAM_START
 
 	.align 2, 0 @ Don't pad with nop.

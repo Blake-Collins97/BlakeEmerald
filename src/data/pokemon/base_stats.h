@@ -31983,7 +31983,7 @@ const struct BaseStats gBaseStats[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_ZARUDE_GrubA] =
+    [SPECIES_ZARUDE_DADA] =
     {
         .baseHP        = 105,
         .baseAttack    = 120,

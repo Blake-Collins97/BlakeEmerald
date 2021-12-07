@@ -310,7 +310,7 @@ LilycoveCity_PokemonTrainerFanClub_EventScript_PokefanM:: @ 821CB05
 	specialvar VAR_RESULT, GetNumFansOfPlayerInTrainerFanClub
 	compare VAR_RESULT, (NUM_TRAINER_FAN_CLUB_MEMBERS - 1)
 	goto_if_eq LilycoveCity_PokemonTrainerFanClub_EventScript_PokefanMOnlyNonFan
-	msgbox LilycoveCity_PokemonTrainerFanClub_Text_LongWayToGoComparedToGrub, MSGBOX_DEFAULT
+	msgbox LilycoveCity_PokemonTrainerFanClub_Text_LongWayToGoComparedToNorman, MSGBOX_DEFAULT
 	release
 	end
 
@@ -328,7 +328,7 @@ LilycoveCity_PokemonTrainerFanClub_EventScript_PokefanMOnlyFan:: @ 821CB5E
 	end
 
 LilycoveCity_PokemonTrainerFanClub_EventScript_PokefanMOnlyNonFan:: @ 821CB68
-	msgbox LilycoveCity_PokemonTrainerFanClub_Text_YouAndGrubAreDifferent, MSGBOX_DEFAULT
+	msgbox LilycoveCity_PokemonTrainerFanClub_Text_YouAndNormanAreDifferent, MSGBOX_DEFAULT
 	release
 	end
 
@@ -718,19 +718,19 @@ LilycoveCity_PokemonTrainerFanClub_Text_YourFatherNeverGaveUpSoKeepOnBattling: @
 	.string "You never give up even if you lose!\n"
 	.string "So keep on battling!$"
 
-LilycoveCity_PokemonTrainerFanClub_Text_LongWayToGoComparedToGrub: @ 821D52E
-	.string "Grub battled with more power,\n"
+LilycoveCity_PokemonTrainerFanClub_Text_LongWayToGoComparedToNorman: @ 821D52E
+	.string "Norman battled with more power,\n"
 	.string "charisma, and showmanship than you.\p"
 	.string "Even though people may say that\n"
 	.string "you're strong…\p"
 	.string "You've still got a long way to go\n"
 	.string "compared to your father.$"
 
-LilycoveCity_PokemonTrainerFanClub_Text_YouAndGrubAreDifferent: @ 821D5DC
+LilycoveCity_PokemonTrainerFanClub_Text_YouAndNormanAreDifferent: @ 821D5DC
 	.string "You're beginning to get the same\n"
-	.string "air of awe Grub exudes.\p"
+	.string "air of awe Norman exudes.\p"
 	.string "But there's something conclusively\n"
-	.string "different between you and Grub.\p"
+	.string "different between you and Norman.\p"
 	.string "I can't tell you what that is.\n"
 	.string "You'll have to find it yourself.$"
 

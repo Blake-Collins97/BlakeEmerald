@@ -558,7 +558,7 @@ int EReader_Send(int size, const void * src)
     {
         GetKeyInput();
         if (sJoyNew & B_BUTTON)
-            gShoulGrubvanceLinkState = 2;
+            gShouldAdvanceLinkState = 2;
 
         sendStatus = EReaderHandleTransfer(1, size, src, NULL);
         sSendRecvStatus = sendStatus;
@@ -579,7 +579,7 @@ int EReader_Send(int size, const void * src)
         }
         else
         {
-            gShoulGrubvanceLinkState = 0;
+            gShouldAdvanceLinkState = 0;
             VBlankIntrWait();
         }
     }
@@ -599,7 +599,7 @@ int EReader_Recv(void * dest)
     {
         GetKeyInput();
         if (sJoyNew & B_BUTTON)
-            gShoulGrubvanceLinkState = 2;
+            gShouldAdvanceLinkState = 2;
 
         recvStatus = EReaderHandleTransfer(0, 0, NULL, dest);
         sSendRecvStatus = recvStatus;
@@ -620,7 +620,7 @@ int EReader_Recv(void * dest)
         }
         else
         {
-            gShoulGrubvanceLinkState = 0;
+            gShouldAdvanceLinkState = 0;
             VBlankIntrWait();
         }
     }
@@ -661,7 +661,7 @@ static void OpenSerial32(void)
     REG_RCNT = 0;
     REG_SIOCNT = SIO_32BIT_MODE | SIO_INTR_ENABLE;
     REG_SIOCNT |= SIO_MULTI_SD;
-    gShoulGrubvanceLinkState = 0;
+    gShouldAdvanceLinkState = 0;
     sCounter1 = 0;
     sCounter2 = 0;
 }
@@ -679,7 +679,7 @@ int EReaderHandleTransfer(u8 mode, size_t size, const void * data, void * recvBu
         if (DetermineSendRecvState(mode))
             EnableSio();
 
-        if (gShoulGrubvanceLinkState == 2)
+        if (gShouldAdvanceLinkState == 2)
         {
             sSendRecvMgr.cancellationReason = EREADER_CANCEL_KEY;
             sSendRecvMgr.state = EREADER_XFR_STATE_DONE;
@@ -691,7 +691,7 @@ int EReaderHandleTransfer(u8 mode, size_t size, const void * data, void * recvBu
         sSendRecvMgr.state = EREADER_XFR_STATE_TRANSFER;
         // fall through
     case EREADER_XFR_STATE_TRANSFER:
-        if (gShoulGrubvanceLinkState == 2)
+        if (gShouldAdvanceLinkState == 2)
         {
             sSendRecvMgr.cancellationReason = EREADER_CANCEL_KEY;
             sSendRecvMgr.state = EREADER_XFR_STATE_DONE;

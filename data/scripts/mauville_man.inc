@@ -1006,4 +1006,4 @@ MauvilleCity_PokemonCenter_1F_Text_HaveYouHeardOfPhrase: @ 8290666
 	.string "Hey, have you heard about\n"
 	.string "“{STR_VAR_1}”?\p"
 	.string "What's it mean? Well…\n"
-	.string "Ask your Grubdy or mommy, okay?$"
+	.string "Ask your daddy or mommy, okay?$"

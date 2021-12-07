@@ -2223,17 +2223,17 @@ MatchCall_Text_TateLiza4:: @ 82B31CD
 	.string "Tate: It would be nice if…\n"
 	.string "Liza: We could all battle again!$"
 
-MatchCall_Text_Cody1:: @ 82B3249
-	.string "Cody: Hmm…\n"
+MatchCall_Text_Juan1:: @ 82B3249
+	.string "Juan: Hmm…\n"
 	.string "{PLAYER}{KUN}… Was it?\p"
 	.string "Our battle together--it brought\n"
 	.string "to me memories of when I first\l"
-	.string "encountered Blake.\p"
+	.string "encountered Wallace.\p"
 	.string "Perhaps you are a genius who may\n"
-	.string "yet surpass Blake!$"
+	.string "yet surpass Wallace!$"
 
-MatchCall_Text_Cody2:: @ 82B32EC
-	.string "Cody: Fufu… {PLAYER}{KUN}…\n"
+MatchCall_Text_Juan2:: @ 82B32EC
+	.string "Juan: Fufu… {PLAYER}{KUN}…\n"
 	.string "You've finally achieved your goal.\p"
 	.string "My eye for appraising talent wasn't\n"
 	.string "mistaken…\p"
@@ -2241,47 +2241,47 @@ MatchCall_Text_Cody2:: @ 82B32EC
 	.string "you, for you have scaled the peak\l"
 	.string "of power and prestige.$"
 
-MatchCall_Text_Cody3:: @ 82B33AA
-	.string "Cody: Hoho… {PLAYER}{KUN}…\p"
+MatchCall_Text_Juan3:: @ 82B33AA
+	.string "Juan: Hoho… {PLAYER}{KUN}…\p"
 	.string "Our Sootopolis Gym has finally\n"
 	.string "reopened.\p"
 	.string "If you wish to see me, you are\n"
 	.string "welcome to visit anytime.$"
 
-MatchCall_Text_Cody4:: @ 82B341E
-	.string "Cody: {PLAYER}{KUN}…\p"
+MatchCall_Text_Juan4:: @ 82B341E
+	.string "Juan: {PLAYER}{KUN}…\p"
 	.string "Like the finest music, the battles\n"
 	.string "we wage together strike chords\l"
 	.string "of inspiration in my heart…\p"
 	.string "When I close my eyes, I see visions\n"
 	.string "of you soaring with the melody…$"
 
-MatchCall_Text_Dan:: @ 82B34CC
-	.string "Dan: Yo, {PLAYER}!\p"
+MatchCall_Text_Sidney:: @ 82B34CC
+	.string "Sidney: Yo, {PLAYER}!\p"
 	.string "If you want to battle with me\n"
 	.string "again, you come on back whenever\l"
 	.string "you like to the Pokémon League.\p"
 	.string "I'll always be here!\n"
 	.string "I'll be waiting!$"
 
-MatchCall_Text_Sharni:: @ 82B3561
-	.string "Sharni: Hi, {PLAYER}!\p"
+MatchCall_Text_Phoebe:: @ 82B3561
+	.string "Phoebe: Hi, {PLAYER}!\p"
 	.string "How about coming back here again\n"
 	.string "sometime?\p"
 	.string "I'd like to see how much tighter\n"
 	.string "your bond has grown with your\l"
 	.string "Pokémon.$"
 
-MatchCall_Text_Chels:: @ 82B35E4
-	.string "Chels: Hello, {PLAYER}.\p"
+MatchCall_Text_Glacia:: @ 82B35E4
+	.string "Glacia: Hello, {PLAYER}.\p"
 	.string "I trust you haven't become\n"
 	.string "complacent with your power?\p"
 	.string "If you feel the need to cool your\n"
 	.string "hot emotions just a little, do come\l"
 	.string "to the Pokémon League…$"
 
-MatchCall_Text_Ray:: @ 82B368B
-	.string "Ray: That voice… {PLAYER}, is it?\n"
+MatchCall_Text_Drake:: @ 82B368B
+	.string "Drake: That voice… {PLAYER}, is it?\n"
 	.string "You sound well…\p"
 	.string "I understand that there is now\n"
 	.string "a facility called the Battle\l"
@@ -2292,8 +2292,8 @@ MatchCall_Text_Ray:: @ 82B368B
 	.string "the Pokémon League!\p"
 	.string "Don't you agree, {PLAYER}?$"
 
-MatchCall_Text_Blake:: @ 82B3790
-	.string "Blake: Hello, {PLAYER}{KUN}.\n"
+MatchCall_Text_Wallace:: @ 82B3790
+	.string "Wallace: Hello, {PLAYER}{KUN}.\n"
 	.string "Have you met Steven?\p"
 	.string "He is…\n"
 	.string "Actually incredibly skilled.\p"
@@ -2709,15 +2709,15 @@ MatchCall_Text_Scott7:: @ 2B56CA
 	.string "Scott appears to be out of\n"
 	.string "the PokéNav's service area…$"
 
-MatchCall_Text_Grub1:: @ 82B5719
-	.string "Grub: In Rustboro, there's a man\n"
+MatchCall_Text_Norman1:: @ 82B5719
+	.string "Dad: In Rustboro, there's a man\n"
 	.string "that goes by the odd name of\l"
 	.string "the Cutter.\p"
 	.string "If you're in the area, you should\n"
 	.string "pay him a visit.$"
 
-MatchCall_Text_Grub2:: @ 82B5795
-	.string "Grub: Hm… Little by little, but also\n"
+MatchCall_Text_Norman2:: @ 82B5795
+	.string "Dad: Hm… Little by little, but also\n"
 	.string "very surely, you're getting\l"
 	.string "tougher, {PLAYER}.\p"
 	.string "The stronger you get, the farther\n"
@@ -2725,52 +2725,52 @@ MatchCall_Text_Grub2:: @ 82B5795
 	.string "and me…\p"
 	.string "This feeling is hard to explain.$"
 
-MatchCall_Text_Grub3:: @ 82B584D
-	.string "Grub: I see…\n"
+MatchCall_Text_Norman3:: @ 82B584D
+	.string "Dad: I see…\n"
 	.string "You've collected four Gym Badges…\p"
 	.string "There's no avoiding it now.\n"
 	.string "We will battle like I promised.\p"
 	.string "Come anytime.\n"
 	.string "We'll all be waiting for you!$"
 
-MatchCall_Text_Grub4:: @ 82B58E3
-	.string "Grub: {PLAYER}! You'd better go visit\n"
+MatchCall_Text_Norman4:: @ 82B58E3
+	.string "Dad: {PLAYER}! You'd better go visit\n"
 	.string "Mother every so often.\p"
 	.string "I'm going to remain here and\n"
 	.string "redouble my training.\p"
 	.string "The way of battling is deep\n"
 	.string "and unforgiving!$"
 
-MatchCall_Text_Grub5:: @ 82B5979
-	.string "Grub: Oh, hi, {PLAYER}!\p"
+MatchCall_Text_Norman5:: @ 82B5979
+	.string "Dad: Oh, hi, {PLAYER}!\p"
 	.string "What's that? Magma Emblem?\n"
 	.string "I don't know what that's about.\p"
 	.string "But with a name like that, it may\n"
 	.string "be somehow linked to a volcano!$"
 
-MatchCall_Text_Grub6:: @ 82B5A07
-	.string "Grub: Hiyah! Haah! Dwah!\p"
+MatchCall_Text_Norman6:: @ 82B5A07
+	.string "Dad: Hiyah! Haah! Dwah!\p"
 	.string "…Oh? {PLAYER}!\p"
 	.string "You caught me right in the middle\n"
 	.string "of a Pokémon training session!$"
 
-MatchCall_Text_Grub7:: @ 82B5A69
-	.string "Grub: {PLAYER}!\p"
+MatchCall_Text_Norman7:: @ 82B5A69
+	.string "Dad: {PLAYER}!\p"
 	.string "Who would've thought you'd become\n"
 	.string "the Pokémon League Champion…\p"
 	.string "Okay!\n"
 	.string "I won't be left behind!$"
 
-MatchCall_Text_Grub8:: @ 82B5ACF
-	.string "Grub: Hm? {PLAYER}?\n"
+MatchCall_Text_Norman8:: @ 82B5ACF
+	.string "Dad: Hm? {PLAYER}?\n"
 	.string "What good timing!\p"
 	.string "This time, I'm going to challenge\n"
 	.string "you to battle.\p"
 	.string "I'm waiting in the Petalburg Gym.\n"
 	.string "Accept my challenge anytime!$"
 
-MatchCall_Text_Grub9:: @ 82B5B5E
-	.string "Grub: …You amaze me, {PLAYER}.\n"
+MatchCall_Text_Norman9:: @ 82B5B5E
+	.string "Dad: …You amaze me, {PLAYER}.\n"
 	.string "How much higher will you soar?$"
 
 MatchCall_Text_Steven1:: @ 82B5B95
@@ -2900,7 +2900,7 @@ MatchCall_Text_MrStone4:: @ 82B63A0
 MatchCall_Text_MrStone5:: @ 82B64A2
 	.string "Mr. Stone: Hello, hello, {PLAYER}{KUN}!\p"
 	.string "I heard from someone in Petalburg\n"
-	.string "that you're Grub's child!\p"
+	.string "that you're NORMAN's child!\p"
 	.string "No wonder you're such a capable\n"
 	.string "being!$"
 

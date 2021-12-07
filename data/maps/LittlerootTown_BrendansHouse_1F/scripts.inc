@@ -361,7 +361,7 @@ PlayersHouse_1F_Text_MoversPokemonGoSetClock: @ 81F7A46
 	.string "This is so convenient!\p"
 	.string "{PLAYER}, your room is upstairs.\n"
 	.string "Go check it out, dear!\p"
-	.string "Grub bought you a new clock to mark\n"
+	.string "Dad bought you a new clock to mark\n"
 	.string "our move here.\l"
 	.string "Don't forget to set it!$"
 
@@ -378,18 +378,18 @@ PlayersHouse_1F_Text_OhComeQuickly: @ 81F7B96
 	.string "Mom: Oh! {PLAYER}, {PLAYER}!\n"
 	.string "Quick! Come quickly!$"
 
-PlayersHouse_1F_Text_MaybeGrubWillBeOn: @ 81F7BBC
+PlayersHouse_1F_Text_MaybeDadWillBeOn: @ 81F7BBC
 	.string "Mom: Look! It's Petalburg Gym!\n"
-	.string "Maybe Grub will be on!$"
+	.string "Maybe Dad will be on!$"
 
 PlayersHouse_1F_Text_ItsOverWeMissedHim: @ 81F7BF1
 	.string "Mom: Oh… It's over.\p"
-	.string "I think Grub was on, but we missed him.\n"
+	.string "I think Dad was on, but we missed him.\n"
 	.string "Too bad.$"
 
 PlayersHouse_1F_Text_GoIntroduceYourselfNextDoor: @ 81F7C35
 	.string "Oh, yes.\n"
-	.string "One of Grub's friends lives in town.\p"
+	.string "One of Dad's friends lives in town.\p"
 	.string "Prof. Birch is his name.\p"
 	.string "He lives right next door, so you should\n"
 	.string "go over and introduce yourself.$"
@@ -409,8 +409,8 @@ PlayersHouse_1F_Text_YouShouldRestABit: @ 81F7D08
 PlayersHouse_1F_Text_TakeCareHoney: @ 81F7D5C
 	.string "Mom: Take care, honey!$"
 
-PlayersHouse_1F_Text_GotGrubsBadgeHeresSomethingFromMom: @ 81F7D73
-	.string "Mom: Oh? Did Grub give you that Badge?\p"
+PlayersHouse_1F_Text_GotDadsBadgeHeresSomethingFromMom: @ 81F7D73
+	.string "Mom: Oh? Did Dad give you that Badge?\p"
 	.string "Then here's something from your Mom!$"
 
 PlayersHouse_1F_Text_DontPushYourselfTooHard: @ 81F7DBE
@@ -454,7 +454,7 @@ PlayersHouse_1F_Text_RunningShoesManual: @ 81F7F66
 	.string "the road running!”$"
 
 PlayersHouse_1F_Text_TicketFromBrineyCameForYou: @ 81F800E
-	.string "Grub: Hm?\p"
+	.string "Dad: Hm?\p"
 	.string "Hey, it's {PLAYER}!\p"
 	.string "It's been a while since I saw you,\n"
 	.string "but you look…stronger, somehow.\p"
@@ -465,7 +465,7 @@ PlayersHouse_1F_Text_TicketFromBrineyCameForYou: @ 81F800E
 	.string "Mr. Briney.$"
 
 PlayersHouse_1F_Text_PortsInSlateportLilycove: @ 81F80FE
-	.string "Grub: Hm, a Ticket for a ferry?\p"
+	.string "Dad: Hm, a Ticket for a ferry?\p"
 	.string "If I recall, there are ferry ports in\n"
 	.string "Slateport and Lilycove.$"
 
@@ -474,8 +474,8 @@ PlayersHouse_1F_Text_BetterGetBackToGym: @ 81F815B
 	.string "Mom, thanks for looking after the house\n"
 	.string "while I'm away.$"
 
-PlayersHouse_1F_Text_GrubShouldStayLonger: @ 81F81B9
-	.string "Mom: That Grub of yours…\p"
+PlayersHouse_1F_Text_DadShouldStayLonger: @ 81F81B9
+	.string "Mom: That Dad of yours…\p"
 	.string "He comes home for the first time in a\n"
 	.string "while, but all he talks about is Pokémon.\p"
 	.string "He should relax and stay a little longer.$"

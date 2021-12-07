@@ -7,8 +7,8 @@ EventScript_TV::
 	goto_if_eq EventScript_PlayersHouseMovie
 	compare VAR_RESULT, PLAYERS_HOUSE_TV_LATI
 	goto_if_eq EventScript_PlayersHouseLatiNewsFlash
-	goto_if_unset FLAG_SYS_TV_START, EventScript_MomGrubMightLikeThis1
-	goto_if_set FLAG_SYS_TV_WATCH, EventScript_MomGrubMightLikeThis1
+	goto_if_unset FLAG_SYS_TV_START, EventScript_MomDadMightLikeThis1
+	goto_if_set FLAG_SYS_TV_WATCH, EventScript_MomDadMightLikeThis1
 	specialvar VAR_RESULT, IsGabbyAndTyShowOnTheAir
 	compare VAR_RESULT, TRUE
 	goto_if_eq EventScript_DoInSearchOfTrainers
@@ -18,19 +18,19 @@ EventScript_TV::
 EventScript_TryDoTVShow::
 	specialvar VAR_0x8004, GetRandomActiveShowIdx
 	compare VAR_0x8004, 255
-	goto_if_eq EventScript_MomGrubMightLikeThis2
+	goto_if_eq EventScript_MomDadMightLikeThis2
 	specialvar VAR_RESULT, GetNextActiveShowIfMassOutbreak
 	compare VAR_RESULT, 255
-	goto_if_eq EventScript_MomGrubMightLikeThis2
+	goto_if_eq EventScript_MomDadMightLikeThis2
 	copyvar VAR_0x8004, VAR_RESULT
 	specialvar VAR_RESULT, GetSelectedTVShow
 	compare VAR_RESULT, 0
 	goto_if_ne EventScript_DoTVShow
 	end
 
-EventScript_MomGrubMightLikeThis1::
-	special GetMomOrGrubStringForTVMessage
-	msgbox gText_MomOrGrubMightLikeThisProgram, MSGBOX_DEFAULT
+EventScript_MomDadMightLikeThis1::
+	special GetMomOrDadStringForTVMessage
+	msgbox gText_MomOrDadMightLikeThisProgram, MSGBOX_DEFAULT
 	special TurnOffTVScreen
 	releaseall
 	end
@@ -67,9 +67,9 @@ EventScript_TurnOffTV::
 	releaseall
 	end
 
-EventScript_MomGrubMightLikeThis2::
-	special GetMomOrGrubStringForTVMessage
-	msgbox gText_MomOrGrubMightLikeThisProgram, MSGBOX_DEFAULT
+EventScript_MomDadMightLikeThis2::
+	special GetMomOrDadStringForTVMessage
+	msgbox gText_MomOrDadMightLikeThisProgram, MSGBOX_DEFAULT
 	goto EventScript_TurnOffTV
 	end
 

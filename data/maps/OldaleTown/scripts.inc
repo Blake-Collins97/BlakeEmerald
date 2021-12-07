@@ -398,7 +398,7 @@ OldaleTown_Text_MayLetsGoBack: @ 81E9462
 	.string "Let's hurry home!$"
 
 OldaleTown_Text_BrendanLetsGoBack: @ 81E948A
-	.string "Brendan: I'm heading back to my Grub's\n"
+	.string "Brendan: I'm heading back to my dad's\n"
 	.string "Lab now.\l"
 	.string "{PLAYER}, you should hustle back, too.$"
 

@@ -23,7 +23,7 @@ gSavedMultiplayerId
 gReceivedRemoteLinkPlayers
 gLinkTestBGInfo
 gLinkCallback
-gShoulGrubvanceLinkState
+gShouldAdvanceLinkState
 gLinkTestBlockChecksums
 gBlockRequestType
 gLinkFiller3

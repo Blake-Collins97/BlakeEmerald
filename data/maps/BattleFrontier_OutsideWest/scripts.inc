@@ -426,7 +426,7 @@ BattleFrontier_OutsideWest_Text_WonIllTakePikeChallenge: @ 823DD7A
 	.string "Yay! I won!\n"
 	.string "I will take the BATTLE PIKE challenge!$"
 
-BattleFrontier_OutsideWest_Text_LostIllPutOffPikeChallenge: @ 823DGrub
+BattleFrontier_OutsideWest_Text_LostIllPutOffPikeChallenge: @ 823DDAD
 	.string "Oh, no…\n"
 	.string "I lost.\p"
 	.string "I guess I'm not very lucky today.\n"

@@ -370,8 +370,8 @@ Route104_EventScript_SailToDewford:: @ 81ED099
 	waitmovement 0
 	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_ROUTE104
 	call Common_EventScript_PlayBrineysBoatMusic
-	goto_if_set FLAG_ENABLE_Grub_MATCH_CALL, Route104_EventScript_SailToDewfordNoCall
-	goto_if_unset FLAG_ENABLE_Grub_MATCH_CALL, Route104_EventScript_SailToDewfordGrubCalls
+	goto_if_set FLAG_ENABLE_NORMAN_MATCH_CALL, Route104_EventScript_SailToDewfordNoCall
+	goto_if_unset FLAG_ENABLE_NORMAN_MATCH_CALL, Route104_EventScript_SailToDewfordDadCalls
 	end
 
 Route104_EventScript_SailToDewfordNoCall:: @ 81ED0D9
@@ -380,21 +380,21 @@ Route104_EventScript_SailToDewfordNoCall:: @ 81ED0D9
 	waitmovement 0
 	goto Route104_EventScript_ArriveInDewford
 
-Route104_EventScript_SailToDewfordGrubCalls:: @ 81ED0EF
-	applymovement LOCALID_BOAT_R104, Route104_Movement_SailToDewfordBeforeGrubCalls
-	applymovement OBJ_EVENT_ID_PLAYER, Route104_Movement_SailToDewfordBeforeGrubCalls
+Route104_EventScript_SailToDewfordDadCalls:: @ 81ED0EF
+	applymovement LOCALID_BOAT_R104, Route104_Movement_SailToDewfordBeforeDadCalls
+	applymovement OBJ_EVENT_ID_PLAYER, Route104_Movement_SailToDewfordBeforeDadCalls
 	waitmovement 0
-	pokenavcall Route104_Text_GrubPokenavCall
+	pokenavcall Route104_Text_DadPokenavCall
 	waitmessage
 	delay 30
 	playfanfare MUS_REGISTER_MATCH_CALL
-	msgbox Route104_Text_RegisteredGrubInPokenav, MSGBOX_DEFAULT
+	msgbox Route104_Text_RegisteredDadInPokenav, MSGBOX_DEFAULT
 	waitfanfare
 	closemessage
 	delay 30
-	setflag FLAG_ENABLE_Grub_MATCH_CALL
-	applymovement OBJ_EVENT_ID_PLAYER, Route104_Movement_SailToDewfordAfterGrubCalls
-	applymovement LOCALID_BOAT_R104, Route104_Movement_SailToDewfordAfterGrubCalls, MAP_ROUTE104
+	setflag FLAG_ENABLE_NORMAN_MATCH_CALL
+	applymovement OBJ_EVENT_ID_PLAYER, Route104_Movement_SailToDewfordAfterDadCalls
+	applymovement LOCALID_BOAT_R104, Route104_Movement_SailToDewfordAfterDadCalls, MAP_ROUTE104
 	waitmovement LOCALID_BOAT_R104, MAP_ROUTE104
 	waitmovement 0
 	goto Route104_EventScript_ArriveInDewford
@@ -437,7 +437,7 @@ Route104_EventScript_LandedInDewford:: @ 81ED1BE
 	releaseall
 	end
 
-Route104_Movement_SailToDewfordBeforeGrubCalls: @ 81ED1C8
+Route104_Movement_SailToDewfordBeforeDadCalls: @ 81ED1C8
 	walk_down
 	walk_down
 	walk_down
@@ -537,7 +537,7 @@ Route104_Movement_SailToDewfordBeforeGrubCalls: @ 81ED1C8
 	walk_fastest_down
 	step_end
 
-Route104_Movement_SailToDewfordAfterGrubCalls: @ 81ED22A
+Route104_Movement_SailToDewfordAfterDadCalls: @ 81ED22A
 	walk_fastest_down
 	walk_fastest_down
 	walk_fastest_down
@@ -1087,7 +1087,7 @@ Route104_Text_RouteSignRustboro: @ 81EDABC
 	.string "Route 104\n"
 	.string "{UP_ARROW} Rustboro City$"
 
-Route104_Text_PrettyPetalFlowShop: @ 81EGrub6
+Route104_Text_PrettyPetalFlowShop: @ 81EDAD6
 	.string "Pretty Petal Flower Shop$"
 
 Route104_Text_TrainerTipsDoubleBattles: @ 81EDAEF
