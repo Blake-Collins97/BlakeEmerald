@@ -139,8 +139,8 @@ const u32 gTrainerPalette_LeaderWinona[] = INCBIN_U32("graphics/trainers/palette
 const u32 gTrainerFrontPic_LeaderTateAndLiza[] = INCBIN_U32("graphics/trainers/front_pics/leader_tate_and_liza_front_pic.4bpp.lz");
 const u32 gTrainerPalette_LeaderTateAndLiza[] = INCBIN_U32("graphics/trainers/palettes/leader_tate_and_liza.gbapal.lz");
 
-const u32 gTrainerFrontPic_LeaderJuan[] = INCBIN_U32("graphics/trainers/front_pics/leader_Juan_front_pic.4bpp.lz");
-const u32 gTrainerPalette_LeaderJuan[] = INCBIN_U32("graphics/trainers/palettes/leader_Juan.gbapal.lz");
+const u32 gTrainerFrontPic_LeaderCody[] = INCBIN_U32("graphics/trainers/front_pics/leader_Cody_front_pic.4bpp.lz");
+const u32 gTrainerPalette_LeaderCody[] = INCBIN_U32("graphics/trainers/palettes/leader_Cody.gbapal.lz");
 
 const u32 gTrainerFrontPic_SchoolKidM[] = INCBIN_U32("graphics/trainers/front_pics/school_kid_m_front_pic.4bpp.lz");
 const u32 gTrainerPalette_SchoolKidM[] = INCBIN_U32("graphics/trainers/palettes/school_kid_m.gbapal.lz");
@@ -160,8 +160,8 @@ const u32 gTrainerPalette_PokefanF[] = INCBIN_U32("graphics/trainers/palettes/po
 const u32 gTrainerFrontPic_Youngster[] = INCBIN_U32("graphics/trainers/front_pics/youngster_front_pic.4bpp.lz");
 const u32 gTrainerPalette_Youngster[] = INCBIN_U32("graphics/trainers/palettes/youngster.gbapal.lz");
 
-const u32 gTrainerFrontPic_ChampionWallace[] = INCBIN_U32("graphics/trainers/front_pics/champion_Wallace_front_pic.4bpp.lz");
-const u32 gTrainerPalette_ChampionWallace[] = INCBIN_U32("graphics/trainers/palettes/champion_Wallace.gbapal.lz");
+const u32 gTrainerFrontPic_ChampionBlake[] = INCBIN_U32("graphics/trainers/front_pics/champion_Blake_front_pic.4bpp.lz");
+const u32 gTrainerPalette_ChampionBlake[] = INCBIN_U32("graphics/trainers/palettes/champion_Blake.gbapal.lz");
 
 const u32 gTrainerFrontPic_Fisherman[] = INCBIN_U32("graphics/trainers/front_pics/fisherman_front_pic.4bpp.lz");
 const u32 gTrainerPalette_Fisherman[] = INCBIN_U32("graphics/trainers/palettes/fisherman.gbapal.lz");

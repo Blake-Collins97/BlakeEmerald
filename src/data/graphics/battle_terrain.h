@@ -54,7 +54,7 @@ const u32 gBattleTerrainPalette_StadiumDan[] = INCBIN_U32("graphics/battle_terra
 const u32 gBattleTerrainPalette_StadiumSharni[] = INCBIN_U32("graphics/battle_terrain/stadium/palette4.gbapal.lz");
 const u32 gBattleTerrainPalette_StadiumChels[] = INCBIN_U32("graphics/battle_terrain/stadium/palette5.gbapal.lz");
 const u32 gBattleTerrainPalette_StadiumRay[] = INCBIN_U32("graphics/battle_terrain/stadium/palette6.gbapal.lz");
-const u32 gBattleTerrainPalette_StadiumWallace[] = INCBIN_U32("graphics/battle_terrain/stadium/palette7.gbapal.lz");
+const u32 gBattleTerrainPalette_StadiumBlake[] = INCBIN_U32("graphics/battle_terrain/stadium/palette7.gbapal.lz");
 const u32 gBattleTerrainPalette_Rayquaza[] = INCBIN_U32("graphics/battle_terrain/sky/palette.gbapal.lz");
 
 const u32 gBattleTerrainAnimTiles_TallGrass[] = INCBIN_U32("graphics/battle_terrain/tall_grass/anim_tiles.4bpp.lz");

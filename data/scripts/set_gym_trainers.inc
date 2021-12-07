@@ -66,7 +66,7 @@ FortreeCity_Gym_SetGymTrainers::
 MossdeepCity_Gym_SetGymTrainers::
 	settrainerflag TRAINER_PRESTON
 	settrainerflag TRAINER_VIRGIL
-	settrainerflag TRAINER_Wallace
+	settrainerflag TRAINER_BLAKE
 	settrainerflag TRAINER_HANNAH
 	settrainerflag TRAINER_SAMANTHA
 	settrainerflag TRAINER_MAURA

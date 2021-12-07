@@ -134,7 +134,7 @@
 #define OBJ_EVENT_GFX_WINONA                     130
 #define OBJ_EVENT_GFX_LIZA                       131
 #define OBJ_EVENT_GFX_TATE                       132
-#define OBJ_EVENT_GFX_Wallace                    133
+#define OBJ_EVENT_GFX_Blake                    133
 #define OBJ_EVENT_GFX_STEVEN                     134
 #define OBJ_EVENT_GFX_WALLY                      135
 #define OBJ_EVENT_GFX_LITTLE_BOY_3               136
@@ -219,7 +219,7 @@
 #define OBJ_EVENT_GFX_MOM                        215
 #define OBJ_EVENT_GFX_LINK_BRENDAN               216
 #define OBJ_EVENT_GFX_LINK_MAY                   217
-#define OBJ_EVENT_GFX_Juan                       218
+#define OBJ_EVENT_GFX_Cody                       218
 #define OBJ_EVENT_GFX_SCOTT                      219
 #define OBJ_EVENT_GFX_POOCHYENA                  220
 #define OBJ_EVENT_GFX_KYOGRE_SIDE                221

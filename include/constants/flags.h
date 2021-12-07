@@ -330,7 +330,7 @@
 #define FLAG_MET_ARCHIE_SOOTOPOLIS           0x134
 #define FLAG_MET_MAXIE_SOOTOPOLIS            0x135
 #define FLAG_MET_SCOTT_RUSTBORO              0x136
-#define FLAG_Wallace_GOES_TO_SKY_PILLAR      0x137 // Set after speaking to Wallace within the Cave of Origin.
+#define FLAG_Blake_GOES_TO_SKY_PILLAR      0x137 // Set after speaking to Blake within the Cave of Origin.
 #define FLAG_RECEIVED_HM07                   0x138
 #define FLAG_BEAT_MAGMA_GRUNT_JAGGED_PASS    0x139
 #define FLAG_RECEIVED_AURORA_TICKET          0x13A
@@ -445,12 +445,12 @@
 #define FLAG_REMATCH_Grub                  0x1A2
 #define FLAG_REMATCH_WINONA                  0x1A3
 #define FLAG_REMATCH_TATE_AND_LIZA           0x1A4
-// Note: FLAG_REMATCH_Juan is handled by FLAG_ENABLE_Juan_MATCH_CALL instead.
+// Note: FLAG_REMATCH_Cody is handled by FLAG_ENABLE_Cody_MATCH_CALL instead.
 #define FLAG_REMATCH_Dan                  0x1A5
 #define FLAG_REMATCH_Sharni                  0x1A6
 #define FLAG_REMATCH_Chels                  0x1A7
 #define FLAG_REMATCH_Ray                   0x1A8
-#define FLAG_REMATCH_Wallace                 0x1A9
+#define FLAG_REMATCH_Blake                 0x1A9
 
 #define FLAG_SANDSTREWN_RUINS_LEECH_LIFE     0x1AA
 #define FLAG_LAVARIDGE_GYM_ENERGY_ROOTS      0x1AB
@@ -499,7 +499,7 @@
 #define FLAG_ENABLE_FLANNERY_MATCH_CALL      0x1D6
 #define FLAG_ENABLE_WINONA_MATCH_CALL        0x1D7
 #define FLAG_ENABLE_TATE_AND_LIZA_MATCH_CALL 0x1D8
-#define FLAG_ENABLE_Juan_MATCH_CALL          0x1D9
+#define FLAG_ENABLE_Cody_MATCH_CALL          0x1D9
 
 #define FLAG_ROUTE_131_SPLASH_PLATE          0x1DA
 
@@ -852,11 +852,11 @@
 #define FLAG_HIDE_ROUTE_116_DROPPED_GLASSES_MAN                     0x32D
 #define FLAG_HIDE_RUSTBORO_CITY_RIVAL                               0x32E
 #define FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F_SWABLU_DOLL     0x32F
-#define FLAG_HIDE_SOOTOPOLIS_CITY_Wallace                           0x330
+#define FLAG_HIDE_SOOTOPOLIS_CITY_Blake                           0x330
 #define FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F_POKE_BALL       0x331
 #define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_2F_POKE_BALL           0x332
 #define FLAG_HIDE_ROUTE_112_TEAM_MAGMA                              0x333
-#define FLAG_HIDE_CAVE_OF_ORIGIN_B1F_Wallace                        0x334
+#define FLAG_HIDE_CAVE_OF_ORIGIN_B1F_Blake                        0x334
 #define FLAG_HIDE_AQUA_HIDEOUT_1F_GRUNT_1_BLOCKING_ENTRANCE         0x335
 #define FLAG_HIDE_AQUA_HIDEOUT_1F_GRUNT_2_BLOCKING_ENTRANCE         0x336
 #define FLAG_HIDE_MOSSDEEP_CITY_TEAM_MAGMA                          0x337
@@ -891,7 +891,7 @@
 #define FLAG_HIDE_LILYCOVE_CITY_AQUA_GRUNTS                         0x354
 #define FLAG_HIDE_MAGMA_HIDEOUT_4F_GROUDON                          0x355
 #define FLAG_HIDE_SOOTOPOLIS_CITY_RESIDENTS                         0x356
-#define FLAG_HIDE_SKY_PILLAR_Wallace                                0x357
+#define FLAG_HIDE_SKY_PILLAR_Blake                                0x357
 #define FLAG_HIDE_MT_PYRE_SUMMIT_MAXIE                              0x358
 #define FLAG_HIDE_MAGMA_HIDEOUT_GRUNTS                              0x359
 #define FLAG_HIDE_VICTORY_ROAD_ENTRANCE_WALLY                       0x35A
@@ -1586,7 +1586,7 @@
 #define FLAG_DAILY_REMATCH_Grub                   (DAILY_FLAGS_START + 0x1A)
 #define FLAG_DAILY_REMATCH_WINONA                   (DAILY_FLAGS_START + 0x1B)
 #define FLAG_DAILY_REMATCH_TATE_AND_LIZA            (DAILY_FLAGS_START + 0x1C)
-#define FLAG_DAILY_REMATCH_Juan                     (DAILY_FLAGS_START + 0x1D)
+#define FLAG_DAILY_REMATCH_Cody                     (DAILY_FLAGS_START + 0x1D)
 #define FLAG_DAILY_REMATCH_RIVAL                    (DAILY_FLAGS_START + 0x1E)
 #define FLAG_DAILY_REMATCH_STEVEN                   (DAILY_FLAGS_START + 0x1F)
 #define FLAG_DAILY_REMATCH_CYNTHIA                  (DAILY_FLAGS_START + 0x20)

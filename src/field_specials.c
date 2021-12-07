@@ -5042,7 +5042,7 @@ static void BufferFanClubTrainerName_(struct LinkBattleRecords *linkRecords, u8 
         switch (whichNPCTrainer)
         {
             case 0:
-                StringCopy(gStringVar1, gText_Wallace);
+                StringCopy(gStringVar1, gText_Blake);
                 break;
             case 1:
                 StringCopy(gStringVar1, gText_Steven);
@@ -5060,7 +5060,7 @@ static void BufferFanClubTrainerName_(struct LinkBattleRecords *linkRecords, u8 
                 StringCopy(gStringVar1, gText_Chels);
                 break;
             default:
-                StringCopy(gStringVar1, gText_Wallace);
+                StringCopy(gStringVar1, gText_Blake);
                 break;
         }
     }

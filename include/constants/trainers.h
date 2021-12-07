@@ -64,14 +64,14 @@
 #define TRAINER_PIC_LEADER_Grub         44
 #define TRAINER_PIC_LEADER_WINONA         45
 #define TRAINER_PIC_LEADER_TATE_AND_LIZA  46
-#define TRAINER_PIC_LEADER_Juan           47
+#define TRAINER_PIC_LEADER_Cody           47
 #define TRAINER_PIC_SCHOOL_KID_M          48
 #define TRAINER_PIC_SCHOOL_KID_F          49
 #define TRAINER_PIC_SR_AND_JR             50
 #define TRAINER_PIC_POKEFAN_M             51
 #define TRAINER_PIC_POKEFAN_F             52
 #define TRAINER_PIC_YOUNGSTER             53
-#define TRAINER_PIC_CHAMPION_Wallace      54
+#define TRAINER_PIC_CHAMPION_Blake      54
 #define TRAINER_PIC_FISHERMAN             55
 #define TRAINER_PIC_CYCLING_TRIATHLETE_M  56
 #define TRAINER_PIC_CYCLING_TRIATHLETE_F  57
@@ -166,7 +166,7 @@
 #define FACILITY_CLASS_POKEFAN_M             0x29
 #define FACILITY_CLASS_POKEFAN_F             0x2a
 #define FACILITY_CLASS_YOUNGSTER             0x2b
-#define FACILITY_CLASS_CHAMPION_Wallace      0x2c
+#define FACILITY_CLASS_CHAMPION_Blake      0x2c
 #define FACILITY_CLASS_FISHERMAN             0x2d
 #define FACILITY_CLASS_CYCLING_TRIATHLETE_M  0x2e
 #define FACILITY_CLASS_CYCLING_TRIATHLETE_F  0x2f

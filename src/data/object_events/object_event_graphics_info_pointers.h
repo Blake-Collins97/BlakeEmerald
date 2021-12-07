@@ -131,7 +131,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Grub;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Winona;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Liza;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Tate;
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Wallace;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Blake;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Steven;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Wally;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RubySapphireLittleBoy;
@@ -216,7 +216,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Azurill;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Mom;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LinkBrendan;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LinkMay;
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Juan;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cody;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Scott;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Poochyena;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_KyogreSide;
@@ -396,7 +396,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_WINONA] =                   &gObjectEventGraphicsInfo_Winona,
     [OBJ_EVENT_GFX_LIZA] =                     &gObjectEventGraphicsInfo_Liza,
     [OBJ_EVENT_GFX_TATE] =                     &gObjectEventGraphicsInfo_Tate,
-    [OBJ_EVENT_GFX_Wallace] =                  &gObjectEventGraphicsInfo_Wallace,
+    [OBJ_EVENT_GFX_Blake] =                  &gObjectEventGraphicsInfo_Blake,
     [OBJ_EVENT_GFX_STEVEN] =                   &gObjectEventGraphicsInfo_Steven,
     [OBJ_EVENT_GFX_WALLY] =                    &gObjectEventGraphicsInfo_Wally,
     [OBJ_EVENT_GFX_LITTLE_BOY_3] =             &gObjectEventGraphicsInfo_RubySapphireLittleBoy,
@@ -481,7 +481,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_MOM] =                      &gObjectEventGraphicsInfo_Mom,
     [OBJ_EVENT_GFX_LINK_BRENDAN] =             &gObjectEventGraphicsInfo_LinkBrendan,
     [OBJ_EVENT_GFX_LINK_MAY] =                 &gObjectEventGraphicsInfo_LinkMay,
-    [OBJ_EVENT_GFX_Juan] =                     &gObjectEventGraphicsInfo_Juan,
+    [OBJ_EVENT_GFX_Cody] =                     &gObjectEventGraphicsInfo_Cody,
     [OBJ_EVENT_GFX_SCOTT] =                    &gObjectEventGraphicsInfo_Scott,
     [OBJ_EVENT_GFX_POOCHYENA] =                &gObjectEventGraphicsInfo_Poochyena,
     [OBJ_EVENT_GFX_KYOGRE_SIDE] =              &gObjectEventGraphicsInfo_KyogreSide,

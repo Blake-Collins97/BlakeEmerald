@@ -232,7 +232,7 @@
 #define VAR_ROAMER_POKEMON                   0x40D5 // 0 = Latias, 1 = Latios
 #define VAR_TRAINER_HILL_IS_ACTIVE           0x40D6
 #define VAR_SKY_PILLAR_RAQUAZA_CRY_DONE      0x40D7
-#define VAR_SOOTOPOLIS_Wallace_STATE         0x40D8
+#define VAR_SOOTOPOLIS_Blake_STATE         0x40D8
 #define VAR_HAS_TALKED_TO_SEAFLOOR_CAVERN_ENTRANCE_GRUNT 0x40D9
 #define VAR_REGISTER_BIRCH_STATE             0x40DA
 #define VAR_UNUSED_0x40DB                    0x40DB // Unused Var

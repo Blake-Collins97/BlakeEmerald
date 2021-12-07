@@ -17603,7 +17603,7 @@ static const struct TrainerMonItemCustomMoves sParty_Maura[] = { // with Preston
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Samantha[] = { // with Wallace
+static const struct TrainerMonItemCustomMoves sParty_Samantha[] = { // with Blake
     {
     .lvl = -2,
     .species = SPECIES_XATU,
@@ -17622,7 +17622,7 @@ static const struct TrainerMonItemCustomMoves sParty_Samantha[] = { // with Wall
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Wallace[] = { // with Samantha
+static const struct TrainerMonItemCustomMoves sParty_Blake[] = { // with Samantha
     {
     .lvl = -2,
     .species = SPECIES_GIRAFARIG,
@@ -18528,7 +18528,7 @@ static const struct TrainerMonItemCustomMoves sParty_Bridget[] = {
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Juan1[] = {
+static const struct TrainerMonItemCustomMoves sParty_Cody1[] = {
     {
     .lvl = 1,
     .species = SPECIES_POLITOED,
@@ -18579,7 +18579,7 @@ static const struct TrainerMonItemCustomMoves sParty_Juan1[] = {
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Juan2[] = { // singles
+static const struct TrainerMonItemCustomMoves sParty_Cody2[] = { // singles
     {
     .lvl = 0,
     .species = SPECIES_POLITOED,
@@ -18630,7 +18630,7 @@ static const struct TrainerMonItemCustomMoves sParty_Juan2[] = { // singles
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Juan3[] = { // Doubles
+static const struct TrainerMonItemCustomMoves sParty_Cody3[] = { // Doubles
     {
     .lvl = 0,
     .species = SPECIES_POLITOED,
@@ -18680,7 +18680,7 @@ static const struct TrainerMonItemCustomMoves sParty_Juan3[] = { // Doubles
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Juan4[] = { // singles legendaries
+static const struct TrainerMonItemCustomMoves sParty_Cody4[] = { // singles legendaries
     {
     .lvl = 0,
     .species = SPECIES_KYOGRE,
@@ -18728,7 +18728,7 @@ static const struct TrainerMonItemCustomMoves sParty_Juan4[] = { // singles lege
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Juan5[] = { // doubles legendaries
+static const struct TrainerMonItemCustomMoves sParty_Cody5[] = { // doubles legendaries
     {
     .lvl = 0,
     .species = SPECIES_KYOGRE,
@@ -20106,7 +20106,7 @@ static const struct TrainerMonItemCustomMoves sParty_Ray[] = {
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Wallace[] = {
+static const struct TrainerMonItemCustomMoves sParty_Blake[] = {
     {
     .lvl = 2,
     .species = SPECIES_REGIROCK,
@@ -21025,7 +21025,7 @@ static const struct TrainerMonItemCustomMoves sParty_Ray4[] = { // Legendaries d
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_WallaceDoubles[] = { // Doubles
+static const struct TrainerMonItemCustomMoves sParty_BlakeDoubles[] = { // Doubles
     {
     .lvl = 2,
     .species = SPECIES_WAILORD,
@@ -21075,7 +21075,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallaceDoubles[] = { // Dou
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_WallaceLegends[] = { // Legendaries
+static const struct TrainerMonItemCustomMoves sParty_BlakeLegends[] = { // Legendaries
     {
     .lvl = 2,
     .species = SPECIES_KYOGRE,
@@ -21123,7 +21123,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallaceLegends[] = { // Leg
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_WallaceDoublesLegends[] = { // Legendaries doubles
+static const struct TrainerMonItemCustomMoves sParty_BlakeDoublesLegends[] = { // Legendaries doubles
     {
     .lvl = 2,
     .species = SPECIES_KYOGRE,
