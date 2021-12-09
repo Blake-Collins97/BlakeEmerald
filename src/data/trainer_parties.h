@@ -9839,43 +9839,43 @@ static const struct TrainerMonItemCustomMoves sParty_Berke[] = { // OHKO Room
 
 static const struct TrainerMonItemCustomMoves sParty_Norman1[] = {
     {
-    .lvl = 0,
-    .species = SPECIES_SWELLOW,
-    .heldItem = ITEM_FLAME_ORB,
-    .ability = 0, // Guts
-    .spread = SPREAD_31_IV_ATK_SPEED_JOLLY,
-    .moves = MOVE_BRAVE_BIRD, MOVE_FACADE, MOVE_REVERSAL, MOVE_U_TURN
-    },
-    {
-    .lvl = 0,
-    .species = SPECIES_TAUROS,
-    .heldItem = ITEM_LIFE_ORB,
-    .ability = 0, // Intimidate
-    .spread = SPREAD_31_IV_ATK_SPEED_JOLLY,
-    .moves = MOVE_FACADE, MOVE_EARTHQUAKE, MOVE_THROAT_CHOP, MOVE_CLOSE_COMBAT
-    },
-    {
-    .lvl = 0,
-    .species = SPECIES_LINOONE,
-    .heldItem = ITEM_FIGY_BERRY,
-    .ability = 1, // Gluttony
-    .spread = SPREAD_31_IV_ATK_SPEED_JOLLY,
-    .moves = MOVE_EXTREME_SPEED, MOVE_BELLY_DRUM, MOVE_SHADOW_CLAW, MOVE_SEED_BOMB
-    },
-    {
-    .lvl = 0,
-    .species = SPECIES_EXPLOUD,
-    .heldItem = ITEM_EXPERT_BELT,
-    .ability = 2, // Scrappy
-    .spread = SPREAD_31_IV_SPATK_SPEED_MODEST,
-    .moves = MOVE_BOOMBURST, MOVE_FIRE_BLAST, MOVE_SURF, MOVE_EXTRASENSORY
-    },
-    {
     .lvl = 2,
     .species = SPECIES_SLAKING,
     .heldItem = ITEM_LUM_BERRY,
     .spread = SPREAD_31_IV_ATK_SPEED_ADAMANT,
-    .moves = MOVE_GIGA_IMPACT, MOVE_YAWN, MOVE_NIGHT_SLASH, MOVE_EARTHQUAKE
+    .moves = MOVE_BODY_SLAM, MOVE_LOW_KICK, MOVE_NIGHT_SLASH, MOVE_EARTHQUAKE
+    },
+    {
+    .lvl = 0,
+    .species = SPECIES_SIGILYPH,
+    .heldItem = ITEM_FOCUS_SASH,
+    .ability = 1, // Magic Guard
+    .spread = SPREAD_31_IV_ATK_SPEED_JOLLY,
+    .moves = MOVE_SKILL_SWAP, MOVE_TAILWIND, MOVE_SWAGGER, MOVE_PSYCHIC
+    },
+    {
+    .lvl = 0,
+    .species = SPECIES_MACHAMP,
+    .heldItem = ITEM_FIGY_BERRY,
+    .ability = 1, // No Guard
+    .spread = SPREAD_31_IV_ATK_SPEED_JOLLY,
+    .moves = MOVE_MACH_PUNCH, MOVE_DYNAMIC_PUNCH, MOVE_STONE_EDGE, MOVE_BULLDOZE
+    },
+    {
+    .lvl = 0,
+    .species = SPECIES_ARCANINE,
+    .heldItem = ITEM_EXPERT_BELT,
+    .ability = 0, // Intimidate
+    .spread = SPREAD_31_IV_SPATK_SPEED_MODEST,
+    .moves = MOVE_HEAT_WAVE, MOVE_SNARL, MOVE_WILL_O_WISP, MOVE_MORNING_SUN
+    },
+    {
+    .lvl = 2,
+    .species = SPECIES_PANGORO,
+    .heldItem = ITEM_LUM_BERRY,
+    .ability = 0, // Iron Fist
+    .spread = SPREAD_31_IV_ATK_SPEED_ADAMANT,
+    .moves = MOVE_KNOCK_OFF, MOVE_SKY_ATTACK, MOVE_PARTING_SHOT, MOVE_EARTHQUAKE
     },
     {
     .lvl = 0,
