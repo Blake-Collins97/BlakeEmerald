@@ -186,7 +186,7 @@ const struct BaseStats gBaseStats[] =
         .baseSpAttack  = 50,
         .baseSpDefense = 64,
         .type1 = TYPE_WATER,
-        .type2 = TYPE_WATER,
+        .type2 = TYPE_WATER
         .catchRate = 45,
         .expYield = 63,
         .evYield_Defense   = 1,
@@ -254,8 +254,12 @@ const struct BaseStats gBaseStats[] =
         .eggGroup1 = EGG_GROUP_MONSTER,
         .eggGroup2 = EGG_GROUP_WATER_1,
         #ifdef REBALANCED_VERSION
-            .abilities = {ABILITY_TORRENT, ABILITY_MEGA_LAUNCHER, ABILITY_RAIN_DISH},
+            .type1 = TYPE_WATER,
+            .type2 = TYPE_ROCK
+            .abilities = {ABILITY_TORRENT, ABILITY_OVERCOAT, ABILITY_RAIN_DISH},
         #else
+            .type1 = TYPE_WATER,
+            .type2 = TYPE_WATER
             .abilities = {ABILITY_TORRENT, ABILITY_TORRENT, ABILITY_RAIN_DISH},
         #endif        
         .bodyColor = BODY_COLOR_BLUE,
