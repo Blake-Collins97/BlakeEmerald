@@ -20090,7 +20090,7 @@ static const struct TrainerMonItemCustomMoves sParty_Drake[] = {
     },
     {
     .lvl = 1,
-    .species = SPECIES_DHELMISE
+    .species = SPECIES_DHELMISE,
     .heldItem = ITEM_WIDE_LENS,
     .ability = 0, // Steelworker
     .spread = SPREAD_31_IV_SPATK_SPEED_MODEST,
