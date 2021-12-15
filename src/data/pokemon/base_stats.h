@@ -18647,7 +18647,6 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_DRAGALGE] =
     {
-        .baseHP        = 65,
         .baseAttack    = 75,
         .baseDefense   = 90,
         .baseSpeed     = 44,
