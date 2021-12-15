@@ -253,11 +253,11 @@ const struct BaseStats gBaseStats[] =
         .eggGroup2 = EGG_GROUP_WATER_1,
         #ifdef REBALANCED_VERSION
             .type1 = TYPE_WATER,
-            .type2 = TYPE_ROCK
+            .type2 = TYPE_ROCK,
             .abilities = {ABILITY_TORRENT, ABILITY_OVERCOAT, ABILITY_RAIN_DISH},
         #else
             .type1 = TYPE_WATER,
-            .type2 = TYPE_WATER
+            .type2 = TYPE_WATER,
             .abilities = {ABILITY_TORRENT, ABILITY_TORRENT, ABILITY_RAIN_DISH},
         #endif        
         .bodyColor = BODY_COLOR_BLUE,
