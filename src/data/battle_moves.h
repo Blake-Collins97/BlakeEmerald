@@ -195,11 +195,11 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
             .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
         #endif
         #ifdef REBALANCED_VERSION
-            .effect = EFFECT_HIT
+            .effect = EFFECT_HIT,
             .power = 80,
             .type = TYPE_FLYING,
         #else
-            .effect = EFFECT_TWO_TURNS_ATTACK
+            .effect = EFFECT_TWO_TURNS_ATTACK,
             .power = 80,
             .type = TYPE_NORMAL,
         #endif            
@@ -4697,7 +4697,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
             .power = 60,
         #endif
         #ifdef REBALANCED_VERSION
-            .effect = EFFECT_HIT
+            .effect = EFFECT_HIT,
         #else
             .effect = EFFECT_SEMI_INVULNERABLE,
         #endif
