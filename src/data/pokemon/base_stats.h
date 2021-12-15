@@ -495,13 +495,13 @@ const struct BaseStats gBaseStats[] =
         .baseSpeed     = 101,
         #ifdef REBALANCED_VERSION
             .type1 = TYPE_FLYING,
-            .type2 = TYPE_FLYING
+            .type2 = TYPE_FLYING,
             .baseAttack    = 70,
             .baseSpAttack  = 95,
             .abilities = {ABILITY_NO_GUARD, ABILITY_TANGLED_FEET, ABILITY_BIG_PECKS},
         #else
             .type1 = TYPE_NORMAL,
-            .type2 = TYPE_FLYING
+            .type2 = TYPE_FLYING,
             .baseAttack    = 80,
             .baseSpAttack  = 70,
             .abilities = {ABILITY_KEEN_EYE, ABILITY_TANGLED_FEET, ABILITY_BIG_PECKS},
