@@ -242,8 +242,6 @@ const struct BaseStats gBaseStats[] =
         .baseSpeed     = 78,
         .baseSpAttack  = 85,
         .baseSpDefense = 105,
-        .type1 = TYPE_WATER,
-        .type2 = TYPE_WATER,
         .catchRate = 45,
         .expYield = 239,
         .evYield_SpDefense = 3,
@@ -8727,7 +8725,7 @@ const struct BaseStats gBaseStats[] =
         .eggGroup1 = EGG_GROUP_FIELD,
         .eggGroup2 = EGG_GROUP_WATER_2,
         #ifdef REBALANCED_VERSION
-            .abilities = {ABILITY_WATER_VEIL, ABILITY_MAGIC_GUARD ABILITY_DRIZZLE},
+            .abilities = {ABILITY_WATER_VEIL, ABILITY_MAGIC_GUARD, ABILITY_DRIZZLE},
         #else
             .abilities = {ABILITY_WATER_VEIL, ABILITY_OBLIVIOUS, ABILITY_PRESSURE},
         #endif
