@@ -1567,7 +1567,7 @@ const struct BaseStats gBaseStats[] =
             .baseSpeed     = 115,
         #else
             .baseAttack    = 82,
-            .baseSpAttack  = 95,
+            .baseSpeed     = 95,
         #endif  
         .type1 = TYPE_FIGHTING,
         .type2 = TYPE_FIGHTING,
