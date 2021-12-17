@@ -103,7 +103,7 @@ EverGrandeCity_GlaciasRoom_EventScript_DefeatedRematch::
 	end
 
 EverGrandeCity_GlaciasRoom_Text_IntroSpeech: @ 82284AC
-	.string "Welcome, my name is Glacia\n"
+	.string "Welcome, my name is Chelsea\n"
 	.string "of the Elite Four.\p"
 	.string "I've traveled from afar to Hoenn\n"
 	.string "so that I may hone my ice skills.\p"
@@ -136,4 +136,4 @@ EverGrandeCity_GlaciasRoom_Text_PostBattleSpeechRematch:
 	.string "Do you intend to thaw my very heart?\p"
 	.string "That actually wouldn't bother me.\p"
 	.string "Anyway, continue onward!\n"
-	.string "Drake is waiting for you as well.$"
+	.string "Ray is waiting for you as well.$"
