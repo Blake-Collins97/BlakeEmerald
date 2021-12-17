@@ -4,7 +4,7 @@ SootopolisCity_House3_MapScripts:: @ 8226B71
 SootopolisCity_House3_EventScript_Woman:: @ 8226B72
 	lock
 	faceplayer
-	msgbox SootopolisCity_House3_Text_JuanHasManyFansDoYou, MSGBOX_YESNO
+	msgbox SootopolisCity_House3_Text_CodyHasManyFansDoYou, MSGBOX_YESNO
 	compare VAR_RESULT, YES
 	goto_if_eq SootopolisCity_House3_EventScript_HaveFans
 	msgbox SootopolisCity_House3_Text_LonesomeTryWorkingHarder, MSGBOX_DEFAULT
@@ -20,9 +20,9 @@ SootopolisCity_House3_EventScript_Girl:: @ 8226B9B
 	msgbox SootopolisCity_House3_Text_TrainerFanClubWasWild, MSGBOX_NPC
 	end
 
-SootopolisCity_House3_Text_JuanHasManyFansDoYou: @ 8226BA4
+SootopolisCity_House3_Text_CodyHasManyFansDoYou: @ 8226BA4
 	.string "You're a Pokémon Trainer, aren't you?\p"
-	.string "Sootopolis's Juan has many fans.\n"
+	.string "Sootopolis's Cody has many fans.\n"
 	.string "Even more than his student Wallace!\p"
 	.string "Do you have any?$"
 
