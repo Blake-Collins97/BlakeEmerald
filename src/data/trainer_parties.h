@@ -21,7 +21,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallyMauville[] = {
     .lvl = 0,
     .species = SPECIES_PUPITAR,
     .heldItem = ITEM_ROCKY_HELMET,
-    .ability = , // Shed Skin
+    .ability = 0, // Shed Skin
     .spread = SPREAD_25_IV_0_EV,
     .moves = MOVE_ROCK_THROW, MOVE_CRUNCH, MOVE_ROCK_SLIDE, MOVE_BULLDOZE
     },   
@@ -18563,7 +18563,7 @@ static const struct TrainerMonItemCustomMoves sParty_Juan1[] = {
     },
     {
     .lvl = 1,
-    .species = SPECIES_METAGROSS
+    .species = SPECIES_METAGROSS,
     .heldItem = ITEM_LIFE_ORB,
     .ability = 0, // Clear Body
     .spread = SPREAD_31_IV_ATK_SPEED_ADAMANT,
