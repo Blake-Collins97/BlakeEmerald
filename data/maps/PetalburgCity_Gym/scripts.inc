@@ -1324,10 +1324,10 @@ PetalburgCity_Gym_Text_WallyIdLikeAPokemon: @ 82058B1
 
 PetalburgCity_Gym_Text_DadOhYoureWallyRight: @ 82058DB
 	.string "Dad: Hm? You're… Uh… Oh, right.\n"
-	.string "You're Wally, right?$"
+	.string "You're Guy, right?$"
 
 PetalburgCity_Gym_Text_WallyIveNeverCaughtAPokemon: @ 8205910
-	.string "Wally: I'm going to go stay with my\n"
+	.string "Guy: I'm going to go stay with my\n"
 	.string "relatives in Verdanturf Town.\p"
 	.string "I thought I would be lonely by myself,\n"
 	.string "so I wanted to take a Pokémon along.\p"
@@ -1340,22 +1340,22 @@ PetalburgCity_Gym_Text_DadHmISee: @ 82059D8
 PetalburgCity_Gym_Text_DadPlayerGoWithWally: @ 82059E8
 	.string "Dad: {PLAYER}, you heard that,\n"
 	.string "right?\p"
-	.string "Go with Wally and make sure that he\n"
+	.string "Go with Guy and make sure that he\n"
 	.string "safely catches a Pokémon.$"
 
 PetalburgCity_Gym_Text_IllLoanYouMyZigzagoon: @ 8205A46
-	.string "Wally, here, I'll loan you my Pokémon.\p"
-	.string "Wally received a Zigzagoon!$"
+	.string "Guy, here, I'll loan you my Pokémon.\p"
+	.string "Guy received a Zigzagoon!$"
 
 PetalburgCity_Gym_Text_WallyThankYouAndDadGivesPokeBall: @ 8205A89
-	.string "Wally: Oh, wow!\n"
+	.string "Guy: Oh, wow!\n"
 	.string "A Pokémon!\p"
 	.string "Dad: Hm. I'll give you a Poké Ball, too.\n"
 	.string "Go for it!\p"
-	.string "Wally received a Poké Ball!$"
+	.string "Guy received a Poké Ball!$"
 
 PetalburgCity_Gym_Text_WallyOhWowThankYou: @ 8205AF4
-	.string "Wally: Oh, wow!\n"
+	.string "Guy: Oh, wow!\n"
 	.string "Thank you!$"
 
 PetalburgCity_Gym_Text_WouldYouReallyComeWithMe: @ 8205B0F
@@ -1366,7 +1366,7 @@ PetalburgCity_Gym_Text_DadSoDidItWorkOut: @ 8205B32
 	.string "Dad: So, did it work out?$"
 
 PetalburgCity_Gym_Text_WallyThankYouBye: @ 8205B4C
-	.string "Wally: Thank you, yes, it did.\n"
+	.string "Guy: Thank you, yes, it did.\n"
 	.string "Here's your Pokémon back.\p"
 	.string "{PLAYER}, thank you for coming along\n"
 	.string "with me.\p"

@@ -721,7 +721,7 @@ PetalburgCity_EventScript_GymBoy:: @ 81DC82E
 	end
 
 PetalburgCity_Text_WhereIsWally: @ 81DC837
-	.string "Where has our Wally gone?\p"
+	.string "Where has our Guy gone?\p"
 	.string "We have to leave for Verdanturf Town\n"
 	.string "very soon…$"
 
@@ -763,7 +763,7 @@ PetalburgCity_Text_CitySign: @ 81DCAF1
 	.string "“Where people mingle with nature.”$"
 
 PetalburgCity_Text_WallyHouseSign: @ 81DCB23
-	.string "Wally's House$"
+	.string "Guy's House$"
 
 PetalburgCity_Text_AreYouATrainer: @ 81DCB31
 	.string "Excuse me!\p"
