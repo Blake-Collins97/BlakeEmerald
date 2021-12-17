@@ -559,7 +559,7 @@
 			.2byte \index
 			.4byte \movements
 		.else
-			@ Really only useful if the object has followed from one map to another (e.g. Wally during the catching event).
+			@ Really only useful if the object has followed from one map to another (e.g. Guy during the catching event).
 			.byte 0x50
 			.2byte \index
 			.4byte \movements

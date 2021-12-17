@@ -7265,18 +7265,18 @@ const struct Trainer gTrainers[] = {
         .party = {.ItemCustomMoves = sParty_Phoebe2},
     },
 
-    [TRAINER_WALLY_VR_1] =
+    [TRAINER_Guy_VR_1] =
     {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM | F_TRAINER_PARTY_CUSTOM_MOVESET,
         .trainerClass = TRAINER_CLASS_PKMN_TRAINER_3,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_WALLY,
+        .trainerPic = TRAINER_PIC_Guy,
         .trainerName = _("Guy"),
         .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_CHECK_FOE,
-        .partySize = ARRAY_COUNT(sParty_WallyVR1),
-        .party = {.ItemCustomMoves = sParty_WallyVR1},
+        .partySize = ARRAY_COUNT(sParty_GuyVR1),
+        .party = {.ItemCustomMoves = sParty_GuyVR1},
     },
 
     [TRAINER_BRENDAN_ROUTE_103_MUDKIP] =
@@ -9183,74 +9183,74 @@ const struct Trainer gTrainers[] = {
         .party = {.ItemCustomMoves = sParty_Ashley},
     },
 
-    [TRAINER_WALLY_MAUVILLE] =
+    [TRAINER_Guy_MAUVILLE] =
     {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM | F_TRAINER_PARTY_CUSTOM_MOVESET,
         .trainerClass = TRAINER_CLASS_PKMN_TRAINER_3,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_WALLY,
+        .trainerPic = TRAINER_PIC_Guy,
         .trainerName = _("Guy"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_CHECK_FOE,
-        .partySize = ARRAY_COUNT(sParty_WallyMauville),
-        .party = {.ItemCustomMoves = sParty_WallyMauville},
+        .partySize = ARRAY_COUNT(sParty_GuyMauville),
+        .party = {.ItemCustomMoves = sParty_GuyMauville},
     },
 
-    [TRAINER_WALLY_VR_2] =
+    [TRAINER_Guy_VR_2] =
     {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM | F_TRAINER_PARTY_CUSTOM_MOVESET,
         .trainerClass = TRAINER_CLASS_PKMN_TRAINER_3,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_WALLY,
+        .trainerPic = TRAINER_PIC_Guy,
         .trainerName = _("Guy"),
         .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_CHECK_FOE,
-        .partySize = ARRAY_COUNT(sParty_WallyVR2),
-        .party = {.ItemCustomMoves = sParty_WallyVR2},
+        .partySize = ARRAY_COUNT(sParty_GuyVR2),
+        .party = {.ItemCustomMoves = sParty_GuyVR2},
     },
 
-    [TRAINER_WALLY_VR_3] =
+    [TRAINER_Guy_VR_3] =
     {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM | F_TRAINER_PARTY_CUSTOM_MOVESET,
         .trainerClass = TRAINER_CLASS_PKMN_TRAINER_3,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_WALLY,
+        .trainerPic = TRAINER_PIC_Guy,
         .trainerName = _("Guy"),
         .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_CHECK_FOE,
-        .partySize = ARRAY_COUNT(sParty_WallyVR3),
-        .party = {.ItemCustomMoves = sParty_WallyVR3},
+        .partySize = ARRAY_COUNT(sParty_GuyVR3),
+        .party = {.ItemCustomMoves = sParty_GuyVR3},
     },
 
-    [TRAINER_WALLY_VR_4] =
+    [TRAINER_Guy_VR_4] =
     {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM | F_TRAINER_PARTY_CUSTOM_MOVESET,
         .trainerClass = TRAINER_CLASS_PKMN_TRAINER_3,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_WALLY,
+        .trainerPic = TRAINER_PIC_Guy,
         .trainerName = _("Guy"),
         .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_CHECK_FOE,
-        .partySize = ARRAY_COUNT(sParty_WallyVR4),
-        .party = {.ItemCustomMoves = sParty_WallyVR4},
+        .partySize = ARRAY_COUNT(sParty_GuyVR4),
+        .party = {.ItemCustomMoves = sParty_GuyVR4},
     },
 
-    [TRAINER_WALLY_VR_5] =
+    [TRAINER_Guy_VR_5] =
     {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM | F_TRAINER_PARTY_CUSTOM_MOVESET,
         .trainerClass = TRAINER_CLASS_PKMN_TRAINER_3,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_WALLY,
+        .trainerPic = TRAINER_PIC_Guy,
         .trainerName = _("Guy"),
         .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_CHECK_FOE,
-        .partySize = ARRAY_COUNT(sParty_WallyVR5),
-        .party = {.ItemCustomMoves = sParty_WallyVR5},
+        .partySize = ARRAY_COUNT(sParty_GuyVR5),
+        .party = {.ItemCustomMoves = sParty_GuyVR5},
     },
 
     [TRAINER_BRENDAN_LILYCOVE_MUDKIP] =

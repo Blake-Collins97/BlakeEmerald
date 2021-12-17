@@ -1347,16 +1347,16 @@ static const struct SpriteFrameImage sPicTable_Steven[] = {
     overworld_frame(gObjectEventPic_Steven, 2, 4, 8),
 };
 
-static const struct SpriteFrameImage sPicTable_Wally[] = {
-    overworld_frame(gObjectEventPic_Wally, 2, 4, 0),
-    overworld_frame(gObjectEventPic_Wally, 2, 4, 1),
-    overworld_frame(gObjectEventPic_Wally, 2, 4, 2),
-    overworld_frame(gObjectEventPic_Wally, 2, 4, 3),
-    overworld_frame(gObjectEventPic_Wally, 2, 4, 4),
-    overworld_frame(gObjectEventPic_Wally, 2, 4, 5),
-    overworld_frame(gObjectEventPic_Wally, 2, 4, 6),
-    overworld_frame(gObjectEventPic_Wally, 2, 4, 7),
-    overworld_frame(gObjectEventPic_Wally, 2, 4, 8),
+static const struct SpriteFrameImage sPicTable_Guy[] = {
+    overworld_frame(gObjectEventPic_Guy, 2, 4, 0),
+    overworld_frame(gObjectEventPic_Guy, 2, 4, 1),
+    overworld_frame(gObjectEventPic_Guy, 2, 4, 2),
+    overworld_frame(gObjectEventPic_Guy, 2, 4, 3),
+    overworld_frame(gObjectEventPic_Guy, 2, 4, 4),
+    overworld_frame(gObjectEventPic_Guy, 2, 4, 5),
+    overworld_frame(gObjectEventPic_Guy, 2, 4, 6),
+    overworld_frame(gObjectEventPic_Guy, 2, 4, 7),
+    overworld_frame(gObjectEventPic_Guy, 2, 4, 8),
 };
 
 static const struct SpriteFrameImage sPicTable_RubySapphireLittleBoy[] = {

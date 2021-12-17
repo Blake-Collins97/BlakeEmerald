@@ -1,4 +1,4 @@
-.set LOCALID_WALLY_ENTRANCE, 4
+.set LOCALID_Guy_ENTRANCE, 4
 
 VictoryRoad_1F_MapScripts:: @ 8235D7A
 	map_script MAP_SCRIPT_ON_TRANSITION, VictoryRoad_1F_OnTransition
@@ -6,53 +6,53 @@ VictoryRoad_1F_MapScripts:: @ 8235D7A
 
 VictoryRoad_1F_OnTransition: @ 8235D80
 	compare VAR_VICTORY_ROAD_1F_STATE, 1
-	call_if_eq VictoryRoad_1F_EventScript_SetEntranceWallyPos1
+	call_if_eq VictoryRoad_1F_EventScript_SetEntranceGuyPos1
 	compare VAR_VICTORY_ROAD_1F_STATE, 2
-	call_if_eq VictoryRoad_1F_EventScript_SetEntranceWallyPos2
+	call_if_eq VictoryRoad_1F_EventScript_SetEntranceGuyPos2
 	end
 
-VictoryRoad_1F_EventScript_SetEntranceWallyPos1:: @ 8235D97
-	setobjectxyperm LOCALID_WALLY_ENTRANCE, 2, 24
-	setobjectmovementtype LOCALID_WALLY_ENTRANCE, MOVEMENT_TYPE_FACE_DOWN
+VictoryRoad_1F_EventScript_SetEntranceGuyPos1:: @ 8235D97
+	setobjectxyperm LOCALID_Guy_ENTRANCE, 2, 24
+	setobjectmovementtype LOCALID_Guy_ENTRANCE, MOVEMENT_TYPE_FACE_DOWN
 	return
 
-VictoryRoad_1F_EventScript_SetEntranceWallyPos2:: @ 8235DA3
-	setobjectxyperm LOCALID_WALLY_ENTRANCE, 3, 24
-	setobjectmovementtype LOCALID_WALLY_ENTRANCE, MOVEMENT_TYPE_FACE_DOWN
+VictoryRoad_1F_EventScript_SetEntranceGuyPos2:: @ 8235DA3
+	setobjectxyperm LOCALID_Guy_ENTRANCE, 3, 24
+	setobjectmovementtype LOCALID_Guy_ENTRANCE, MOVEMENT_TYPE_FACE_DOWN
 	return
 
-VictoryRoad_1F_EventScript_WallyBattleTrigger1:: @ 8235DAF
+VictoryRoad_1F_EventScript_GuyBattleTrigger1:: @ 8235DAF
 	lockall
 	setvar VAR_0x8008, 1
-	addobject LOCALID_WALLY_ENTRANCE
-	applymovement LOCALID_WALLY_ENTRANCE, VictoryRoad_1F_Movement_WallyApproachPlayer1
+	addobject LOCALID_Guy_ENTRANCE
+	applymovement LOCALID_Guy_ENTRANCE, VictoryRoad_1F_Movement_GuyApproachPlayer1
 	waitmovement 0
-	goto VictoryRoad_1F_EventScript_WallyEntranceBattle
+	goto VictoryRoad_1F_EventScript_GuyEntranceBattle
 	end
 
-VictoryRoad_1F_EventScript_WallyBattleTrigger2:: @ 8235DC8
+VictoryRoad_1F_EventScript_GuyBattleTrigger2:: @ 8235DC8
 	lockall
 	setvar VAR_0x8008, 2
-	addobject LOCALID_WALLY_ENTRANCE
-	applymovement LOCALID_WALLY_ENTRANCE, VictoryRoad_1F_Movement_WallyApproachPlayer2
+	addobject LOCALID_Guy_ENTRANCE
+	applymovement LOCALID_Guy_ENTRANCE, VictoryRoad_1F_Movement_GuyApproachPlayer2
 	waitmovement 0
-	goto VictoryRoad_1F_EventScript_WallyEntranceBattle
+	goto VictoryRoad_1F_EventScript_GuyEntranceBattle
 	end
 
-VictoryRoad_1F_EventScript_WallyEntranceBattle:: @ 8235DE1
+VictoryRoad_1F_EventScript_GuyEntranceBattle:: @ 8235DE1
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFastestDown
 	waitmovement 0
-	msgbox VictoryRoad_1F_Text_WallyNotGoingToLoseAnymore, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_WALLY_VR_1, VictoryRoad_1F_Text_WallyEntranceDefeat
-	msgbox VictoryRoad_1F_Text_WallyPostEntranceBattle, MSGBOX_DEFAULT
-	clearflag FLAG_HIDE_VICTORY_ROAD_ENTRANCE_WALLY
-	copyobjectxytoperm LOCALID_WALLY_ENTRANCE
-	setflag FLAG_DEFEATED_WALLY_VICTORY_ROAD
+	msgbox VictoryRoad_1F_Text_GuyNotGoingToLoseAnymore, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_Guy_VR_1, VictoryRoad_1F_Text_GuyEntranceDefeat
+	msgbox VictoryRoad_1F_Text_GuyPostEntranceBattle, MSGBOX_DEFAULT
+	clearflag FLAG_HIDE_VICTORY_ROAD_ENTRANCE_Guy
+	copyobjectxytoperm LOCALID_Guy_ENTRANCE
+	setflag FLAG_DEFEATED_Guy_VICTORY_ROAD
 	copyvar VAR_VICTORY_ROAD_1F_STATE, VAR_0x8008
 	releaseall
 	end
 
-VictoryRoad_1F_Movement_WallyApproachPlayer1: @ 8235E15
+VictoryRoad_1F_Movement_GuyApproachPlayer1: @ 8235E15
 	walk_left
 	walk_left
 	walk_left
@@ -66,7 +66,7 @@ VictoryRoad_1F_Movement_WallyApproachPlayer1: @ 8235E15
 	walk_up
 	step_end
 
-VictoryRoad_1F_Movement_WallyApproachPlayer2: @ 8235E21
+VictoryRoad_1F_Movement_GuyApproachPlayer2: @ 8235E21
 	walk_left
 	walk_left
 	walk_left
@@ -79,23 +79,23 @@ VictoryRoad_1F_Movement_WallyApproachPlayer2: @ 8235E21
 	walk_up
 	step_end
 
-@ This Wally appears near the entrance once his battle is triggered and remains there until the Hall of Fame is entered
-VictoryRoad_1F_EventScript_EntranceWally:: @ 8235E2C
-	msgbox VictoryRoad_1F_Text_WallyPostEntranceBattle, MSGBOX_NPC
+@ This Guy appears near the entrance once his battle is triggered and remains there until the Hall of Fame is entered
+VictoryRoad_1F_EventScript_EntranceGuy:: @ 8235E2C
+	msgbox VictoryRoad_1F_Text_GuyPostEntranceBattle, MSGBOX_NPC
 	end
 
-@ This Wally appears and remains at the exit after the Hall of Fame is entered 
-VictoryRoad_1F_EventScript_ExitWally:: @ 8235E35
-	trainerbattle_single TRAINER_WALLY_VR_2, VictoryRoad_1F_Text_WallyIntro, VictoryRoad_1F_Text_WallyDefeat
+@ This Guy appears and remains at the exit after the Hall of Fame is entered 
+VictoryRoad_1F_EventScript_ExitGuy:: @ 8235E35
+	trainerbattle_single TRAINER_Guy_VR_2, VictoryRoad_1F_Text_GuyIntro, VictoryRoad_1F_Text_GuyDefeat
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	compare VAR_RESULT, TRUE
-	goto_if_eq VictoryRoad_1F_EventScript_RematchWally
-	msgbox VictoryRoad_1F_Text_WallyPostBattle, MSGBOX_AUTOCLOSE
+	goto_if_eq VictoryRoad_1F_EventScript_RematchGuy
+	msgbox VictoryRoad_1F_Text_GuyPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-VictoryRoad_1F_EventScript_RematchWally:: @ 8235E5C
-	trainerbattle_rematch TRAINER_WALLY_VR_2, VictoryRoad_1F_Text_WallyIntro, VictoryRoad_1F_Text_WallyDefeat
-	msgbox VictoryRoad_1F_Text_WallyPostBattle, MSGBOX_AUTOCLOSE
+VictoryRoad_1F_EventScript_RematchGuy:: @ 8235E5C
+	trainerbattle_rematch TRAINER_Guy_VR_2, VictoryRoad_1F_Text_GuyIntro, VictoryRoad_1F_Text_GuyDefeat
+	msgbox VictoryRoad_1F_Text_GuyPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 VictoryRoad_1F_EventScript_Edgar:: @ 8235E73
@@ -123,8 +123,8 @@ VictoryRoad_1F_EventScript_Katelynn:: @ 8235ECF
 	msgbox VictoryRoad_1F_Text_KatelynnPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-VictoryRoad_1F_Text_WallyNotGoingToLoseAnymore: @ 8235EE6
-	.string "Wally: Hi! {PLAYER}!\p"
+VictoryRoad_1F_Text_GuyNotGoingToLoseAnymore: @ 8235EE6
+	.string "Guy: Hi! {PLAYER}!\p"
 	.string "I bet you're surprised to see me here!\p"
 	.string "I made it all the way here, and it's\n"
 	.string "all thanks to you!\p"
@@ -135,27 +135,27 @@ VictoryRoad_1F_Text_WallyNotGoingToLoseAnymore: @ 8235EE6
 	.string "gave me courage and strength!\p"
 	.string "Okay… Here I come!$"
 
-VictoryRoad_1F_Text_WallyEntranceDefeat: @ 8235FFC
+VictoryRoad_1F_Text_GuyEntranceDefeat: @ 8235FFC
 	.string "Wow!\n"
 	.string "{PLAYER}, you are strong, after all!$"
 
-VictoryRoad_1F_Text_WallyPostEntranceBattle: @ 8236020
-	.string "Wally: I couldn't beat you today,\n"
+VictoryRoad_1F_Text_GuyPostEntranceBattle: @ 8236020
+	.string "Guy: I couldn't beat you today,\n"
 	.string "{PLAYER}, but one of these days, I'll\l"
 	.string "catch up to you!$"
 
-VictoryRoad_1F_Text_WallyIntro: @ 8236073
-	.string "Wally: Hi! {PLAYER}!\p"
+VictoryRoad_1F_Text_GuyIntro: @ 8236073
+	.string "Guy: Hi! {PLAYER}!\p"
 	.string "I've gotten stronger since that last\n"
 	.string "time! I wanted to show you, {PLAYER}!\p"
 	.string "Okay… Here I come!$"
 
-VictoryRoad_1F_Text_WallyDefeat: @ 82360DA
+VictoryRoad_1F_Text_GuyDefeat: @ 82360DA
 	.string "Wow!\n"
 	.string "{PLAYER}, you are strong, after all!$"
 
-VictoryRoad_1F_Text_WallyPostBattle: @ 82360FE
-	.string "Wally: I couldn't beat you this time,\n"
+VictoryRoad_1F_Text_GuyPostBattle: @ 82360FE
+	.string "Guy: I couldn't beat you this time,\n"
 	.string "too… But one of these days, {PLAYER},\l"
 	.string "I'm going to catch up to you…\p"
 	.string "And challenge the Pokémon League!$"
