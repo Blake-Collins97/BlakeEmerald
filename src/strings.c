@@ -275,7 +275,7 @@ const u8 *const gBagMenu_ReturnToStrings[] =
     [ITEMMENULOCATION_FAVOR_LADY]          = gText_TheField,
     [ITEMMENULOCATION_QUIZ_LADY]           = gText_TheField,
     [ITEMMENULOCATION_APPRENTICE]          = gText_TheField,
-    [ITEMMENULOCATION_Guy]               = gText_TheBattle,
+    [ITEMMENULOCATION_WALLY]               = gText_TheBattle,
     [ITEMMENULOCATION_PCBOX]               = gText_ThePC
 };
 
@@ -1808,7 +1808,7 @@ const u8 gText_StevenMatchCallName[] = _("Steven");
 const u8 gText_MayBrendanMatchCallDesc[] = _("Rad Neighbor");
 const u8 gText_NormanMatchCallDesc[] = _("Reliable One");
 const u8 gText_MomMatchCallDesc[] = _("Calm & Kind");
-const u8 gText_GuyMatchCallDesc[] = _("{PKMN} Lover");
+const u8 gText_WallyMatchCallDesc[] = _("{PKMN} Lover");
 const u8 gText_NormanMatchCallName[] = _("Dad");
 const u8 gText_MomMatchCallName[] = _("Mom");
 const u8 gText_ScottMatchCallDesc[] = _("Elusive Eyes");

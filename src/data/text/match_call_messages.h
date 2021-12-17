@@ -318,10 +318,10 @@ const u8 gText_MatchCallYoungCouple_LoisAndHal_Pokemon[] = _("Lovey-dovey Pokém
 const u8 gText_MatchCallYoungCouple_LoisAndHal_Intro1[] = _("We're lovey-dovey!");
 const u8 gText_MatchCallYoungCouple_LoisAndHal_Intro2[] = _("Forever lovey-dovey!");
 
-const u8 gText_MatchCallPkmnTrainer_Guy_Strategy[] = _("We let it all hang out.");
-const u8 gText_MatchCallPkmnTrainer_Guy_Pokemon[] = _("The 1st Pokémon I caught.");
-const u8 gText_MatchCallPkmnTrainer_Guy_Intro1[] = _("Pokémon and I have grown");
-const u8 gText_MatchCallPkmnTrainer_Guy_Intro2[] = _("stronger together.");
+const u8 gText_MatchCallPkmnTrainer_Wally_Strategy[] = _("We let it all hang out.");
+const u8 gText_MatchCallPkmnTrainer_Wally_Pokemon[] = _("The 1st Pokémon I caught.");
+const u8 gText_MatchCallPkmnTrainer_Wally_Intro1[] = _("Pokémon and I have grown");
+const u8 gText_MatchCallPkmnTrainer_Wally_Intro2[] = _("stronger together.");
 
 const u8 gText_MatchCallRockinWhiz_Roxanne_Strategy[] = _("ROCK-type power attack.");
 const u8 gText_MatchCallRockinWhiz_Roxanne_Pokemon[] = _("I prefer rock-hard Pokémon.");
@@ -454,7 +454,7 @@ const u8 *const gMatchCallFlavorTexts[REMATCH_TABLE_ENTRIES][CHECK_PAGE_ENTRY_CO
     [REMATCH_TRENT] = MCFLAVOR(Hiker_Trent),
     [REMATCH_SAWYER] = MCFLAVOR(Hiker_Sawyer),
     [REMATCH_KIRA_AND_DAN] = MCFLAVOR(YoungCouple_LoisAndHal),
-    [REMATCH_Guy_3] = MCFLAVOR(PkmnTrainer_Guy),
+    [REMATCH_WALLY_3] = MCFLAVOR(PkmnTrainer_Wally),
     [REMATCH_ROXANNE] = MCFLAVOR(RockinWhiz_Roxanne),
     [REMATCH_BRAWLY] = MCFLAVOR(TheBigHit_Brawly),
     [REMATCH_WATTSON] = MCFLAVOR(SwellShock_Wattson),

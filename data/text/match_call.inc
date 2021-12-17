@@ -2586,37 +2586,37 @@ MatchCall_Text_Brendan15:: @ 2B4D46
 	.string "with you, {PLAYER}, they get pretty\l"
 	.string "envious!$"
 
-MatchCall_Text_Guy1:: @ 2B4DE2
-	.string "Guy: Oh, {PLAYER}!\p"
+MatchCall_Text_Wally1:: @ 2B4DE2
+	.string "Wally: Oh, {PLAYER}!\p"
 	.string "I've been getting healthier and\n"
 	.string "more physically fit.\p"
 	.string "I hope I can become a Trainer like\n"
 	.string "you soon, {PLAYER}!$"
 
-MatchCall_Text_Guy2:: @ 2B4E57
-	.string "Guy: {PLAYER}, hello!\p"
+MatchCall_Text_Wally2:: @ 2B4E57
+	.string "Wally: {PLAYER}, hello!\p"
 	.string "After Rusturf Tunnel went\n"
 	.string "through, Wanda's been very happy!$"
 
-MatchCall_Text_Guy3:: @ 2B4EA5
-	.string "Guy: Oh, {PLAYER}!\p"
+MatchCall_Text_Wally3:: @ 2B4EA5
+	.string "Wally: Oh, {PLAYER}!\p"
 	.string "I… I left my uncle's place in\n"
 	.string "Verdanturf without telling anyone.\p"
 	.string "I wonder if he's furious with me…\p"
 	.string "{PLAYER}, you understand how\n"
 	.string "I feel, don't you?$"
 
-MatchCall_Text_Guy4:: @ 2B4F41
-	.string "Guy: {PLAYER}?\n"
-	.string "It's me, Guy!\p"
+MatchCall_Text_Wally4:: @ 2B4F41
+	.string "Wally: {PLAYER}?\n"
+	.string "It's me, WALLY!\p"
 	.string "The world of Trainers is amazing!\p"
 	.string "When I have my Pokémon with me,\n"
 	.string "all sorts of people say hi!\p"
 	.string "It's as if everyone's getting\n"
 	.string "connected through Pokémon!$"
 
-MatchCall_Text_Guy5:: @ 2B4FF3
-	.string "Guy: {PLAYER}? It's awesome!\n"
+MatchCall_Text_Wally5:: @ 2B4FF3
+	.string "Wally: {PLAYER}? It's awesome!\n"
 	.string "That RALTS we caught together?\l"
 	.string "It evolved, {PLAYER}!\p"
 	.string "Maybe I'm talented…\p"
@@ -2625,14 +2625,14 @@ MatchCall_Text_Guy5:: @ 2B4FF3
 	.string "After all, it's the Pokémon that\n"
 	.string "should be praised!$"
 
-MatchCall_Text_Guy6:: @ 2B50B1
+MatchCall_Text_Wally6:: @ 2B50B1
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
-	.string "Guy appears to be out of\n"
+	.string "Wally appears to be out of\n"
 	.string "the PokéNav's service area…$"
 
-MatchCall_Text_Guy7:: @ 2B5100
-	.string "Guy: Oh, {PLAYER}!\p"
+MatchCall_Text_Wally7:: @ 2B5100
+	.string "Wally: Oh, {PLAYER}!\p"
 	.string "Before I met you, I hardly ever\n"
 	.string "left my house…\p"
 	.string "But now, I'm on an adventure with\n"

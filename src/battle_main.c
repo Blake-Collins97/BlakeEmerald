@@ -476,7 +476,7 @@ static void (* const sTurnActionsFuncsTable[])(void) =
     [B_ACTION_SAFARI_POKEBLOCK] = HandleAction_ThrowPokeblock,
     [B_ACTION_SAFARI_GO_NEAR] = HandleAction_GoNear,
     [B_ACTION_SAFARI_RUN] = HandleAction_SafariZoneRun,
-    [B_ACTION_Guy_THROW] = HandleAction_GuyBallThrow,
+    [B_ACTION_WALLY_THROW] = HandleAction_WallyBallThrow,
     [B_ACTION_EXEC_SCRIPT] = HandleAction_RunBattleScript,
     [B_ACTION_TRY_FINISH] = HandleAction_TryFinish,
     [B_ACTION_FINISHED] = HandleAction_ActionFinished,
@@ -4256,7 +4256,7 @@ static void HandleTurnActionSelectionState(void)
                     gHitMarker |= HITMARKER_RUN;
                     gBattleCommunication[gActiveBattler]++;
                     break;
-                case B_ACTION_Guy_THROW:
+                case B_ACTION_WALLY_THROW:
                     gBattleCommunication[gActiveBattler]++;
                     break;
                 case B_ACTION_DEBUG:
@@ -5071,7 +5071,7 @@ static void HandleEndTurn_FinishBattle(void)
                                   | BATTLE_TYPE_FIRST_BATTLE
                                   | BATTLE_TYPE_SAFARI
                                   | BATTLE_TYPE_EREADER_TRAINER
-                                  | BATTLE_TYPE_Guy_TUTORIAL
+                                  | BATTLE_TYPE_WALLY_TUTORIAL
                                   | BATTLE_TYPE_FRONTIER)))
         {
             for (gActiveBattler = 0; gActiveBattler < gBattlersCount; gActiveBattler++)
@@ -5100,7 +5100,7 @@ static void HandleEndTurn_FinishBattle(void)
                                   | BATTLE_TYPE_SAFARI
                                   | BATTLE_TYPE_FRONTIER
                                   | BATTLE_TYPE_EREADER_TRAINER
-                                  | BATTLE_TYPE_Guy_TUTORIAL))
+                                  | BATTLE_TYPE_WALLY_TUTORIAL))
             && gBattleResults.shinyWildMon)
         {
             TryPutBreakingNewsOnAir();

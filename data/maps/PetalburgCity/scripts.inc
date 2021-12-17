@@ -1,6 +1,6 @@
-.set LOCALID_Guy, 2
+.set LOCALID_WALLY, 2
 .set LOCALID_BOY, 3
-.set LOCALID_GuyS_DAD, 5
+.set LOCALID_WALLYS_DAD, 5
 .set LOCALID_GYM_BOY, 8
 .set LOCALID_SCOTT, 9
 
@@ -35,23 +35,23 @@ PetalburgCity_EventScript_SetGymDoorsUnlocked:: @ 81DC316
 	return
 
 PetalburgCity_OnFrame: @ 81DC31C
-	map_script_2 VAR_PETALBURG_CITY_STATE, 2, PetalburgCity_EventScript_GuyTutorial
-	map_script_2 VAR_PETALBURG_CITY_STATE, 4, PetalburgCity_EventScript_WalkToGuyHouse
+	map_script_2 VAR_PETALBURG_CITY_STATE, 2, PetalburgCity_EventScript_WallyTutorial
+	map_script_2 VAR_PETALBURG_CITY_STATE, 4, PetalburgCity_EventScript_WalkToWallyHouse
 	.2byte 0
 
-PetalburgCity_EventScript_GuyTutorial:: @ 81DC32E
+PetalburgCity_EventScript_WallyTutorial:: @ 81DC32E
 	lockall
 	special SavePlayerParty
 	special PutZigzagoonInPlayerParty
-	applymovement LOCALID_Guy, PetalburgCity_Movement_GuyTutorialGuy
-	applymovement OBJ_EVENT_ID_PLAYER, PetalburgCity_Movement_GuyTutorialPlayer
+	applymovement LOCALID_WALLY, PetalburgCity_Movement_WallyTutorialWally
+	applymovement OBJ_EVENT_ID_PLAYER, PetalburgCity_Movement_WallyTutorialPlayer
 	waitmovement 0
 	msgbox Route102_Text_WatchMeCatchPokemon, MSGBOX_DEFAULT
-	special StartGuyTutorialBattle
+	special StartWallyTutorialBattle
 	waitstate
-	msgbox Route102_Text_GuyIDidIt, MSGBOX_DEFAULT
-	applymovement LOCALID_Guy, Common_Movement_WalkInPlaceFastestLeft, MAP_PETALBURG_CITY
-	waitmovement LOCALID_Guy, MAP_PETALBURG_CITY
+	msgbox Route102_Text_WallyIDidIt, MSGBOX_DEFAULT
+	applymovement LOCALID_WALLY, Common_Movement_WalkInPlaceFastestLeft, MAP_PETALBURG_CITY
+	waitmovement LOCALID_WALLY, MAP_PETALBURG_CITY
 	msgbox Route102_Text_LetsGoBack, MSGBOX_DEFAULT
 	closemessage
 	clearflag FLAG_HIDE_MAP_NAME_POPUP
@@ -65,27 +65,27 @@ PetalburgCity_EventScript_GuyTutorial:: @ 81DC32E
 	releaseall
 	end
 
-PetalburgCity_EventScript_WalkToGuyHouse:: @ 81DC390
+PetalburgCity_EventScript_WalkToWallyHouse:: @ 81DC390
 	lockall
 	setflag FLAG_HIDE_MAP_NAME_POPUP
-	applymovement LOCALID_GuyS_DAD, PetalburgCity_Movement_WalkToGuyHouseGuysDad
-	applymovement OBJ_EVENT_ID_PLAYER, PetalburgCity_Movement_WalkToGuyHousePlayer
+	applymovement LOCALID_WALLYS_DAD, PetalburgCity_Movement_WalkToWallyHouseWallysDad
+	applymovement OBJ_EVENT_ID_PLAYER, PetalburgCity_Movement_WalkToWallyHousePlayer
 	waitmovement 0
 	setvar VAR_0x8004, 7
 	setvar VAR_0x8005, 5
 	opendoor VAR_0x8004, VAR_0x8005
 	waitdooranim
-	applymovement LOCALID_GuyS_DAD, PetalburgCity_Movement_WalkInsideHouseGuysDad
+	applymovement LOCALID_WALLYS_DAD, PetalburgCity_Movement_WalkInsideHouseWallysDad
 	applymovement OBJ_EVENT_ID_PLAYER, PetalburgCity_Movement_WalkInsideHousePlayer
 	waitmovement 0
-	setflag FLAG_HIDE_PETALBURG_CITY_GuyS_DAD
+	setflag FLAG_HIDE_PETALBURG_CITY_WALLYS_DAD
 	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_PETALBURG_CITY
 	closedoor VAR_0x8004, VAR_0x8005
 	waitdooranim
 	clearflag FLAG_HIDE_MAP_NAME_POPUP
 	fadedefaultbgm
 	clearflag FLAG_DONT_TRANSITION_MUSIC
-	warp MAP_PETALBURG_CITY_GuyS_HOUSE, 255, 2, 4
+	warp MAP_PETALBURG_CITY_WALLYS_HOUSE, 255, 2, 4
 	waitstate
 	releaseall
 	end
@@ -100,11 +100,11 @@ PetalburgCity_EventScript_Boy:: @ 81DC3E6
 	release
 	end
 
-PetalburgCity_EventScript_GuysMom:: @ 81DC3FD
-	msgbox PetalburgCity_Text_WhereIsGuy, MSGBOX_NPC
+PetalburgCity_EventScript_WallysMom:: @ 81DC3FD
+	msgbox PetalburgCity_Text_WhereIsWally, MSGBOX_NPC
 	end
 
-PetalburgCity_Movement_WalkToGuyHousePlayer: @ 81DC406
+PetalburgCity_Movement_WalkToWallyHousePlayer: @ 81DC406
 	delay_8
 	walk_down
 	walk_down
@@ -129,7 +129,7 @@ PetalburgCity_Movement_WalkInsideHousePlayer: @ 81DC418
 	walk_up
 	step_end
 
-PetalburgCity_Movement_WalkToGuyHouseGuysDad: @ 81DC41B
+PetalburgCity_Movement_WalkToWallyHouseWallysDad: @ 81DC41B
 	delay_8
 	walk_down
 	walk_down
@@ -149,12 +149,12 @@ PetalburgCity_Movement_WalkToGuyHouseGuysDad: @ 81DC41B
 	walk_up
 	step_end
 
-PetalburgCity_Movement_WalkInsideHouseGuysDad: @ 81DC42D
+PetalburgCity_Movement_WalkInsideHouseWallysDad: @ 81DC42D
 	walk_up
 	set_invisible
 	step_end
 
-PetalburgCity_Movement_GuyTutorialPlayer: @ 81DC430
+PetalburgCity_Movement_WallyTutorialPlayer: @ 81DC430
 	delay_8
 	walk_down
 	walk_down
@@ -189,7 +189,7 @@ PetalburgCity_Movement_GuyTutorialPlayer: @ 81DC430
 	walk_in_place_fastest_right
 	step_end
 
-PetalburgCity_Movement_GuyTutorialGuy: @ 81DC451
+PetalburgCity_Movement_WallyTutorialWally: @ 81DC451
 	delay_8
 	walk_down
 	walk_down
@@ -240,8 +240,8 @@ PetalburgCity_EventScript_Gentleman:: @ 81DC488
 	msgbox PetalburgCity_Text_FullPartyExplanation, MSGBOX_NPC
 	end
 
-PetalburgCity_EventScript_GuyHouseSign:: @ 81DC491
-	msgbox PetalburgCity_Text_GuyHouseSign, MSGBOX_SIGN
+PetalburgCity_EventScript_WallyHouseSign:: @ 81DC491
+	msgbox PetalburgCity_Text_WallyHouseSign, MSGBOX_SIGN
 	end
 
 PetalburgCity_EventScript_ShowGymToPlayer0:: @ 81DC49A
@@ -720,8 +720,8 @@ PetalburgCity_EventScript_GymBoy:: @ 81DC82E
 	msgbox PetalburgCity_Text_AreYouRookieTrainer, MSGBOX_NPC
 	end
 
-PetalburgCity_Text_WhereIsGuy: @ 81DC837
-	.string "Where has our Guy gone?\p"
+PetalburgCity_Text_WhereIsWally: @ 81DC837
+	.string "Where has our Wally gone?\p"
 	.string "We have to leave for Verdanturf Town\n"
 	.string "very soon…$"
 
@@ -762,8 +762,8 @@ PetalburgCity_Text_CitySign: @ 81DCAF1
 	.string "Petalburg City\n"
 	.string "“Where people mingle with nature.”$"
 
-PetalburgCity_Text_GuyHouseSign: @ 81DCB23
-	.string "Guy's House$"
+PetalburgCity_Text_WallyHouseSign: @ 81DCB23
+	.string "Wally's House$"
 
 PetalburgCity_Text_AreYouATrainer: @ 81DCB31
 	.string "Excuse me!\p"

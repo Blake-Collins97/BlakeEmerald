@@ -1041,7 +1041,7 @@ static void AnimTask_ThrowBall_Step(u8 taskId)
         DestroyAnimVisualTask(taskId);
 }
 
-// Safari Zone throw / Guy's throw
+// Safari Zone throw / Wally's throw
 void AnimTask_ThrowBall_StandingTrainer(u8 taskId)
 {
     s16 x, y;
@@ -1049,7 +1049,7 @@ void AnimTask_ThrowBall_StandingTrainer(u8 taskId)
     u8 subpriority;
     u8 spriteId;
 
-    if (gBattleTypeFlags & BATTLE_TYPE_Guy_TUTORIAL)
+    if (gBattleTypeFlags & BATTLE_TYPE_WALLY_TUTORIAL)
     {
         x = 32;
         y = 11;

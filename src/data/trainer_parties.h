@@ -1,7 +1,7 @@
 
-// Guy
+// Wally
 
-static const struct TrainerMonItemCustomMoves sParty_GuyMauville[] = {
+static const struct TrainerMonItemCustomMoves sParty_WallyMauville[] = {
     {
     .lvl = 0,
     .species = SPECIES_ROSELIA,
@@ -35,7 +35,7 @@ static const struct TrainerMonItemCustomMoves sParty_GuyMauville[] = {
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_GuyVR2[] = {
+static const struct TrainerMonItemCustomMoves sParty_WallyVR2[] = {
     {
     .lvl = 1,
     .species = SPECIES_GARCHOMP,
@@ -86,7 +86,7 @@ static const struct TrainerMonItemCustomMoves sParty_GuyVR2[] = {
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_GuyVR3[] = {
+static const struct TrainerMonItemCustomMoves sParty_WallyVR3[] = {
     {
     .lvl = 1,
     .species = SPECIES_GARCHOMP,
@@ -137,7 +137,7 @@ static const struct TrainerMonItemCustomMoves sParty_GuyVR3[] = {
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_GuyVR4[] = {
+static const struct TrainerMonItemCustomMoves sParty_WallyVR4[] = {
     {
     .lvl = 5,
     .species = SPECIES_GARCHOMP,
@@ -188,7 +188,7 @@ static const struct TrainerMonItemCustomMoves sParty_GuyVR4[] = {
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_GuyVR5[] = {
+static const struct TrainerMonItemCustomMoves sParty_WallyVR5[] = {
     {
     .lvl = 5,
     .species = SPECIES_GARCHOMP,
@@ -239,7 +239,7 @@ static const struct TrainerMonItemCustomMoves sParty_GuyVR5[] = {
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_GuyVR1[] = {
+static const struct TrainerMonItemCustomMoves sParty_WallyVR1[] = {
     {
     .lvl = 1,
     .species = SPECIES_GARCHOMP,

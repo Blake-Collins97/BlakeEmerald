@@ -62,7 +62,7 @@ void HandleAction_SafariZoneBallThrow(void);
 void HandleAction_ThrowPokeblock(void);
 void HandleAction_GoNear(void);
 void HandleAction_SafariZoneRun(void);
-void HandleAction_GuyBallThrow(void);
+void HandleAction_WallyBallThrow(void);
 void HandleAction_TryFinish(void);
 void HandleAction_NothingIsFainted(void);
 void HandleAction_ActionFinished(void);
