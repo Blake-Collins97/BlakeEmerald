@@ -275,7 +275,7 @@ const u8 *const gBagMenu_ReturnToStrings[] =
     [ITEMMENULOCATION_FAVOR_LADY]          = gText_TheField,
     [ITEMMENULOCATION_QUIZ_LADY]           = gText_TheField,
     [ITEMMENULOCATION_APPRENTICE]          = gText_TheField,
-    [ITEMMENULOCATION_WALLY]               = gText_TheBattle,
+    [ITEMMENULOCATION_Guy]               = gText_TheBattle,
     [ITEMMENULOCATION_PCBOX]               = gText_ThePC
 };
 
@@ -616,12 +616,12 @@ const u8 gText_BagIsFull[] = _("The Bag is full.{PAUSE_UNTIL_PRESS}");
 const u8 gText_MailToBagMessageErased[] = _("The Mail was returned to the Bag\nwith its message erased.{PAUSE_UNTIL_PRESS}");
 const u8 gText_Dad[] = _("Dad");
 const u8 gText_Mom[] = _("Mom");
-const u8 gText_Wallace[] = _("Wallace");
+const u8 gText_Blake[] = _("Blake");
 const u8 gText_Steven[] = _("Steven");
 const u8 gText_Brawly[] = _("Brawly");
 const u8 gText_Winona[] = _("Winona");
-const u8 gText_Phoebe[] = _("Phoebe");
-const u8 gText_Glacia[] = _("Glacia");
+const u8 gText_Sharni[] = _("Sharni");
+const u8 gText_Chelsea[] = _("Chelsea");
 const u8 gText_Petalburg[] = _("Petalburg");
 const u8 gText_Slateport[] = _("Slateport");
 const u8 gText_Littleroot[] = _("LITTLEROOT"); // Unused. Given the context, Briney may at one point have been able to sail the player here
@@ -1806,10 +1806,10 @@ const u8 gText_MrStoneMatchCallName[] = _("Mr. Stone");
 const u8 gText_StevenMatchCallDesc[] = _("Hard As Rock");
 const u8 gText_StevenMatchCallName[] = _("Steven");
 const u8 gText_MayBrendanMatchCallDesc[] = _("Rad Neighbor");
-const u8 gText_NormanMatchCallDesc[] = _("Reliable One");
+const u8 gText_GrubMatchCallDesc[] = _("Reliable One");
 const u8 gText_MomMatchCallDesc[] = _("Calm & Kind");
-const u8 gText_WallyMatchCallDesc[] = _("{PKMN} Lover");
-const u8 gText_NormanMatchCallName[] = _("Dad");
+const u8 gText_GuyMatchCallDesc[] = _("{PKMN} Lover");
+const u8 gText_GrubMatchCallName[] = _("Dad");
 const u8 gText_MomMatchCallName[] = _("Mom");
 const u8 gText_ScottMatchCallDesc[] = _("Elusive Eyes");
 const u8 gText_ScottMatchCallName[] = _("Scott");
@@ -1819,7 +1819,7 @@ const u8 gText_WattsonMatchCallDesc[] = _("Swell Shock");
 const u8 gText_FlanneryMatchCallDesc[] = _("Passion Burn");
 const u8 gText_WinonaMatchCallDesc[] = _("Sky Tamer");
 const u8 gText_TateLizaMatchCallDesc[] = _("Mystic Duo");
-const u8 gText_JuanMatchCallDesc[] = _("Dandy Charm");
+const u8 gText_CodyMatchCallDesc[] = _("Dandy Charm");
 const u8 gText_EliteFourMatchCallDesc[] = _("Elite Four");
 const u8 gText_ChampionMatchCallDesc[] = _("Champion");
 const u8 gText_ProfBirchMatchCallDesc[] = _("{PKMN} Prof.");
@@ -1990,7 +1990,7 @@ const u8 gText_WeatherBall[] = _("Weather Ball");
 const u8 gText_AirSlash[] = _("Air Slash");
 const u8 gText_StompingTantrum[] = _("Stomping Tantrum");
 
-// Unlocked after beating Norman
+// Unlocked after beating Grub
 const u8 gText_IronHead[] = _("Iron Head");
 const u8 gText_AquaTail[] = _("Aqua Tail");
 const u8 gText_PowerGem[] = _("Power Gem");

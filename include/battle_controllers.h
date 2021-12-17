@@ -274,8 +274,8 @@ void SetControllerToPlayerPartner(void);
 // safari controller
 void SetControllerToSafari(void);
 
-// wally controller
-void SetControllerToWally(void);
+// Guy controller
+void SetControllerToGuy(void);
 
 // recorded opponent controller
 void SetControllerToRecordedOpponent(void);

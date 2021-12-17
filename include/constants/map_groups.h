@@ -126,7 +126,7 @@
 #define MAP_PACIFIDLOG_TOWN_HOUSE5            (6 | (7 << 8))
 
 // gMapGroup_IndoorPetalburg
-#define MAP_PETALBURG_CITY_WALLYS_HOUSE      (0 | (8 << 8))
+#define MAP_PETALBURG_CITY_GuyS_HOUSE      (0 | (8 << 8))
 #define MAP_PETALBURG_CITY_GYM               (1 | (8 << 8))
 #define MAP_PETALBURG_CITY_HOUSE1            (2 | (8 << 8))
 #define MAP_PETALBURG_CITY_HOUSE2            (3 | (8 << 8))
@@ -249,10 +249,10 @@
 #define MAP_SOOTOPOLIS_CITY_MYSTERY_EVENTS_HOUSE_B1F (14 | (15 << 8))
 
 // gMapGroup_IndoorEverGrande
-#define MAP_EVER_GRANDE_CITY_SIDNEYS_ROOM      (0 | (16 << 8))
-#define MAP_EVER_GRANDE_CITY_PHOEBES_ROOM      (1 | (16 << 8))
-#define MAP_EVER_GRANDE_CITY_GLACIAS_ROOM      (2 | (16 << 8))
-#define MAP_EVER_GRANDE_CITY_DRAKES_ROOM       (3 | (16 << 8))
+#define MAP_EVER_GRANDE_CITY_DanS_ROOM      (0 | (16 << 8))
+#define MAP_EVER_GRANDE_CITY_SharniS_ROOM      (1 | (16 << 8))
+#define MAP_EVER_GRANDE_CITY_ChelseaS_ROOM      (2 | (16 << 8))
+#define MAP_EVER_GRANDE_CITY_RayS_ROOM       (3 | (16 << 8))
 #define MAP_EVER_GRANDE_CITY_CHAMPIONS_ROOM    (4 | (16 << 8))
 #define MAP_EVER_GRANDE_CITY_HALL1             (5 | (16 << 8))
 #define MAP_EVER_GRANDE_CITY_HALL2             (6 | (16 << 8))

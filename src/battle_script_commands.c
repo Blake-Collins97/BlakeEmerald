@@ -1005,7 +1005,7 @@ static const u8 sForbiddenMoves[MOVES_COUNT] =
     [MOVE_FURY_SWIPES] = FORBIDDEN_PARENTAL_BOND,
     [MOVE_GEAR_GRIND] = FORBIDDEN_PARENTAL_BOND,
     [MOVE_GEOMANCY] = FORBIDDEN_SLEEP_TALK | FORBIDDEN_PARENTAL_BOND,
-    [MOVE_GLACIAL_LANCE] = FORBIDDEN_METRONOME,
+    [MOVE_ChelseaL_LANCE] = FORBIDDEN_METRONOME,
     [MOVE_GLITZY_GLOW] = FORBIDDEN_METRONOME,
     [MOVE_GRAV_APPLE] = FORBIDDEN_METRONOME,
     [MOVE_GUILLOTINE] = FORBIDDEN_PARENTAL_BOND,
@@ -1993,7 +1993,7 @@ static void Cmd_critcalc(void)
     s32 critChance = CalcCritChanceStage(gBattlerAttacker, gBattlerTarget, gCurrentMove, TRUE);
     gPotentialItemEffectBattler = gBattlerAttacker;
 
-    if (gBattleTypeFlags & (BATTLE_TYPE_WALLY_TUTORIAL | BATTLE_TYPE_FIRST_BATTLE))
+    if (gBattleTypeFlags & (BATTLE_TYPE_Guy_TUTORIAL | BATTLE_TYPE_FIRST_BATTLE))
         gIsCriticalHit = FALSE;
     else if (critChance == -1)
         gIsCriticalHit = FALSE;
@@ -13388,11 +13388,11 @@ static void Cmd_handleballthrow(void)
         MarkBattlerForControllerExec(gActiveBattler);
         gBattlescriptCurrInstr = BattleScript_TrainerBallBlock;
     }
-    else if (gBattleTypeFlags & BATTLE_TYPE_WALLY_TUTORIAL)
+    else if (gBattleTypeFlags & BATTLE_TYPE_Guy_TUTORIAL)
     {
         BtlController_EmitBallThrowAnim(0, BALL_3_SHAKES_SUCCESS);
         MarkBattlerForControllerExec(gActiveBattler);
-        gBattlescriptCurrInstr = BattleScript_WallyBallThrow;
+        gBattlescriptCurrInstr = BattleScript_GuyBallThrow;
     }
     else
     {

@@ -14,7 +14,7 @@
 .set LOCALID_BOY_2, 15
 .set LOCALID_MAXIE, 16
 .set LOCALID_ARCHIE, 17
-.set LOCALID_WALLACE, 18
+.set LOCALID_Blake, 18
 
 SootopolisCity_MapScripts:: @ 81E565C
 	map_script MAP_SCRIPT_ON_LOAD, SootopolisCity_OnLoad
@@ -149,7 +149,7 @@ SootopolisCity_EventScript_SetEnterCaveOfOriginObjPos:: @ 81E584C
 
 SootopolisCity_EventScript_SetExitCaveOfOriginObjPos:: @ 81E585B
 	setobjectxyperm LOCALID_EXPERT, 30, 18
-	setobjectxyperm LOCALID_WALLACE, 31, 18
+	setobjectxyperm LOCALID_Blake, 31, 18
 	setobjectxyperm LOCALID_STEVEN, 32, 18
 	end
 
@@ -158,27 +158,27 @@ SootopolisCity_EventScript_SetOutsideGymObjPos:: @ 81E5871
 	setobjectxyperm LOCALID_STEVEN, 29, 33
 	setobjectxyperm LOCALID_MAXIE, 33, 35
 	setobjectxyperm LOCALID_ARCHIE, 34, 35
-	compare VAR_SOOTOPOLIS_WALLACE_STATE, 0
-	call_if_eq SootopolisCity_EventScript_SetWallaceMiddle
-	compare VAR_SOOTOPOLIS_WALLACE_STATE, 1
-	call_if_eq SootopolisCity_EventScript_SetWallaceRight
-	compare VAR_SOOTOPOLIS_WALLACE_STATE, 2
-	call_if_eq SootopolisCity_EventScript_SetWallaceLeft
+	compare VAR_SOOTOPOLIS_Blake_STATE, 0
+	call_if_eq SootopolisCity_EventScript_SetBlakeMiddle
+	compare VAR_SOOTOPOLIS_Blake_STATE, 1
+	call_if_eq SootopolisCity_EventScript_SetBlakeRight
+	compare VAR_SOOTOPOLIS_Blake_STATE, 2
+	call_if_eq SootopolisCity_EventScript_SetBlakeLeft
 	return
 
-SootopolisCity_EventScript_SetWallaceMiddle:: @ 81E58AF
-	setobjectxyperm LOCALID_WALLACE, 31, 33
-	setobjectmovementtype LOCALID_WALLACE, MOVEMENT_TYPE_FACE_DOWN
+SootopolisCity_EventScript_SetBlakeMiddle:: @ 81E58AF
+	setobjectxyperm LOCALID_Blake, 31, 33
+	setobjectmovementtype LOCALID_Blake, MOVEMENT_TYPE_FACE_DOWN
 	return
 
-SootopolisCity_EventScript_SetWallaceRight:: @ 81E58BB
-	setobjectxyperm LOCALID_WALLACE, 32, 33
-	setobjectmovementtype LOCALID_WALLACE, MOVEMENT_TYPE_FACE_DOWN
+SootopolisCity_EventScript_SetBlakeRight:: @ 81E58BB
+	setobjectxyperm LOCALID_Blake, 32, 33
+	setobjectmovementtype LOCALID_Blake, MOVEMENT_TYPE_FACE_DOWN
 	return
 
-SootopolisCity_EventScript_SetWallaceLeft:: @ 81E58C7
-	setobjectxyperm LOCALID_WALLACE, 30, 33
-	setobjectmovementtype LOCALID_WALLACE, MOVEMENT_TYPE_FACE_DOWN
+SootopolisCity_EventScript_SetBlakeLeft:: @ 81E58C7
+	setobjectxyperm LOCALID_Blake, 30, 33
+	setobjectmovementtype LOCALID_Blake, MOVEMENT_TYPE_FACE_DOWN
 	return
 
 SootopolisCity_EventScript_SetExpertUnblockCaveEntrance:: @ 81E58D3
@@ -955,17 +955,17 @@ SootopolisCity_EventScript_Steven:: @ 81E6166
 	waitmovement 0
 	call_if_unset FLAG_STEVEN_GUIDES_TO_CAVE_OF_ORIGIN, SootopolisCity_EventScript_StevenLeadPlayerCaveOfOrigin
 	compare VAR_SOOTOPOLIS_CITY_STATE, 2
-	goto_if_eq SootopolisCity_EventScript_StevenHelpWallace
+	goto_if_eq SootopolisCity_EventScript_StevenHelpBlake
 	compare VAR_SOOTOPOLIS_CITY_STATE, 3
-	goto_if_eq SootopolisCity_EventScript_StevenHelpedWallace
+	goto_if_eq SootopolisCity_EventScript_StevenHelpedBlake
 	compare VAR_SOOTOPOLIS_CITY_STATE, 4
-	goto_if_eq SootopolisCity_EventScript_StevenHelpedWallace
+	goto_if_eq SootopolisCity_EventScript_StevenHelpedBlake
 	goto_if_set FLAG_SOOTOPOLIS_ARCHIE_MAXIE_LEAVE, SootopolisCity_EventScript_StevenMaxieArchieLeft
 	msgbox SootopolisCity_Text_SoThatsRayquaza, MSGBOX_DEFAULT
 	releaseall
 	end
 
-SootopolisCity_EventScript_StevenHelpWallace:: @ 81E61AE
+SootopolisCity_EventScript_StevenHelpBlake:: @ 81E61AE
 	msgbox SootopolisCity_Text_KnowWhatsNeededToHelpHim, MSGBOX_DEFAULT
 	releaseall
 	end
@@ -975,7 +975,7 @@ SootopolisCity_EventScript_StevenMaxieArchieLeft:: @ 81E61B8
 	releaseall
 	end
 
-SootopolisCity_EventScript_StevenHelpedWallace:: @ 81E61C2
+SootopolisCity_EventScript_StevenHelpedBlake:: @ 81E61C2
 	msgbox SootopolisCity_Text_NeverBeenToSkyPillar, MSGBOX_DEFAULT
 	releaseall
 	end
@@ -998,7 +998,7 @@ SootopolisCity_EventScript_StevenLeadPlayerCaveOfOrigin:: @ 81E61CC
 	applymovement LOCALID_STEVEN, SootopolisCity_Movement_StevenArriveCaveEntrance
 	applymovement OBJ_EVENT_ID_PLAYER, SootopolisCity_Movement_PlayerArriveCaveEntrance
 	waitmovement 0
-	msgbox SootopolisCity_Text_HereWereAreHelpWallace, MSGBOX_DEFAULT
+	msgbox SootopolisCity_Text_HereWereAreHelpBlake, MSGBOX_DEFAULT
 	closemessage
 	setflag FLAG_STEVEN_GUIDES_TO_CAVE_OF_ORIGIN
 	applymovement OBJ_EVENT_ID_PLAYER, SootopolisCity_Movement_PlayerEnterCaveOfOrigin
@@ -1361,7 +1361,7 @@ SootopolisCity_EventScript_ManiacRayquaza:: @ 81E643C
 	releaseall
 	end
 
-SootopolisCity_EventScript_Wallace:: @ 81E6446
+SootopolisCity_EventScript_Blake:: @ 81E6446
 	lock
 	faceplayer
 	compare VAR_SOOTOPOLIS_CITY_STATE, 4
@@ -1379,26 +1379,26 @@ SootopolisCity_EventScript_GiveWaterfall:: @ 81E646F
 	msgbox SootopolisCity_Text_ExplainWaterfallGoToGym, MSGBOX_DEFAULT
 	closemessage
 	compare VAR_FACING, DIR_NORTH
-	call_if_eq SootopolisCity_EventScript_WallaceMoveFromGym
+	call_if_eq SootopolisCity_EventScript_BlakeMoveFromGym
 	compare VAR_FACING, DIR_EAST
-	call_if_eq SootopolisCity_EventScript_WallaceMoveFromGym
+	call_if_eq SootopolisCity_EventScript_BlakeMoveFromGym
 	compare VAR_FACING, DIR_WEST
-	call_if_eq SootopolisCity_EventScript_WallaceMoveFromGymWest
+	call_if_eq SootopolisCity_EventScript_BlakeMoveFromGymWest
 	release
 	end
 
-SootopolisCity_EventScript_WallaceMoveFromGym:: @ 81E64B2
-	applymovement LOCALID_WALLACE, SootopolisCity_Movement_WallaceMoveFromGym
+SootopolisCity_EventScript_BlakeMoveFromGym:: @ 81E64B2
+	applymovement LOCALID_Blake, SootopolisCity_Movement_BlakeMoveFromGym
 	waitmovement 0
-	copyobjectxytoperm LOCALID_WALLACE
-	setvar VAR_SOOTOPOLIS_WALLACE_STATE, 1
+	copyobjectxytoperm LOCALID_Blake
+	setvar VAR_SOOTOPOLIS_Blake_STATE, 1
 	return
 
-SootopolisCity_EventScript_WallaceMoveFromGymWest:: @ 81E64C5
-	applymovement LOCALID_WALLACE, SootopolisCity_Movement_WallaceMoveFromGymWest
+SootopolisCity_EventScript_BlakeMoveFromGymWest:: @ 81E64C5
+	applymovement LOCALID_Blake, SootopolisCity_Movement_BlakeMoveFromGymWest
 	waitmovement 0
-	copyobjectxytoperm LOCALID_WALLACE
-	setvar VAR_SOOTOPOLIS_WALLACE_STATE, 2
+	copyobjectxytoperm LOCALID_Blake
+	setvar VAR_SOOTOPOLIS_Blake_STATE, 2
 	return
 
 SootopolisCity_EventScript_GoToSkyPillar:: @ 81E64D8
@@ -1411,12 +1411,12 @@ SootopolisCity_EventScript_GoToGym:: @ 81E64E2
 	release
 	end
 
-SootopolisCity_Movement_WallaceMoveFromGym: @ 81E64EC
+SootopolisCity_Movement_BlakeMoveFromGym: @ 81E64EC
 	walk_right
 	walk_in_place_fastest_down
 	step_end
 
-SootopolisCity_Movement_WallaceMoveFromGymWest: @ 81E64EF
+SootopolisCity_Movement_BlakeMoveFromGymWest: @ 81E64EF
 	walk_left
 	walk_in_place_fastest_down
 	step_end
@@ -1477,7 +1477,7 @@ SootopolisCity_Movement_DestroyTask:: @ 81E656D
 
 SootopolisCity_Text_GymSign: @ 81E656F
 	.string "Sootopolis City Pokémon Gym\n"
-	.string "Leader: Juan\p"
+	.string "Leader: Cody\p"
 	.string "“The Gym Leader with the beauty\n"
 	.string "of pure water!”$"
 
@@ -1610,7 +1610,7 @@ SootopolisCity_Text_LeadSuperiorTrainerToCave: @ 81E6DFE
 	.string "A Trainer who has knowledge and\n"
 	.string "experience of many kinds of Pokémon…\p"
 	.string "If such a person were to appear, I was\n"
-	.string "instructed by Wallace to lead that\l"
+	.string "instructed by Blake to lead that\l"
 	.string "Trainer to this cave.$"
 
 SootopolisCity_Text_AwakenedPokemonClash: @ 81E6ED4
@@ -1727,10 +1727,10 @@ SootopolisCity_Text_DoesThisMakeYourFearPokemon: @ 81E7737
 	.string "…Why am I asking you this?\n"
 	.string "You already know.$"
 
-SootopolisCity_Text_HereWereAreHelpWallace: @ 81E77F0
+SootopolisCity_Text_HereWereAreHelpBlake: @ 81E77F0
 	.string "Steven: Okay, here we are!\p"
 	.string "Inside here you'll find someone named\n"
-	.string "Wallace.\p"
+	.string "Blake.\p"
 	.string "I think you have what's needed to\n"
 	.string "help him…$"
 
@@ -1755,7 +1755,7 @@ SootopolisCity_Text_MaxieArchieLeft: @ 81E794B
 	.string "return those Orbs…$"
 
 SootopolisCity_Text_HaventYouScaledSkyPillar: @ 81E79C8
-	.string "Wallace: Oh?\n"
+	.string "Blake: Oh?\n"
 	.string "{PLAYER}{KUN}?\p"
 	.string "Haven't you scaled the Sky Pillar\n"
 	.string "yet?\p"
@@ -1763,14 +1763,14 @@ SootopolisCity_Text_HaventYouScaledSkyPillar: @ 81E79C8
 	.string "the top of the Sky Pillar…$"
 
 SootopolisCity_Text_AquaMagmaDidntMeanHarm: @ 81E7A3E
-	.string "Wallace: {PLAYER}{KUN}…\p"
+	.string "Blake: {PLAYER}{KUN}…\p"
 	.string "The leaders of Team Magma and Aqua,\n"
 	.string "I don't think they meant harm.\p"
 	.string "It wouldn't hurt to hear what they\n"
 	.string "have to say for themselves.$"
 
 SootopolisCity_Text_ThankYouForHelpAcceptThis: @ 81E7ACF
-	.string "Wallace: {PLAYER}{KUN}…\n"
+	.string "Blake: {PLAYER}{KUN}…\n"
 	.string "My eyes didn't deceive me.\p"
 	.string "Thanks to your help, Sootopolis…\n"
 	.string "No, all of Hoenn was saved.\p"
@@ -1792,6 +1792,6 @@ SootopolisCity_Text_ExplainWaterfallGoToGym: @ 81E7B86
 	.string "that door.$"
 
 SootopolisCity_Text_DazzledByMentor: @ 81E7CBC
-	.string "Wallace: I'm sure that you will be\n"
+	.string "Blake: I'm sure that you will be\n"
 	.string "dazzled by my mentor's breathtakingly\l"
 	.string "elegant battle style.$"

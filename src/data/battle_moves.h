@@ -8745,7 +8745,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_SPECIAL,
     },
 
-    [MOVE_GLACIATE] =
+    [MOVE_ChelseaTE] =
     {
         #ifdef REBALANCED_VERSION
             .power = 80,
@@ -11747,7 +11747,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .split = SPLIT_PHYSICAL,
     },
 
-    [MOVE_GLACIAL_LANCE] =
+    [MOVE_ChelseaL_LANCE] =
     {
         .effect = EFFECT_HIT,
         .power = 130,

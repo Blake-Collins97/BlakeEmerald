@@ -1,6 +1,6 @@
-.set LOCALID_NORMAN, 1
-.set LOCALID_WALLY, 10
-.set LOCALID_WALLYS_DAD, 11
+.set LOCALID_Grub, 1
+.set LOCALID_Guy, 10
+.set LOCALID_GuyS_DAD, 11
 
 PetalburgCity_Gym_MapScripts:: @ 8204889
 	map_script MAP_SCRIPT_ON_LOAD, PetalburgCity_Gym_OnLoad
@@ -43,28 +43,28 @@ PetalburgCity_Gym_EventScript_UnlockAllDoors:: @ 82048FF
 
 PetalburgCity_Gym_OnTransition: @ 820492D
 	compare VAR_PETALBURG_GYM_STATE, 1
-	call_if_eq PetalburgCity_Gym_EventScript_MoveWallyToEntrance
+	call_if_eq PetalburgCity_Gym_EventScript_MoveGuyToEntrance
 	compare VAR_PETALBURG_GYM_STATE, 6
-	call_if_lt PetalburgCity_Gym_EventScript_MoveNormanToEntrance
-	call_if_set FLAG_SYS_GAME_CLEAR, PetalburgCity_Gym_EventScript_CheckNormanForRematch
+	call_if_lt PetalburgCity_Gym_EventScript_MoveGrubToEntrance
+	call_if_set FLAG_SYS_GAME_CLEAR, PetalburgCity_Gym_EventScript_CheckGrubForRematch
 	end
 
-PetalburgCity_Gym_EventScript_MoveWallyToEntrance:: @ 820494D
-	setobjectxyperm LOCALID_WALLY, 5, 108
+PetalburgCity_Gym_EventScript_MoveGuyToEntrance:: @ 820494D
+	setobjectxyperm LOCALID_Guy, 5, 108
 	return
 
-PetalburgCity_Gym_EventScript_MoveNormanToEntrance:: @ 8204955
-	setobjectxyperm LOCALID_NORMAN, 4, 107
+PetalburgCity_Gym_EventScript_MoveGrubToEntrance:: @ 8204955
+	setobjectxyperm LOCALID_Grub, 4, 107
 	return
 
-PetalburgCity_Gym_EventScript_CheckNormanForRematch:: @ 820495D
-	goto_if_unset FLAG_DAILY_REMATCH_NORMAN, PetalburgCity_Gym_EventScript_DontMoveNormanToFront
+PetalburgCity_Gym_EventScript_CheckGrubForRematch:: @ 820495D
+	goto_if_unset FLAG_DAILY_REMATCH_Grub, PetalburgCity_Gym_EventScript_DontMoveGrubToFront
 	compare VAR_PETALBURG_GYM_STATE, 8
-	goto_if_eq PetalburgCity_Gym_EventScript_DontMoveNormanToFront @ If var = 8 set var = 8? Why
-	setobjectxyperm LOCALID_NORMAN, 4, 107
+	goto_if_eq PetalburgCity_Gym_EventScript_DontMoveGrubToFront @ If var = 8 set var = 8? Why
+	setobjectxyperm LOCALID_Grub, 4, 107
 	return
 
-PetalburgCity_Gym_EventScript_DontMoveNormanToFront:: @ 8204985
+PetalburgCity_Gym_EventScript_DontMoveGrubToFront:: @ 8204985
 	setvar VAR_PETALBURG_GYM_STATE, 8
 	end
 
@@ -77,20 +77,20 @@ PetalburgCity_Gym_EventScript_TurnPlayerNorth:: @ 8204995
 	end
 
 PetalburgCity_Gym_OnFrame: @ 820499A
-	map_script_2 VAR_PETALBURG_GYM_STATE, 1, PetalburgCity_Gym_EventScript_ReturnFromWallyTutorial
+	map_script_2 VAR_PETALBURG_GYM_STATE, 1, PetalburgCity_Gym_EventScript_ReturnFromGuyTutorial
 	.2byte 0
 
-PetalburgCity_Gym_EventScript_ReturnFromWallyTutorial:: @ 82049A4
+PetalburgCity_Gym_EventScript_ReturnFromGuyTutorial:: @ 82049A4
 	lockall
 	msgbox PetalburgCity_Gym_Text_DadSoDidItWorkOut, MSGBOX_DEFAULT
-	msgbox PetalburgCity_Gym_Text_WallyThankYouBye, MSGBOX_DEFAULT
+	msgbox PetalburgCity_Gym_Text_GuyThankYouBye, MSGBOX_DEFAULT
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFastestDown
-	applymovement LOCALID_WALLY, PetalburgCity_Gym_Movement_WallyExitGym
+	applymovement LOCALID_Guy, PetalburgCity_Gym_Movement_GuyExitGym
 	waitmovement 0
 	playse SE_EXIT
-	removeobject LOCALID_WALLY
-	setflag FLAG_HIDE_PETALBURG_CITY_WALLY
+	removeobject LOCALID_Guy
+	setflag FLAG_HIDE_PETALBURG_CITY_Guy
 	delay 30
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFastestUp
 	waitmovement 0
@@ -99,122 +99,122 @@ PetalburgCity_Gym_EventScript_ReturnFromWallyTutorial:: @ 82049A4
 	releaseall
 	end
 
-PetalburgCity_Gym_Movement_WallyExitGym: @ 82049EC
+PetalburgCity_Gym_Movement_GuyExitGym: @ 82049EC
 	walk_down
 	walk_down
 	walk_down
 	delay_16
 	step_end
 
-PetalburgCity_Gym_EventScript_Norman:: @ 82049F1
+PetalburgCity_Gym_EventScript_Grub:: @ 82049F1
 	lock
 	faceplayer
 	switch VAR_PETALBURG_GYM_STATE
-	case 2, PetalburgCity_Gym_EventScript_NormanNoBadges
-	case 3, PetalburgCity_Gym_EventScript_NormanOneBadge
-	case 4, PetalburgCity_Gym_EventScript_NormanTwoBadges
-	case 5, PetalburgCity_Gym_EventScript_NormanThreeBadges
-	case 6, PetalburgCity_Gym_EventScript_NormanGiveKeystone
-	case 7, PetalburgCity_Gym_EventScript_NormanPostBattle
-	case 8, PetalburgCity_Gym_EventScript_NormanRematch
+	case 2, PetalburgCity_Gym_EventScript_GrubNoBadges
+	case 3, PetalburgCity_Gym_EventScript_GrubOneBadge
+	case 4, PetalburgCity_Gym_EventScript_GrubTwoBadges
+	case 5, PetalburgCity_Gym_EventScript_GrubThreeBadges
+	case 6, PetalburgCity_Gym_EventScript_GrubGiveKeystone
+	case 7, PetalburgCity_Gym_EventScript_GrubPostBattle
+	case 8, PetalburgCity_Gym_EventScript_GrubRematch
 	msgbox PetalburgCity_Gym_Text_DadYoureHereWithYourPokemon, MSGBOX_DEFAULT
 	closemessage
 	switch VAR_FACING
-	case DIR_SOUTH, PetalburgCity_Gym_EventScript_BeginWallyTutorialSouth
-	case DIR_NORTH, PetalburgCity_Gym_EventScript_BeginWallyTutorialNorth
-	case DIR_WEST, PetalburgCity_Gym_EventScript_BeginWallyTutorialWest
-	case DIR_EAST, PetalburgCity_Gym_EventScript_BeginWallyTutorialEast
+	case DIR_SOUTH, PetalburgCity_Gym_EventScript_BeginGuyTutorialSouth
+	case DIR_NORTH, PetalburgCity_Gym_EventScript_BeginGuyTutorialNorth
+	case DIR_WEST, PetalburgCity_Gym_EventScript_BeginGuyTutorialWest
+	case DIR_EAST, PetalburgCity_Gym_EventScript_BeginGuyTutorialEast
 	end
 
-PetalburgCity_Gym_EventScript_BeginWallyTutorialSouth:: @ 8204A80
+PetalburgCity_Gym_EventScript_BeginGuyTutorialSouth:: @ 8204A80
 	setvar VAR_0x8008, 0
-	goto PetalburgCity_Gym_EventScript_BeginWallyTutorial
+	goto PetalburgCity_Gym_EventScript_BeginGuyTutorial
 	end
 
-PetalburgCity_Gym_EventScript_BeginWallyTutorialNorth:: @ 8204A8B
+PetalburgCity_Gym_EventScript_BeginGuyTutorialNorth:: @ 8204A8B
 	setvar VAR_0x8008, 1
-	goto PetalburgCity_Gym_EventScript_BeginWallyTutorial
+	goto PetalburgCity_Gym_EventScript_BeginGuyTutorial
 	end
 
-PetalburgCity_Gym_EventScript_BeginWallyTutorialWest:: @ 8204A96
+PetalburgCity_Gym_EventScript_BeginGuyTutorialWest:: @ 8204A96
 	setvar VAR_0x8008, 2
-	goto PetalburgCity_Gym_EventScript_BeginWallyTutorial
+	goto PetalburgCity_Gym_EventScript_BeginGuyTutorial
 	end
 
-PetalburgCity_Gym_EventScript_BeginWallyTutorialEast:: @ 8204AA1
+PetalburgCity_Gym_EventScript_BeginGuyTutorialEast:: @ 8204AA1
 	setvar VAR_0x8008, 3
-	goto PetalburgCity_Gym_EventScript_BeginWallyTutorial
+	goto PetalburgCity_Gym_EventScript_BeginGuyTutorial
 	end
 
-PetalburgCity_Gym_EventScript_BeginWallyTutorial:: @ 8204AAC
-	addobject LOCALID_WALLY
+PetalburgCity_Gym_EventScript_BeginGuyTutorial:: @ 8204AAC
+	addobject LOCALID_Guy
 	playse SE_DOOR
 	compare VAR_0x8008, 0
-	call_if_eq PetalburgCity_Gym_EventScript_WallyArriveSouth
+	call_if_eq PetalburgCity_Gym_EventScript_GuyArriveSouth
 	compare VAR_0x8008, 1
-	call_if_eq PetalburgCity_Gym_EventScript_WallyArriveNorth
+	call_if_eq PetalburgCity_Gym_EventScript_GuyArriveNorth
 	compare VAR_0x8008, 2
-	call_if_eq PetalburgCity_Gym_EventScript_WallyArriveWestEast
+	call_if_eq PetalburgCity_Gym_EventScript_GuyArriveWestEast
 	compare VAR_0x8008, 3
-	call_if_eq PetalburgCity_Gym_EventScript_WallyArriveWestEast
-	msgbox PetalburgCity_Gym_Text_WallyIdLikeAPokemon, MSGBOX_DEFAULT
-	msgbox PetalburgCity_Gym_Text_DadOhYoureWallyRight, MSGBOX_DEFAULT
-	msgbox PetalburgCity_Gym_Text_WallyIveNeverCaughtAPokemon, MSGBOX_DEFAULT
+	call_if_eq PetalburgCity_Gym_EventScript_GuyArriveWestEast
+	msgbox PetalburgCity_Gym_Text_GuyIdLikeAPokemon, MSGBOX_DEFAULT
+	msgbox PetalburgCity_Gym_Text_DadOhYoureGuyRight, MSGBOX_DEFAULT
+	msgbox PetalburgCity_Gym_Text_GuyIveNeverCaughtAPokemon, MSGBOX_DEFAULT
 	msgbox PetalburgCity_Gym_Text_DadHmISee, MSGBOX_DEFAULT
 	compare VAR_0x8008, 0
-	call_if_eq PetalburgCity_Gym_EventScript_NormanAddressPlayerSouth
+	call_if_eq PetalburgCity_Gym_EventScript_GrubAddressPlayerSouth
 	compare VAR_0x8008, 1
-	call_if_eq PetalburgCity_Gym_EventScript_NormanAddressPlayerNorth
+	call_if_eq PetalburgCity_Gym_EventScript_GrubAddressPlayerNorth
 	compare VAR_0x8008, 2
-	call_if_eq PetalburgCity_Gym_EventScript_NormanAddressPlayerWest
+	call_if_eq PetalburgCity_Gym_EventScript_GrubAddressPlayerWest
 	compare VAR_0x8008, 3
-	call_if_eq PetalburgCity_Gym_EventScript_NormanAddressPlayerEast
-	msgbox PetalburgCity_Gym_Text_DadPlayerGoWithWally, MSGBOX_DEFAULT
+	call_if_eq PetalburgCity_Gym_EventScript_GrubAddressPlayerEast
+	msgbox PetalburgCity_Gym_Text_DadPlayerGoWithGuy, MSGBOX_DEFAULT
 	compare VAR_0x8008, 0
-	call_if_eq PetalburgCity_Gym_EventScript_NormanAddressWallySouth
+	call_if_eq PetalburgCity_Gym_EventScript_GrubAddressGuySouth
 	compare VAR_0x8008, 1
-	call_if_eq PetalburgCity_Gym_EventScript_NormanAddressWallyNorth
+	call_if_eq PetalburgCity_Gym_EventScript_GrubAddressGuyNorth
 	compare VAR_0x8008, 2
-	call_if_eq PetalburgCity_Gym_EventScript_NormanAddressWallyWest
+	call_if_eq PetalburgCity_Gym_EventScript_GrubAddressGuyWest
 	compare VAR_0x8008, 3
-	call_if_eq PetalburgCity_Gym_EventScript_NormanAddressWallyEast
+	call_if_eq PetalburgCity_Gym_EventScript_GrubAddressGuyEast
 	msgbox PetalburgCity_Gym_Text_IllLoanYouMyZigzagoon, MSGBOX_DEFAULT
-	msgbox PetalburgCity_Gym_Text_WallyThankYouAndDadGivesPokeBall, MSGBOX_DEFAULT
-	msgbox PetalburgCity_Gym_Text_WallyOhWowThankYou, MSGBOX_DEFAULT
+	msgbox PetalburgCity_Gym_Text_GuyThankYouAndDadGivesPokeBall, MSGBOX_DEFAULT
+	msgbox PetalburgCity_Gym_Text_GuyOhWowThankYou, MSGBOX_DEFAULT
 	compare VAR_0x8008, 0
-	call_if_eq PetalburgCity_Gym_EventScript_NormanFaceDoorSouth
+	call_if_eq PetalburgCity_Gym_EventScript_GrubFaceDoorSouth
 	compare VAR_0x8008, 1
-	call_if_eq PetalburgCity_Gym_EventScript_NormanFaceDoorNorth
+	call_if_eq PetalburgCity_Gym_EventScript_GrubFaceDoorNorth
 	compare VAR_0x8008, 2
-	call_if_eq PetalburgCity_Gym_EventScript_NormanFaceDoorWest
+	call_if_eq PetalburgCity_Gym_EventScript_GrubFaceDoorWest
 	compare VAR_0x8008, 3
-	call_if_eq PetalburgCity_Gym_EventScript_NormanFaceDoorEast
+	call_if_eq PetalburgCity_Gym_EventScript_GrubFaceDoorEast
 	compare VAR_0x8008, 0
-	call_if_eq PetalburgCity_Gym_EventScript_WallyFacePlayer
+	call_if_eq PetalburgCity_Gym_EventScript_GuyFacePlayer
 	compare VAR_0x8008, 1
-	call_if_eq PetalburgCity_Gym_EventScript_WallyFaceDown
+	call_if_eq PetalburgCity_Gym_EventScript_GuyFaceDown
 	compare VAR_0x8008, 2
-	call_if_eq PetalburgCity_Gym_EventScript_WallyFacePlayer
+	call_if_eq PetalburgCity_Gym_EventScript_GuyFacePlayer
 	compare VAR_0x8008, 3
-	call_if_eq PetalburgCity_Gym_EventScript_WallyFacePlayer
+	call_if_eq PetalburgCity_Gym_EventScript_GuyFacePlayer
 	msgbox PetalburgCity_Gym_Text_WouldYouReallyComeWithMe, MSGBOX_DEFAULT
 	closemessage
 	setflag FLAG_DONT_TRANSITION_MUSIC
 	playbgm MUS_FOLLOW_ME, FALSE
 	compare VAR_0x8008, 0
-	call_if_eq PetalburgCity_Gym_EventScript_ExitGymWithWallySouth
+	call_if_eq PetalburgCity_Gym_EventScript_ExitGymWithGuySouth
 	compare VAR_0x8008, 1
-	call_if_eq PetalburgCity_Gym_EventScript_ExitGymWithWallyNorth
+	call_if_eq PetalburgCity_Gym_EventScript_ExitGymWithGuyNorth
 	compare VAR_0x8008, 2
-	call_if_eq PetalburgCity_Gym_EventScript_ExitGymWithWallyWest
+	call_if_eq PetalburgCity_Gym_EventScript_ExitGymWithGuyWest
 	compare VAR_0x8008, 3
-	call_if_eq PetalburgCity_Gym_EventScript_ExitGymWithWallyEast
-	removeobject LOCALID_WALLY
-	setflag FLAG_HIDE_PETALBURG_CITY_WALLYS_MOM
+	call_if_eq PetalburgCity_Gym_EventScript_ExitGymWithGuyEast
+	removeobject LOCALID_Guy
+	setflag FLAG_HIDE_PETALBURG_CITY_GuyS_MOM
 	setvar VAR_PETALBURG_GYM_STATE, 1
 	setvar VAR_PETALBURG_CITY_STATE, 2
-	clearflag FLAG_HIDE_PETALBURG_CITY_WALLY
-	clearflag FLAG_HIDE_PETALBURG_GYM_WALLY
+	clearflag FLAG_HIDE_PETALBURG_CITY_Guy
+	clearflag FLAG_HIDE_PETALBURG_GYM_Guy
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_RIVAL
 	special InitBirchState
 	warp MAP_PETALBURG_CITY, 255, 15, 8
@@ -222,141 +222,141 @@ PetalburgCity_Gym_EventScript_BeginWallyTutorial:: @ 8204AAC
 	release
 	end
 
-PetalburgCity_Gym_EventScript_WallyArriveSouth:: @ 8204C31
-	applymovement LOCALID_NORMAN, Common_Movement_WalkInPlaceFastestDown
-	applymovement LOCALID_WALLY, PetalburgCity_Gym_Movement_WallyArrive
+PetalburgCity_Gym_EventScript_GuyArriveSouth:: @ 8204C31
+	applymovement LOCALID_Grub, Common_Movement_WalkInPlaceFastestDown
+	applymovement LOCALID_Guy, PetalburgCity_Gym_Movement_GuyArrive
 	waitmovement 0
 	return
 
-PetalburgCity_Gym_EventScript_WallyArriveNorth:: @ 8204C43
-	applymovement LOCALID_WALLY, PetalburgCity_Gym_Movement_WallyArriveNorth
+PetalburgCity_Gym_EventScript_GuyArriveNorth:: @ 8204C43
+	applymovement LOCALID_Guy, PetalburgCity_Gym_Movement_GuyArriveNorth
 	waitmovement 0
-	applymovement LOCALID_NORMAN, Common_Movement_WalkInPlaceFastestRight
+	applymovement LOCALID_Grub, Common_Movement_WalkInPlaceFastestRight
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFastestRight
 	waitmovement 0
 	return
 
-PetalburgCity_Gym_EventScript_WallyArriveWestEast:: @ 8204C5F
-	applymovement LOCALID_NORMAN, Common_Movement_WalkInPlaceFastestDown
+PetalburgCity_Gym_EventScript_GuyArriveWestEast:: @ 8204C5F
+	applymovement LOCALID_Grub, Common_Movement_WalkInPlaceFastestDown
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFastestDown
-	applymovement LOCALID_WALLY, PetalburgCity_Gym_Movement_WallyArrive
+	applymovement LOCALID_Guy, PetalburgCity_Gym_Movement_GuyArrive
 	waitmovement 0
 	return
 
-PetalburgCity_Gym_EventScript_ExitGymWithWallySouth:: @ 8204C78
-	applymovement LOCALID_NORMAN, Common_Movement_WalkInPlaceFastestDown
-	applymovement LOCALID_WALLY, PetalburgCity_Gym_Movement_WallyExitSouthWest
-	applymovement OBJ_EVENT_ID_PLAYER, PetalburgCity_Gym_Movement_PlayerExitWithWallySouth
+PetalburgCity_Gym_EventScript_ExitGymWithGuySouth:: @ 8204C78
+	applymovement LOCALID_Grub, Common_Movement_WalkInPlaceFastestDown
+	applymovement LOCALID_Guy, PetalburgCity_Gym_Movement_GuyExitSouthWest
+	applymovement OBJ_EVENT_ID_PLAYER, PetalburgCity_Gym_Movement_PlayerExitWithGuySouth
 	waitmovement 0
 	return
 
-PetalburgCity_Gym_EventScript_ExitGymWithWallyNorth:: @ 8204C91
-	applymovement LOCALID_WALLY, PetalburgCity_Gym_Movement_WallyExitNorth
-	applymovement OBJ_EVENT_ID_PLAYER, PetalburgCity_Gym_Movement_PlayerExitWithWallyNorth
+PetalburgCity_Gym_EventScript_ExitGymWithGuyNorth:: @ 8204C91
+	applymovement LOCALID_Guy, PetalburgCity_Gym_Movement_GuyExitNorth
+	applymovement OBJ_EVENT_ID_PLAYER, PetalburgCity_Gym_Movement_PlayerExitWithGuyNorth
 	waitmovement 0
 	return
 
-PetalburgCity_Gym_EventScript_ExitGymWithWallyWest:: @ 8204CA3
-	applymovement LOCALID_WALLY, PetalburgCity_Gym_Movement_WallyExitSouthWest
-	applymovement OBJ_EVENT_ID_PLAYER, PetalburgCity_Gym_Movement_PlayerExitWithWallyWest
+PetalburgCity_Gym_EventScript_ExitGymWithGuyWest:: @ 8204CA3
+	applymovement LOCALID_Guy, PetalburgCity_Gym_Movement_GuyExitSouthWest
+	applymovement OBJ_EVENT_ID_PLAYER, PetalburgCity_Gym_Movement_PlayerExitWithGuyWest
 	waitmovement 0
 	return
 
-PetalburgCity_Gym_EventScript_ExitGymWithWallyEast:: @ 8204CB5
-	applymovement LOCALID_WALLY, PetalburgCity_Gym_Movement_WallyExitEast
-	applymovement OBJ_EVENT_ID_PLAYER, PetalburgCity_Gym_Movement_PlayerExitWithWallyEast
+PetalburgCity_Gym_EventScript_ExitGymWithGuyEast:: @ 8204CB5
+	applymovement LOCALID_Guy, PetalburgCity_Gym_Movement_GuyExitEast
+	applymovement OBJ_EVENT_ID_PLAYER, PetalburgCity_Gym_Movement_PlayerExitWithGuyEast
 	waitmovement 0
 	return
 
-PetalburgCity_Gym_EventScript_NormanAddressPlayerSouth:: @ 8204CC7
-	applymovement LOCALID_NORMAN, Common_Movement_WalkInPlaceFastestUp
+PetalburgCity_Gym_EventScript_GrubAddressPlayerSouth:: @ 8204CC7
+	applymovement LOCALID_Grub, Common_Movement_WalkInPlaceFastestUp
 	waitmovement 0
 	return
 
-PetalburgCity_Gym_EventScript_NormanAddressPlayerNorth:: @ 8204CD2
-	applymovement LOCALID_NORMAN, Common_Movement_WalkInPlaceFastestDown
+PetalburgCity_Gym_EventScript_GrubAddressPlayerNorth:: @ 8204CD2
+	applymovement LOCALID_Grub, Common_Movement_WalkInPlaceFastestDown
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFastestUp
 	waitmovement 0
 	return
 
-PetalburgCity_Gym_EventScript_NormanAddressPlayerWest:: @ 8204CE4
-	applymovement LOCALID_NORMAN, Common_Movement_WalkInPlaceFastestRight
+PetalburgCity_Gym_EventScript_GrubAddressPlayerWest:: @ 8204CE4
+	applymovement LOCALID_Grub, Common_Movement_WalkInPlaceFastestRight
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFastestLeft
 	waitmovement 0
 	return
 
-PetalburgCity_Gym_EventScript_NormanAddressPlayerEast:: @ 8204CF6
-	applymovement LOCALID_NORMAN, Common_Movement_WalkInPlaceFastestLeft
+PetalburgCity_Gym_EventScript_GrubAddressPlayerEast:: @ 8204CF6
+	applymovement LOCALID_Grub, Common_Movement_WalkInPlaceFastestLeft
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFastestRight
 	waitmovement 0
 	return
 
-PetalburgCity_Gym_EventScript_NormanAddressWallySouth:: @ 8204D08
-	applymovement LOCALID_NORMAN, Common_Movement_WalkInPlaceFastestDown
+PetalburgCity_Gym_EventScript_GrubAddressGuySouth:: @ 8204D08
+	applymovement LOCALID_Grub, Common_Movement_WalkInPlaceFastestDown
 	waitmovement 0
 	return
 
-PetalburgCity_Gym_EventScript_NormanAddressWallyNorth:: @ 8204D13
-	applymovement LOCALID_NORMAN, Common_Movement_WalkInPlaceFastestRight
+PetalburgCity_Gym_EventScript_GrubAddressGuyNorth:: @ 8204D13
+	applymovement LOCALID_Grub, Common_Movement_WalkInPlaceFastestRight
 	waitmovement 0
 	return
 
-PetalburgCity_Gym_EventScript_NormanAddressWallyWest:: @ 8204D1E
-	applymovement LOCALID_NORMAN, Common_Movement_WalkInPlaceFastestDown
+PetalburgCity_Gym_EventScript_GrubAddressGuyWest:: @ 8204D1E
+	applymovement LOCALID_Grub, Common_Movement_WalkInPlaceFastestDown
 	waitmovement 0
 	return
 
-PetalburgCity_Gym_EventScript_NormanAddressWallyEast:: @ 8204D29
-	applymovement LOCALID_NORMAN, Common_Movement_WalkInPlaceFastestDown
+PetalburgCity_Gym_EventScript_GrubAddressGuyEast:: @ 8204D29
+	applymovement LOCALID_Grub, Common_Movement_WalkInPlaceFastestDown
 	waitmovement 0
 	return
 
-PetalburgCity_Gym_EventScript_WallyFacePlayer:: @ 8204D34
-	applymovement LOCALID_WALLY, Common_Movement_FacePlayer
+PetalburgCity_Gym_EventScript_GuyFacePlayer:: @ 8204D34
+	applymovement LOCALID_Guy, Common_Movement_FacePlayer
 	waitmovement 0
 	return
 
-PetalburgCity_Gym_EventScript_WallyFaceDown:: @ 8204D3F
-	applymovement LOCALID_WALLY, Common_Movement_WalkInPlaceFastestDown
+PetalburgCity_Gym_EventScript_GuyFaceDown:: @ 8204D3F
+	applymovement LOCALID_Guy, Common_Movement_WalkInPlaceFastestDown
 	waitmovement 0
 	return
 
-PetalburgCity_Gym_EventScript_NormanNoBadges:: @ 8204D4A
-	msgbox PetalburgCity_Gym_Text_NormanGoToRustboro, MSGBOX_DEFAULT
+PetalburgCity_Gym_EventScript_GrubNoBadges:: @ 8204D4A
+	msgbox PetalburgCity_Gym_Text_GrubGoToRustboro, MSGBOX_DEFAULT
 	release
 	end
 
-PetalburgCity_Gym_EventScript_NormanOneBadge:: @ 8204D54
-	msgbox PetalburgCity_Gym_Text_NormanGoToDewford, MSGBOX_DEFAULT
+PetalburgCity_Gym_EventScript_GrubOneBadge:: @ 8204D54
+	msgbox PetalburgCity_Gym_Text_GrubGoToDewford, MSGBOX_DEFAULT
 	release
 	end
 
-PetalburgCity_Gym_EventScript_NormanTwoBadges:: @ 8204D5E
+PetalburgCity_Gym_EventScript_GrubTwoBadges:: @ 8204D5E
 	msgbox PetalburgCity_Gym_Text_YouHaveGottenStronger, MSGBOX_DEFAULT
 	release
 	end
 
-PetalburgCity_Gym_EventScript_NormanThreeBadges:: @ 8204D68
+PetalburgCity_Gym_EventScript_GrubThreeBadges:: @ 8204D68
 	msgbox PetalburgCity_Gym_Text_YouHaveGottenStronger, MSGBOX_DEFAULT
 	release
 	end
 
-PetalburgCity_Gym_EventScript_NormanFaceDoorSouth:: @ 8204D72
+PetalburgCity_Gym_EventScript_GrubFaceDoorSouth:: @ 8204D72
 	return
 
-@ For all other NormanFaceDoorX, Norman is already facing the door from NormanAddressWallyX
-PetalburgCity_Gym_EventScript_NormanFaceDoorNorth:: @ 8204D73
-	applymovement LOCALID_NORMAN, Common_Movement_WalkInPlaceFastestDown
+@ For all other GrubFaceDoorX, Grub is already facing the door from GrubAddressGuyX
+PetalburgCity_Gym_EventScript_GrubFaceDoorNorth:: @ 8204D73
+	applymovement LOCALID_Grub, Common_Movement_WalkInPlaceFastestDown
 	waitmovement 0
 	return
 
-PetalburgCity_Gym_EventScript_NormanFaceDoorWest:: @ 8204D7E
+PetalburgCity_Gym_EventScript_GrubFaceDoorWest:: @ 8204D7E
 	return
 
-PetalburgCity_Gym_EventScript_NormanFaceDoorEast:: @ 8204D7F
+PetalburgCity_Gym_EventScript_GrubFaceDoorEast:: @ 8204D7F
 	return
 
-PetalburgCity_Gym_EventScript_NormanPostBattle:: @ 8204D80
+PetalburgCity_Gym_EventScript_GrubPostBattle:: @ 8204D80
 	call PetalburgCity_Gym_EventScript_ShouldGiveEnigmaBerry
 	compare VAR_RESULT, TRUE
 	goto_if_eq PetalburgCity_Gym_EventScript_GiveEnigmaBerry
@@ -371,8 +371,8 @@ PetalburgCity_Gym_EventScript_GiveFacade2:: @ 8204DAC
 	release
 	end
 
-PetalburgCity_Gym_EventScript_NormanRematch::
-	message PetalburgCity_Gym_Text_NormanChooseFormat
+PetalburgCity_Gym_EventScript_GrubRematch::
+	message PetalburgCity_Gym_Text_GrubChooseFormat
 	waitmessage
 	multichoice 17, 6, MULTI_REMATCH_BATTLE_MODE, 0
 	switch VAR_RESULT
@@ -384,37 +384,37 @@ PetalburgCity_Gym_EventScript_NormanRematch::
 	end
 
 PetalburgCity_Gym_EventScript_SetSingles::
-	msgbox PetalburgCity_Gym_Text_NormanAllowLegends, MSGBOX_YESNO
+	msgbox PetalburgCity_Gym_Text_GrubAllowLegends, MSGBOX_YESNO
 	compare VAR_RESULT, NO
-	goto_if_eq PetalburgCity_Gym_EventScript_NormanSinglesRematch
-	trainerbattle_no_intro TRAINER_NORMAN_4, PetalburgCity_Gym_Text_NormanRematchDefeat
-	setflag FLAG_DAILY_REMATCH_NORMAN
+	goto_if_eq PetalburgCity_Gym_EventScript_GrubSinglesRematch
+	trainerbattle_no_intro TRAINER_Grub_4, PetalburgCity_Gym_Text_GrubRematchDefeat
+	setflag FLAG_DAILY_REMATCH_Grub
 	releaseall
 	end
 
 PetalburgCity_Gym_EventScript_SetDoubles::
-	msgbox PetalburgCity_Gym_Text_NormanAllowLegends, MSGBOX_YESNO
+	msgbox PetalburgCity_Gym_Text_GrubAllowLegends, MSGBOX_YESNO
 	compare VAR_RESULT, NO
-	goto_if_eq PetalburgCity_Gym_EventScript_NormanDoublesRematch
-	trainerbattle_no_intro TRAINER_NORMAN_5, PetalburgCity_Gym_Text_NormanRematchDefeat
-	setflag FLAG_DAILY_REMATCH_NORMAN
+	goto_if_eq PetalburgCity_Gym_EventScript_GrubDoublesRematch
+	trainerbattle_no_intro TRAINER_Grub_5, PetalburgCity_Gym_Text_GrubRematchDefeat
+	setflag FLAG_DAILY_REMATCH_Grub
 	releaseall
 	end
 
-PetalburgCity_Gym_EventScript_NormanSinglesRematch::
-	trainerbattle_no_intro TRAINER_NORMAN_2, PetalburgCity_Gym_Text_NormanRematchDefeat
-	setflag FLAG_DAILY_REMATCH_NORMAN
+PetalburgCity_Gym_EventScript_GrubSinglesRematch::
+	trainerbattle_no_intro TRAINER_Grub_2, PetalburgCity_Gym_Text_GrubRematchDefeat
+	setflag FLAG_DAILY_REMATCH_Grub
 	releaseall
 	end
 
-PetalburgCity_Gym_EventScript_NormanDoublesRematch::
-	trainerbattle_no_intro TRAINER_NORMAN_3, PetalburgCity_Gym_Text_NormanRematchDefeat
-	setflag FLAG_DAILY_REMATCH_NORMAN
+PetalburgCity_Gym_EventScript_GrubDoublesRematch::
+	trainerbattle_no_intro TRAINER_Grub_3, PetalburgCity_Gym_Text_GrubRematchDefeat
+	setflag FLAG_DAILY_REMATCH_Grub
 	releaseall
 	end
 
 PetalburgCity_Gym_EventScript_AlreadyRematched::
-	msgbox PetalburgCity_Gym_Text_NormanPostRematch, MSGBOX_AUTOCLOSE
+	msgbox PetalburgCity_Gym_Text_GrubPostRematch, MSGBOX_AUTOCLOSE
 	releaseall
 	end
 
@@ -450,25 +450,25 @@ PetalburgCity_Gym_EventScript_GiveEnigmaBerry:: @ 8204E1D
 	release
 	end
 
-PetalburgCity_Gym_EventScript_NormanGiveKeystone::
-	goto_if_set FLAG_SYS_RECEIVED_KEYSTONE, PetalburgCity_Gym_EventScript_NormanBattle
-	msgbox PetalburgCity_Gym_Text_NormanIntro, MSGBOX_DEFAULT
+PetalburgCity_Gym_EventScript_GrubGiveKeystone::
+	goto_if_set FLAG_SYS_RECEIVED_KEYSTONE, PetalburgCity_Gym_EventScript_GrubBattle
+	msgbox PetalburgCity_Gym_Text_GrubIntro, MSGBOX_DEFAULT
 	giveitem ITEM_MEGA_BRACELET
 	setflag FLAG_SYS_RECEIVED_KEYSTONE
-	msgbox PetalburgCity_Gym_Text_NormanMegaBracelet, MSGBOX_DEFAULT
+	msgbox PetalburgCity_Gym_Text_GrubMegaBracelet, MSGBOX_DEFAULT
 	giveitem ITEM_SCEPTILITE
 	waitmessage
 	giveitem ITEM_BLAZIKENITE
 	waitmessage
 	giveitem ITEM_SWAMPERTITE
 	waitmessage
-	msgbox PetalburgCity_Gym_Text_NormanWheneverReady, MSGBOX_DEFAULT
+	msgbox PetalburgCity_Gym_Text_GrubWheneverReady, MSGBOX_DEFAULT
 	closemessage
 	end
 	
-PetalburgCity_Gym_EventScript_NormanBattle::
-	msgbox PetalburgCity_Gym_Text_NormanBattleIntro, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_NORMAN_1, PetalburgCity_Gym_Text_NormanDefeat
+PetalburgCity_Gym_EventScript_GrubBattle::
+	msgbox PetalburgCity_Gym_Text_GrubBattleIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_Grub_1, PetalburgCity_Gym_Text_GrubDefeat
 	message PetalburgCity_Gym_Text_ReceivedBalanceBadge
 	waitmessage
 	call Common_EventScript_PlayGymBadgeFanfare
@@ -500,11 +500,11 @@ PetalburgCity_Gym_EventScript_NormanBattle::
 	delay 40
 	playse SE_DOOR
 	delay 10
-	addobject LOCALID_WALLYS_DAD
+	addobject LOCALID_GuyS_DAD
 	switch VAR_FACING
-	case DIR_NORTH, PetalburgCity_Gym_EventScript_WallysDadArrivesNorth
-	case DIR_WEST, PetalburgCity_Gym_EventScript_WallysDadArrivesWest
-	case DIR_EAST, PetalburgCity_Gym_EventScript_WallysDadArrivesEast
+	case DIR_NORTH, PetalburgCity_Gym_EventScript_GuysDadArrivesNorth
+	case DIR_WEST, PetalburgCity_Gym_EventScript_GuysDadArrivesWest
+	case DIR_EAST, PetalburgCity_Gym_EventScript_GuysDadArrivesEast
 	end
 
 PetalburgCity_Gym_EventScript_GiveFacade:: @ 8204ED2
@@ -515,119 +515,119 @@ PetalburgCity_Gym_EventScript_GiveFacade:: @ 8204ED2
 	msgbox PetalburgCity_Gym_Text_ExplainFacade, MSGBOX_DEFAULT
 	return
 
-PetalburgCity_Gym_EventScript_WallysDadArrivesNorth:: @ 8204EF5
+PetalburgCity_Gym_EventScript_GuysDadArrivesNorth:: @ 8204EF5
 	setvar VAR_0x8008, 1
-	goto PetalburgCity_Gym_EventScript_WallysDadArrives
+	goto PetalburgCity_Gym_EventScript_GuysDadArrives
 
-PetalburgCity_Gym_EventScript_WallysDadArrivesEast:: @ 8204EFF
+PetalburgCity_Gym_EventScript_GuysDadArrivesEast:: @ 8204EFF
 	setvar VAR_0x8008, 2
-	goto PetalburgCity_Gym_EventScript_WallysDadArrives
+	goto PetalburgCity_Gym_EventScript_GuysDadArrives
 
-PetalburgCity_Gym_EventScript_WallysDadArrivesWest:: @ 8204F09
+PetalburgCity_Gym_EventScript_GuysDadArrivesWest:: @ 8204F09
 	setvar VAR_0x8008, 3
-	goto PetalburgCity_Gym_EventScript_WallysDadArrives
+	goto PetalburgCity_Gym_EventScript_GuysDadArrives
 
-PetalburgCity_Gym_EventScript_WallysDadArrives:: @ 8204F13
-	applymovement LOCALID_WALLYS_DAD, PetalburgCity_Gym_Movement_WallysDadEnterGym
+PetalburgCity_Gym_EventScript_GuysDadArrives:: @ 8204F13
+	applymovement LOCALID_GuyS_DAD, PetalburgCity_Gym_Movement_GuysDadEnterGym
 	waitmovement 0
 	playse SE_PIN
-	applymovement LOCALID_WALLYS_DAD, Common_Movement_ExclamationMark
+	applymovement LOCALID_GuyS_DAD, Common_Movement_ExclamationMark
 	waitmovement 0
-	applymovement LOCALID_WALLYS_DAD, Common_Movement_Delay48
+	applymovement LOCALID_GuyS_DAD, Common_Movement_Delay48
 	waitmovement 0
 	delay 10
 	compare VAR_0x8008, 1
-	call_if_eq PetalburgCity_Gym_EventScript_WallysDadApproachPlayerNorth
+	call_if_eq PetalburgCity_Gym_EventScript_GuysDadApproachPlayerNorth
 	compare VAR_0x8008, 2
-	call_if_eq PetalburgCity_Gym_EventScript_WallysDadApproachPlayerEast
+	call_if_eq PetalburgCity_Gym_EventScript_GuysDadApproachPlayerEast
 	compare VAR_0x8008, 3
-	call_if_eq PetalburgCity_Gym_EventScript_WallysDadApproachPlayerWest
+	call_if_eq PetalburgCity_Gym_EventScript_GuysDadApproachPlayerWest
 	msgbox PetalburgCity_Gym_Text_PleaseComeWithMe, MSGBOX_DEFAULT
 	closemessage
 	delay 20
 	compare VAR_0x8008, 1
-	call_if_eq PetalburgCity_Gym_EventScript_WallysDadFaceNormanNorth
+	call_if_eq PetalburgCity_Gym_EventScript_GuysDadFaceGrubNorth
 	compare VAR_0x8008, 2
-	call_if_eq PetalburgCity_Gym_EventScript_WallysDadFaceNormanEast
+	call_if_eq PetalburgCity_Gym_EventScript_GuysDadFaceGrubEast
 	compare VAR_0x8008, 3
-	call_if_eq PetalburgCity_Gym_EventScript_WallysDadFaceNormanWest
+	call_if_eq PetalburgCity_Gym_EventScript_GuysDadFaceGrubWest
 	msgbox PetalburgCity_Gym_Text_LetMeBorrowPlayer, MSGBOX_DEFAULT
 	closemessage
 	setflag FLAG_DONT_TRANSITION_MUSIC
 	playbgm MUS_FOLLOW_ME, FALSE
 	compare VAR_0x8008, 1
-	call_if_eq PetalburgCity_Gym_EventScript_ExitGymWithWallysDadNorth
+	call_if_eq PetalburgCity_Gym_EventScript_ExitGymWithGuysDadNorth
 	compare VAR_0x8008, 2
-	call_if_eq PetalburgCity_Gym_EventScript_ExitGymWithWallysDadEast
+	call_if_eq PetalburgCity_Gym_EventScript_ExitGymWithGuysDadEast
 	compare VAR_0x8008, 3
-	call_if_eq PetalburgCity_Gym_EventScript_ExitGymWithWallysDadWest
-	removeobject LOCALID_WALLYS_DAD
+	call_if_eq PetalburgCity_Gym_EventScript_ExitGymWithGuysDadWest
+	removeobject LOCALID_GuyS_DAD
 	setvar VAR_PETALBURG_CITY_STATE, 4
-	clearflag FLAG_HIDE_PETALBURG_CITY_WALLYS_DAD
+	clearflag FLAG_HIDE_PETALBURG_CITY_GuyS_DAD
 	warp MAP_PETALBURG_CITY, 255, 15, 8
 	waitstate
 	release
 	end
 
-PetalburgCity_Gym_EventScript_WallysDadFaceNormanNorth:: @ 8204FCC
-	applymovement LOCALID_WALLYS_DAD, Common_Movement_WalkInPlaceFastestUp
+PetalburgCity_Gym_EventScript_GuysDadFaceGrubNorth:: @ 8204FCC
+	applymovement LOCALID_GuyS_DAD, Common_Movement_WalkInPlaceFastestUp
 	waitmovement 0
 	return
 
-PetalburgCity_Gym_EventScript_WallysDadFaceNormanEast:: @ 8204FD7
-	applymovement LOCALID_WALLYS_DAD, Common_Movement_WalkInPlaceFastestRight
+PetalburgCity_Gym_EventScript_GuysDadFaceGrubEast:: @ 8204FD7
+	applymovement LOCALID_GuyS_DAD, Common_Movement_WalkInPlaceFastestRight
 	waitmovement 0
 	return
 
-PetalburgCity_Gym_EventScript_WallysDadFaceNormanWest:: @ 8204FE2
-	applymovement LOCALID_WALLYS_DAD, Common_Movement_WalkInPlaceFastestLeft
+PetalburgCity_Gym_EventScript_GuysDadFaceGrubWest:: @ 8204FE2
+	applymovement LOCALID_GuyS_DAD, Common_Movement_WalkInPlaceFastestLeft
 	waitmovement 0
 	return
 
-PetalburgCity_Gym_EventScript_WallysDadApproachPlayerNorth:: @ 8204FED
-	applymovement LOCALID_WALLYS_DAD, PetalburgCity_Gym_Movement_WallysDadApproachPlayerNorth
+PetalburgCity_Gym_EventScript_GuysDadApproachPlayerNorth:: @ 8204FED
+	applymovement LOCALID_GuyS_DAD, PetalburgCity_Gym_Movement_GuysDadApproachPlayerNorth
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFastestLeft
-	applymovement LOCALID_NORMAN, Common_Movement_WalkInPlaceFastestLeft
+	applymovement LOCALID_Grub, Common_Movement_WalkInPlaceFastestLeft
 	waitmovement 0
 	return
 
-PetalburgCity_Gym_EventScript_WallysDadApproachPlayerEast:: @ 8205009
-	applymovement LOCALID_WALLYS_DAD, PetalburgCity_Gym_Movement_WallysDadApproachPlayerEast
+PetalburgCity_Gym_EventScript_GuysDadApproachPlayerEast:: @ 8205009
+	applymovement LOCALID_GuyS_DAD, PetalburgCity_Gym_Movement_GuysDadApproachPlayerEast
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFastestDown
-	applymovement LOCALID_NORMAN, Common_Movement_WalkInPlaceFastestDown
+	applymovement LOCALID_Grub, Common_Movement_WalkInPlaceFastestDown
 	waitmovement 0
 	return
 
-PetalburgCity_Gym_EventScript_WallysDadApproachPlayerWest:: @ 8205025
-	applymovement LOCALID_WALLYS_DAD, PetalburgCity_Gym_Movement_WallysDadApproachPlayerWest
+PetalburgCity_Gym_EventScript_GuysDadApproachPlayerWest:: @ 8205025
+	applymovement LOCALID_GuyS_DAD, PetalburgCity_Gym_Movement_GuysDadApproachPlayerWest
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFastestDown
-	applymovement LOCALID_NORMAN, Common_Movement_WalkInPlaceFastestDown
+	applymovement LOCALID_Grub, Common_Movement_WalkInPlaceFastestDown
 	waitmovement 0
 	return
 
-PetalburgCity_Gym_EventScript_ExitGymWithWallysDadNorth:: @ 8205041
-	applymovement LOCALID_WALLYS_DAD, PetalburgCity_Gym_Movement_WallysDadExitNorth
-	applymovement LOCALID_NORMAN, Common_Movement_WalkInPlaceFastestDown
-	applymovement OBJ_EVENT_ID_PLAYER, PetalburgCity_Gym_Movement_PlayerExitWithWallysDadNorth
+PetalburgCity_Gym_EventScript_ExitGymWithGuysDadNorth:: @ 8205041
+	applymovement LOCALID_GuyS_DAD, PetalburgCity_Gym_Movement_GuysDadExitNorth
+	applymovement LOCALID_Grub, Common_Movement_WalkInPlaceFastestDown
+	applymovement OBJ_EVENT_ID_PLAYER, PetalburgCity_Gym_Movement_PlayerExitWithGuysDadNorth
 	waitmovement 0
 	return
 
-PetalburgCity_Gym_EventScript_ExitGymWithWallysDadEast:: @ 820505A
-	applymovement LOCALID_WALLYS_DAD, PetalburgCity_Gym_Movement_WallysDadExitEast
-	applymovement OBJ_EVENT_ID_PLAYER, PetalburgCity_Gym_Movement_PlayerExitWithWallysDadEast
+PetalburgCity_Gym_EventScript_ExitGymWithGuysDadEast:: @ 820505A
+	applymovement LOCALID_GuyS_DAD, PetalburgCity_Gym_Movement_GuysDadExitEast
+	applymovement OBJ_EVENT_ID_PLAYER, PetalburgCity_Gym_Movement_PlayerExitWithGuysDadEast
 	waitmovement 0
 	return
 
-PetalburgCity_Gym_EventScript_ExitGymWithWallysDadWest:: @ 820506C
-	applymovement LOCALID_WALLYS_DAD, PetalburgCity_Gym_Movement_WallysDadExitWest
-	applymovement OBJ_EVENT_ID_PLAYER, PetalburgCity_Gym_Movement_PlayerExitWithWallysDadWest
+PetalburgCity_Gym_EventScript_ExitGymWithGuysDadWest:: @ 820506C
+	applymovement LOCALID_GuyS_DAD, PetalburgCity_Gym_Movement_GuysDadExitWest
+	applymovement OBJ_EVENT_ID_PLAYER, PetalburgCity_Gym_Movement_PlayerExitWithGuysDadWest
 	waitmovement 0
 	return
 
-PetalburgCity_Gym_Movement_WallysDadExitNorth: @ 820507E
+PetalburgCity_Gym_Movement_GuysDadExitNorth: @ 820507E
 	walk_down
 	walk_down
 	walk_left
@@ -640,7 +640,7 @@ PetalburgCity_Gym_Movement_WallysDadExitNorth: @ 820507E
 	set_invisible
 	step_end
 
-PetalburgCity_Gym_Movement_WallysDadExitEast: @ 8205089
+PetalburgCity_Gym_Movement_GuysDadExitEast: @ 8205089
 	walk_down
 	walk_down
 	walk_left
@@ -653,7 +653,7 @@ PetalburgCity_Gym_Movement_WallysDadExitEast: @ 8205089
 	set_invisible
 	step_end
 
-PetalburgCity_Gym_Movement_WallysDadExitWest: @ 8205094
+PetalburgCity_Gym_Movement_GuysDadExitWest: @ 8205094
 	walk_down
 	walk_down
 	walk_left
@@ -668,7 +668,7 @@ PetalburgCity_Gym_Movement_WallysDadExitWest: @ 8205094
 	set_invisible
 	step_end
 
-PetalburgCity_Gym_Movement_PlayerExitWithWallysDadNorth: @ 82050A1
+PetalburgCity_Gym_Movement_PlayerExitWithGuysDadNorth: @ 82050A1
 	delay_16
 	walk_down
 	walk_down
@@ -678,7 +678,7 @@ PetalburgCity_Gym_Movement_PlayerExitWithWallysDadNorth: @ 82050A1
 	walk_down
 	step_end
 
-PetalburgCity_Gym_Movement_PlayerExitWithWallysDadEast: @ 82050A9
+PetalburgCity_Gym_Movement_PlayerExitWithGuysDadEast: @ 82050A9
 	delay_16
 	walk_down
 	walk_down
@@ -688,7 +688,7 @@ PetalburgCity_Gym_Movement_PlayerExitWithWallysDadEast: @ 82050A9
 	walk_down
 	step_end
 
-PetalburgCity_Gym_Movement_PlayerExitWithWallysDadWest: @ 82050B1
+PetalburgCity_Gym_Movement_PlayerExitWithGuysDadWest: @ 82050B1
 	delay_16
 	walk_down
 	walk_down
@@ -700,7 +700,7 @@ PetalburgCity_Gym_Movement_PlayerExitWithWallysDadWest: @ 82050B1
 	walk_down
 	step_end
 
-PetalburgCity_Gym_Movement_WallysDadEnterGym: @ 82050BB
+PetalburgCity_Gym_Movement_GuysDadEnterGym: @ 82050BB
 	walk_up
 	delay_8
 	walk_in_place_fastest_right
@@ -710,7 +710,7 @@ PetalburgCity_Gym_Movement_WallysDadEnterGym: @ 82050BB
 	walk_in_place_fastest_up
 	step_end
 
-PetalburgCity_Gym_Movement_WallysDadApproachPlayerNorth: @ 82050C3
+PetalburgCity_Gym_Movement_GuysDadApproachPlayerNorth: @ 82050C3
 	walk_right
 	walk_right
 	walk_up
@@ -719,7 +719,7 @@ PetalburgCity_Gym_Movement_WallysDadApproachPlayerNorth: @ 82050C3
 	walk_in_place_fastest_right
 	step_end
 
-PetalburgCity_Gym_Movement_WallysDadApproachPlayerEast: @ 82050CA
+PetalburgCity_Gym_Movement_GuysDadApproachPlayerEast: @ 82050CA
 	walk_right
 	walk_right
 	walk_up
@@ -727,7 +727,7 @@ PetalburgCity_Gym_Movement_WallysDadApproachPlayerEast: @ 82050CA
 	walk_up
 	step_end
 
-PetalburgCity_Gym_Movement_WallysDadApproachPlayerWest: @ 82050D0
+PetalburgCity_Gym_Movement_GuysDadApproachPlayerWest: @ 82050D0
 	walk_right
 	walk_right
 	walk_up
@@ -748,7 +748,7 @@ PetalburgCity_Gym_Movement_Unused: @ 82050D8
 	walk_in_place_fastest_down
 	step_end
 
-PetalburgCity_Gym_Movement_WallyArriveNorth: @ 82050E1
+PetalburgCity_Gym_Movement_GuyArriveNorth: @ 82050E1
 	delay_16
 	walk_up
 	delay_16
@@ -760,7 +760,7 @@ PetalburgCity_Gym_Movement_WallyArriveNorth: @ 82050E1
 	walk_in_place_fastest_left
 	step_end
 
-PetalburgCity_Gym_Movement_WallyArrive: @ 82050EB
+PetalburgCity_Gym_Movement_GuyArrive: @ 82050EB
 	delay_16
 	walk_up
 	delay_16
@@ -769,7 +769,7 @@ PetalburgCity_Gym_Movement_WallyArrive: @ 82050EB
 	walk_up
 	step_end
 
-PetalburgCity_Gym_Movement_WallyExitNorth: @ 82050F2
+PetalburgCity_Gym_Movement_GuyExitNorth: @ 82050F2
 	walk_down
 	walk_down
 	walk_down
@@ -779,7 +779,7 @@ PetalburgCity_Gym_Movement_WallyExitNorth: @ 82050F2
 	walk_in_place_down
 	step_end
 
-PetalburgCity_Gym_Movement_WallyExitEast: @ 82050FA
+PetalburgCity_Gym_Movement_GuyExitEast: @ 82050FA
 	walk_down
 	walk_down
 	walk_right
@@ -789,7 +789,7 @@ PetalburgCity_Gym_Movement_WallyExitEast: @ 82050FA
 	walk_in_place_down
 	step_end
 
-PetalburgCity_Gym_Movement_WallyExitSouthWest: @ 8205102
+PetalburgCity_Gym_Movement_GuyExitSouthWest: @ 8205102
 	walk_down
 	walk_down
 	walk_down
@@ -798,7 +798,7 @@ PetalburgCity_Gym_Movement_WallyExitSouthWest: @ 8205102
 	walk_in_place_down
 	step_end
 
-PetalburgCity_Gym_Movement_PlayerExitWithWallyNorth: @ 8205109
+PetalburgCity_Gym_Movement_PlayerExitWithGuyNorth: @ 8205109
 	delay_16
 	delay_16
 	delay_16
@@ -808,7 +808,7 @@ PetalburgCity_Gym_Movement_PlayerExitWithWallyNorth: @ 8205109
 	delay_8
 	step_end
 
-PetalburgCity_Gym_Movement_PlayerExitWithWallySouth: @ 8205111
+PetalburgCity_Gym_Movement_PlayerExitWithGuySouth: @ 8205111
 	delay_16
 	delay_16
 	walk_right
@@ -820,7 +820,7 @@ PetalburgCity_Gym_Movement_PlayerExitWithWallySouth: @ 8205111
 	delay_8
 	step_end
 
-PetalburgCity_Gym_Movement_PlayerExitWithWallyWest: @ 820511B
+PetalburgCity_Gym_Movement_PlayerExitWithGuyWest: @ 820511B
 	delay_16
 	delay_16
 	walk_down
@@ -830,7 +830,7 @@ PetalburgCity_Gym_Movement_PlayerExitWithWallyWest: @ 820511B
 	delay_8
 	step_end
 
-PetalburgCity_Gym_Movement_PlayerExitWithWallyEast: @ 8205123
+PetalburgCity_Gym_Movement_PlayerExitWithGuyEast: @ 8205123
 	walk_in_place_fastest_down
 	delay_16
 	delay_16
@@ -1318,16 +1318,16 @@ PetalburgCity_Gym_Text_DadYoureHereWithYourPokemon: @ 82057A2
 	.string "That's great news!\n"
 	.string "I'll be looking forward to it!$"
 
-PetalburgCity_Gym_Text_WallyIdLikeAPokemon: @ 82058B1
+PetalburgCity_Gym_Text_GuyIdLikeAPokemon: @ 82058B1
 	.string "Um… I…\n"
 	.string "I'd like to get a Pokémon, please…$"
 
-PetalburgCity_Gym_Text_DadOhYoureWallyRight: @ 82058DB
+PetalburgCity_Gym_Text_DadOhYoureGuyRight: @ 82058DB
 	.string "Dad: Hm? You're… Uh… Oh, right.\n"
-	.string "You're Wally, right?$"
+	.string "You're Guy, right?$"
 
-PetalburgCity_Gym_Text_WallyIveNeverCaughtAPokemon: @ 8205910
-	.string "Wally: I'm going to go stay with my\n"
+PetalburgCity_Gym_Text_GuyIveNeverCaughtAPokemon: @ 8205910
+	.string "Guy: I'm going to go stay with my\n"
 	.string "relatives in Verdanturf Town.\p"
 	.string "I thought I would be lonely by myself,\n"
 	.string "so I wanted to take a Pokémon along.\p"
@@ -1337,25 +1337,25 @@ PetalburgCity_Gym_Text_WallyIveNeverCaughtAPokemon: @ 8205910
 PetalburgCity_Gym_Text_DadHmISee: @ 82059D8
 	.string "Dad: Hm. I see.$"
 
-PetalburgCity_Gym_Text_DadPlayerGoWithWally: @ 82059E8
+PetalburgCity_Gym_Text_DadPlayerGoWithGuy: @ 82059E8
 	.string "Dad: {PLAYER}, you heard that,\n"
 	.string "right?\p"
-	.string "Go with Wally and make sure that he\n"
+	.string "Go with Guy and make sure that he\n"
 	.string "safely catches a Pokémon.$"
 
 PetalburgCity_Gym_Text_IllLoanYouMyZigzagoon: @ 8205A46
-	.string "Wally, here, I'll loan you my Pokémon.\p"
-	.string "Wally received a Zigzagoon!$"
+	.string "Guy, here, I'll loan you my Pokémon.\p"
+	.string "Guy received a Zigzagoon!$"
 
-PetalburgCity_Gym_Text_WallyThankYouAndDadGivesPokeBall: @ 8205A89
-	.string "Wally: Oh, wow!\n"
+PetalburgCity_Gym_Text_GuyThankYouAndDadGivesPokeBall: @ 8205A89
+	.string "Guy: Oh, wow!\n"
 	.string "A Pokémon!\p"
 	.string "Dad: Hm. I'll give you a Poké Ball, too.\n"
 	.string "Go for it!\p"
-	.string "Wally received a Poké Ball!$"
+	.string "Guy received a Poké Ball!$"
 
-PetalburgCity_Gym_Text_WallyOhWowThankYou: @ 8205AF4
-	.string "Wally: Oh, wow!\n"
+PetalburgCity_Gym_Text_GuyOhWowThankYou: @ 8205AF4
+	.string "Guy: Oh, wow!\n"
 	.string "Thank you!$"
 
 PetalburgCity_Gym_Text_WouldYouReallyComeWithMe: @ 8205B0F
@@ -1365,8 +1365,8 @@ PetalburgCity_Gym_Text_WouldYouReallyComeWithMe: @ 8205B0F
 PetalburgCity_Gym_Text_DadSoDidItWorkOut: @ 8205B32
 	.string "Dad: So, did it work out?$"
 
-PetalburgCity_Gym_Text_WallyThankYouBye: @ 8205B4C
-	.string "Wally: Thank you, yes, it did.\n"
+PetalburgCity_Gym_Text_GuyThankYouBye: @ 8205B4C
+	.string "Guy: Thank you, yes, it did.\n"
 	.string "Here's your Pokémon back.\p"
 	.string "{PLAYER}, thank you for coming along\n"
 	.string "with me.\p"
@@ -1395,7 +1395,7 @@ PetalburgCity_Gym_Text_DadGoCollectBadges: @ 8205C40
 	.string "But that's only after you become\n"
 	.string "stronger.$"
 
-PetalburgCity_Gym_Text_NormanGoToRustboro: @ 8205DB4
+PetalburgCity_Gym_Text_GrubGoToRustboro: @ 8205DB4
 	.string "Dad: Hm? Aren't you going to the\n"
 	.string "Pokémon Gym in Rustboro City?\p"
 	.string "There's no challenge for me to\n"
@@ -1405,7 +1405,7 @@ PetalburgCity_Gym_Text_NormanGoToRustboro: @ 8205DB4
 	.string "I'll battle you, {PLAYER}, when you\n"
 	.string "can show me four Gym Badges, okay?$"
 
-PetalburgCity_Gym_Text_NormanGoToDewford: @ 8205EAE
+PetalburgCity_Gym_Text_GrubGoToDewford: @ 8205EAE
 	.string "Dad: I see… So, you've beaten\n"
 	.string "the Gym Leader in Rustboro City.\p"
 	.string "But there are many more Trainers\n"
@@ -1420,14 +1420,14 @@ PetalburgCity_Gym_Text_YouHaveGottenStronger: @ 8205F87
 	.string "I can tell by the number of Badges\n"
 	.string "that you've earned.$"
 
-PetalburgCity_Gym_Text_NormanIntro: @ 8205FE5
+PetalburgCity_Gym_Text_GrubIntro: @ 8205FE5
 	.string "Dad: Hm…\n"
 	.string "So, you did get four Gym Badges.\p"
 	.string "Fine, as I promised, we will have\n"
 	.string "a Pokémon battle.\p"
 	.string "But first, let me give you this.$"
 
-PetalburgCity_Gym_Text_NormanMegaBracelet:
+PetalburgCity_Gym_Text_GrubMegaBracelet:
 	.string "That Mega Bracelet will allow certain\n"
 	.string "Pokémon to Mega Evolve in battle.\p"
 	.string "It's no good on its own, though.\p"
@@ -1442,11 +1442,11 @@ PetalburgCity_Gym_Text_NormanMegaBracelet:
 	.string "battle!\p"
 	.string "Here, take these Mega Stones too.$"
 
-PetalburgCity_Gym_Text_NormanWheneverReady:
+PetalburgCity_Gym_Text_GrubWheneverReady:
 	.string "Now then, {PLAYER}!\n"
 	.string "I'm ready when you are!$"
 
-PetalburgCity_Gym_Text_NormanBattleIntro:
+PetalburgCity_Gym_Text_GrubBattleIntro:
 	.string "{PLAYER}…\p"
 	.string "I'm so happy that I can have\n"
 	.string "a real battle with my own child.\p"
@@ -1456,7 +1456,7 @@ PetalburgCity_Gym_Text_NormanBattleIntro:
 	.string "{PLAYER}, you'd better give it your\n"
 	.string "best shot, too!$"
 
-PetalburgCity_Gym_Text_NormanDefeat: @ 8206107
+PetalburgCity_Gym_Text_GrubDefeat: @ 8206107
 	.string "…\p"
 	.string "I… I can't…\p"
 	.string "I can't believe it. {PLAYER}…\p"
@@ -1504,7 +1504,7 @@ PetalburgCity_Gym_Text_PleaseComeWithMe: @ 8206377
 	.string "I have something I want you to have.$"
 
 PetalburgCity_Gym_Text_LetMeBorrowPlayer: @ 82063CA
-	.string "Norman, you don't mind, do you?\p"
+	.string "Grub, you don't mind, do you?\p"
 	.string "Let me borrow your {PLAYER}{KUN} for\n"
 	.string "a minute or two.$"
 
@@ -1751,33 +1751,33 @@ PetalburgCity_Gym_Text_GymStatue: @ 820744C
 
 PetalburgCity_Gym_Text_GymStatueCertified: @ 8207467
 	.string "Petalburg City Pokémon Gym\p"
-	.string "Norman's Certified Trainers:\n"
+	.string "Grub's Certified Trainers:\n"
 	.string "{PLAYER}$"
 
-PetalburgCity_Gym_Text_NormanPreRematch: @ 82074A2
+PetalburgCity_Gym_Text_GrubPreRematch: @ 82074A2
 	.string "Because we are parent and child,\n"
 	.string "we owe it to each other to do the best\l"
 	.string "we can. Isn't that right, {PLAYER}?$"
 
-PetalburgCity_Gym_Text_NormanRematchDefeat: @ 82075CE
+PetalburgCity_Gym_Text_GrubRematchDefeat: @ 82075CE
 	.string "Uh… Haha…\n"
 	.string "Maybe that was going too hard…$"
 
-PetalburgCity_Gym_Text_NormanPostRematch: @ 82075F7
+PetalburgCity_Gym_Text_GrubPostRematch: @ 82075F7
 	.string "Dad: {PLAYER}…\n"
 	.string "What is your dream?\p"
 	.string "My dream…\n"
 	.string "Hahaha…\l"
 	.string "It has already come true, actually.$"
 
-PetalburgCity_Gym_Text_NormanRematchNeedTwoMons: @ 820764A
+PetalburgCity_Gym_Text_GrubRematchNeedTwoMons: @ 820764A
 	.string "Dad: Hm? Wait a second, {PLAYER}.\p"
 	.string "Do you only have one Pokémon that is\n"
 	.string "capable of battle?\p"
 	.string "Sorry, but you'll have to come back\n"
 	.string "with at least two Pokémon.$"
 
-PetalburgCity_Gym_Text_NormanChooseFormat:
+PetalburgCity_Gym_Text_GrubChooseFormat:
 	.string "Dad: {PLAYER}…\n"
 	.string "I had a feeling that you would come.\p"
 	.string "I would never refuse to accept\n"
@@ -1790,6 +1790,6 @@ PetalburgCity_Gym_Text_NormanChooseFormat:
 	.string "So what'll it be: a single battle,\n"
 	.string "or a double battle?$"
 
-PetalburgCity_Gym_Text_NormanAllowLegends:
+PetalburgCity_Gym_Text_GrubAllowLegends:
 	.string "Dad: Do you want to try battling my\n"
 	.string "Legendary Pokémon?$"

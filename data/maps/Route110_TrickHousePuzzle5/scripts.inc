@@ -1026,7 +1026,7 @@ Route110_TrickHousePuzzle5_Text_Mechadoll2Intro: @ 826D8EA
 
 Route110_TrickHousePuzzle5_Text_Mechadoll2Quiz1: @ 826D940
 	.string "MECHADOLL 2 QUIZ.\p"
-	.string "Which of these Pokémon did Wally\n"
+	.string "Which of these Pokémon did Guy\n"
 	.string "borrow from your father?$"
 
 Route110_TrickHousePuzzle5_Text_Mechadoll2Quiz2: @ 826D98C

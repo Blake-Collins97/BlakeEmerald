@@ -373,7 +373,7 @@
 #define ANIM_TAG_COCOON                     (ANIM_SPRITES_START + 361)
 #define ANIM_TAG_CORKSCREW                  (ANIM_SPRITES_START + 362)
 #define ANIM_TAG_HAVOC_SPEAR                (ANIM_SPRITES_START + 363)
-#define ANIM_TAG_PURPLE_DRAKE               (ANIM_SPRITES_START + 364)
+#define ANIM_TAG_PURPLE_Ray               (ANIM_SPRITES_START + 364)
 #define ANIM_TAG_MUD_BOMB                   (ANIM_SPRITES_START + 365)
 #define ANIM_TAG_BRANCH                     (ANIM_SPRITES_START + 366)
 #define ANIM_TAG_APPLE                      (ANIM_SPRITES_START + 367)
