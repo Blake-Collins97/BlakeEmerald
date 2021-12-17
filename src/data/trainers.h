@@ -3817,8 +3817,8 @@ const struct Trainer gTrainers[] = {
         .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_CHECK_FOE,
-        .partySize = ARRAY_COUNT(sParty_Cody1),
-        .party = {.ItemCustomMoves = sParty_Cody1},
+        .partySize = ARRAY_COUNT(sParty_Juan1),
+        .party = {.ItemCustomMoves = sParty_Juan1},
     },
 
     [TRAINER_JERRY_1] =
@@ -11181,8 +11181,8 @@ const struct Trainer gTrainers[] = {
         .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_CHECK_FOE,
-        .partySize = ARRAY_COUNT(sParty_Cody2),
-        .party = {.ItemCustomMoves = sParty_Cody2},
+        .partySize = ARRAY_COUNT(sParty_Juan2),
+        .party = {.ItemCustomMoves = sParty_Juan2},
     },
 
     [TRAINER_JUAN_3] =
@@ -11195,8 +11195,8 @@ const struct Trainer gTrainers[] = {
         .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_CHECK_FOE,
-        .partySize = ARRAY_COUNT(sParty_Cody3),
-        .party = {.ItemCustomMoves = sParty_Cody3},
+        .partySize = ARRAY_COUNT(sParty_Juan3),
+        .party = {.ItemCustomMoves = sParty_Juan3},
     },
 
     [TRAINER_JUAN_4] =
@@ -11209,8 +11209,8 @@ const struct Trainer gTrainers[] = {
         .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_CHECK_FOE,
-        .partySize = ARRAY_COUNT(sParty_Cody4),
-        .party = {.ItemCustomMoves = sParty_Cody4},
+        .partySize = ARRAY_COUNT(sParty_Juan4),
+        .party = {.ItemCustomMoves = sParty_Juan4},
     },
 
     [TRAINER_JUAN_5] =
@@ -11223,8 +11223,8 @@ const struct Trainer gTrainers[] = {
         .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_CHECK_FOE,
-        .partySize = ARRAY_COUNT(sParty_Cody5),
-        .party = {.ItemCustomMoves = sParty_Cody5},
+        .partySize = ARRAY_COUNT(sParty_Juan5),
+        .party = {.ItemCustomMoves = sParty_Juan5},
     },
 
     [TRAINER_ANGELO] =

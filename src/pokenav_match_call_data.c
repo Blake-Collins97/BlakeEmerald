@@ -478,23 +478,23 @@ static const struct MatchCallStructTrainer sTateLizaMatchCallHeader =
     .textData = sTateLizaTextScripts
 };
 
-static const match_call_text_data_t sCodyTextScripts[] = {
-    { MatchCall_Text_Cody1, 0xFFFE,              0xFFFF },
-    { MatchCall_Text_Cody2, 0xFFFF,              0xFFFF },
-    { MatchCall_Text_Cody3, 0xFFFF,              0xFFFF },
-    { MatchCall_Text_Cody4, FLAG_SYS_GAME_CLEAR, 0xFFFF },
+static const match_call_text_data_t sJuanTextScripts[] = {
+    { MatchCall_Text_Juan1, 0xFFFE,              0xFFFF },
+    { MatchCall_Text_Juan2, 0xFFFF,              0xFFFF },
+    { MatchCall_Text_Juan3, 0xFFFF,              0xFFFF },
+    { MatchCall_Text_Juan4, FLAG_SYS_GAME_CLEAR, 0xFFFF },
     { NULL,                 0xFFFF,              0xFFFF }
 };
 
-static const struct MatchCallStructTrainer sCodyMatchCallHeader =
+static const struct MatchCallStructTrainer sJuanMatchCallHeader =
 {
     .type = MC_TYPE_LEADER,
     .mapSec = MAPSEC_SOOTOPOLIS_CITY,
     .flag = FLAG_ENABLE_JUAN_MATCH_CALL,
     .rematchTableIdx = REMATCH_JUAN,
-    .desc = gText_CodyMatchCallDesc,
+    .desc = gText_JuanMatchCallDesc,
     .name = NULL,
-    .textData = sCodyTextScripts
+    .textData = sJuanTextScripts
 };
 
 static const match_call_text_data_t sSidneyTextScripts[] = {
@@ -593,7 +593,7 @@ static const match_call_t sMatchCallHeaders[] = {
     [MC_HEADER_FLANNERY]   = {.leader = &sFlanneryMatchCallHeader},
     [MC_HEADER_WINONA]     = {.leader = &sWinonaMatchCallHeader},
     [MC_HEADER_TATE_LIZA]  = {.leader = &sTateLizaMatchCallHeader},
-    [MC_HEADER_JUAN]       = {.leader = &sCodyMatchCallHeader},
+    [MC_HEADER_JUAN]       = {.leader = &sJuanMatchCallHeader},
     [MC_HEADER_SIDNEY]     = {.leader = &sSidneyMatchCallHeader},
     [MC_HEADER_PHOEBE]     = {.leader = &sPhoebeMatchCallHeader},
     [MC_HEADER_GLACIA]     = {.leader = &sGlaciaMatchCallHeader},
