@@ -61,15 +61,15 @@ gBattlescriptsForSafariActions::
 	.4byte BattleScript_ActionWatchesCarefully
 	.4byte BattleScript_ActionGetNear
 	.4byte BattleScript_ActionThrowPokeblock
-	.4byte BattleScript_ActionGuyThrow
+	.4byte BattleScript_ActionWallyThrow
 
 BattleScript_BallThrow::
-	jumpifword CMP_COMMON_BITS, gBattleTypeFlags, BATTLE_TYPE_Guy_TUTORIAL, BattleScript_BallThrowByGuy
+	jumpifword CMP_COMMON_BITS, gBattleTypeFlags, BATTLE_TYPE_WALLY_TUTORIAL, BattleScript_BallThrowByWally
 	printstring STRINGID_PLAYERUSEDITEM
 	handleballthrow
 
-BattleScript_BallThrowByGuy::
-	printstring STRINGID_GuyUSEDITEM
+BattleScript_BallThrowByWally::
+	printstring STRINGID_WALLYUSEDITEM
 	handleballthrow
 
 BattleScript_SafariBallThrow::
@@ -108,7 +108,7 @@ BattleScript_SuccessBallThrowEnd::
 	setbyte gBattleOutcome, B_OUTCOME_CAUGHT
 	finishturn
 
-BattleScript_GuyBallThrow::
+BattleScript_WallyBallThrow::
 	printstring STRINGID_GOTCHAPKMNCAUGHT2
 	setbyte gBattleOutcome, B_OUTCOME_CAUGHT
 	finishturn
@@ -213,7 +213,7 @@ BattleScript_ActionThrowPokeblock:
 	waitmessage B_WAIT_TIME_LONG
 	end2
 
-BattleScript_ActionGuyThrow:
+BattleScript_ActionWallyThrow:
 	printstring STRINGID_RETURNMON
 	waitmessage B_WAIT_TIME_LONG
 	returnatktoball

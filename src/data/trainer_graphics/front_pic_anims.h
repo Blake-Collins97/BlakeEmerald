@@ -142,19 +142,19 @@ static const union AnimCmd *const sAnims_Gentleman[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_EliteFourDan[] ={
+static const union AnimCmd *const sAnims_EliteFourSidney[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_EliteFourSharni[] ={
+static const union AnimCmd *const sAnims_EliteFourPhoebe[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_EliteFourChelsea[] ={
+static const union AnimCmd *const sAnims_EliteFourGlacia[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_EliteFourRay[] ={
+static const union AnimCmd *const sAnims_EliteFourDrake[] ={
     sAnim_GeneralFrame0,
 };
 
@@ -174,7 +174,7 @@ static const union AnimCmd *const sAnims_LeaderFlannery[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_LeaderGrub[] ={
+static const union AnimCmd *const sAnims_LeaderNorman[] ={
     sAnim_GeneralFrame0,
 };
 
@@ -186,7 +186,7 @@ static const union AnimCmd *const sAnims_LeaderTateAndLiza[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_LeaderCody[] ={
+static const union AnimCmd *const sAnims_LeaderJuan[] ={
     sAnim_GeneralFrame0,
 };
 
@@ -214,7 +214,7 @@ static const union AnimCmd *const sAnims_Youngster[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_ChampionBlake[] ={
+static const union AnimCmd *const sAnims_ChampionWallace[] ={
     sAnim_GeneralFrame0,
 };
 
@@ -282,7 +282,7 @@ static const union AnimCmd *const sAnims_Cynthia[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_Guy[] ={
+static const union AnimCmd *const sAnims_Wally[] ={
     sAnim_GeneralFrame0,
 };
 
@@ -412,25 +412,25 @@ const union AnimCmd *const *const gTrainerFrontAnimsPtrTable[] =
     [TRAINER_PIC_PSYCHIC_M] = sAnims_PsychicM,
     [TRAINER_PIC_PSYCHIC_F] = sAnims_PsychicF,
     [TRAINER_PIC_GENTLEMAN] = sAnims_Gentleman,
-    [TRAINER_PIC_ELITE_FOUR_Dan] = sAnims_EliteFourDan,
-    [TRAINER_PIC_ELITE_FOUR_Sharni] = sAnims_EliteFourSharni,
-    [TRAINER_PIC_ELITE_FOUR_Chelsea] = sAnims_EliteFourChelsea,
-    [TRAINER_PIC_ELITE_FOUR_Ray] = sAnims_EliteFourRay,
+    [TRAINER_PIC_ELITE_FOUR_SIDNEY] = sAnims_EliteFourSidney,
+    [TRAINER_PIC_ELITE_FOUR_PHOEBE] = sAnims_EliteFourPhoebe,
+    [TRAINER_PIC_ELITE_FOUR_GLACIA] = sAnims_EliteFourGlacia,
+    [TRAINER_PIC_ELITE_FOUR_DRAKE] = sAnims_EliteFourDrake,
     [TRAINER_PIC_LEADER_ROXANNE] = sAnims_LeaderRoxanne,
     [TRAINER_PIC_LEADER_BRAWLY] = sAnims_LeaderBrawly,
     [TRAINER_PIC_LEADER_WATTSON] = sAnims_LeaderWattson,
     [TRAINER_PIC_LEADER_FLANNERY] = sAnims_LeaderFlannery,
-    [TRAINER_PIC_LEADER_Grub] = sAnims_LeaderGrub,
+    [TRAINER_PIC_LEADER_NORMAN] = sAnims_LeaderNorman,
     [TRAINER_PIC_LEADER_WINONA] = sAnims_LeaderWinona,
     [TRAINER_PIC_LEADER_TATE_AND_LIZA] = sAnims_LeaderTateAndLiza,
-    [TRAINER_PIC_LEADER_Cody] = sAnims_LeaderCody,
+    [TRAINER_PIC_LEADER_JUAN] = sAnims_LeaderJuan,
     [TRAINER_PIC_SCHOOL_KID_M] = sAnims_SchoolKidM,
     [TRAINER_PIC_SCHOOL_KID_F] = sAnims_SchoolKidF,
     [TRAINER_PIC_SR_AND_JR] = sAnims_SrAndJr,
     [TRAINER_PIC_POKEFAN_M] = sAnims_PokefanM,
     [TRAINER_PIC_POKEFAN_F] = sAnims_PokefanF,
     [TRAINER_PIC_YOUNGSTER] = sAnims_Youngster,
-    [TRAINER_PIC_CHAMPION_Blake] = sAnims_ChampionBlake,
+    [TRAINER_PIC_CHAMPION_WALLACE] = sAnims_ChampionWallace,
     [TRAINER_PIC_FISHERMAN] = sAnims_Fisherman,
     [TRAINER_PIC_CYCLING_TRIATHLETE_M] = sAnims_CyclingTriathleteM,
     [TRAINER_PIC_CYCLING_TRIATHLETE_F] = sAnims_CyclingTriathleteF,
@@ -446,7 +446,7 @@ const union AnimCmd *const *const gTrainerFrontAnimsPtrTable[] =
     [TRAINER_PIC_TWINS] = sAnims_Twins,
     [TRAINER_PIC_SAILOR] = sAnims_Sailor,
     [TRAINER_PIC_MAGMA_ADMIN] = sAnims_MagmaAdmin,
-    [TRAINER_PIC_Guy] = sAnims_Guy,
+    [TRAINER_PIC_WALLY] = sAnims_Wally,
     [TRAINER_PIC_BRENDAN] = sAnims_Brendan,
     [TRAINER_PIC_MAY] = sAnims_May,
     [TRAINER_PIC_BUG_CATCHER] = sAnims_BugCatcher,

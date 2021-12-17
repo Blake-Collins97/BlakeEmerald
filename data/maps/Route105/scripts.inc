@@ -99,5 +99,5 @@ Route104_Text_DadPokenavCall: @ 81EE336
 	.string "… … … … … Click!$"
 
 Route104_Text_RegisteredDadInPokenav: @ 81EE463
-	.string "Registered Dad Grub\n"
+	.string "Registered Dad Norman\n"
 	.string "in the PokéNav.$"

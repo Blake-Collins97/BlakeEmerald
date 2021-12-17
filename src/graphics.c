@@ -154,7 +154,7 @@ const u32 gBattleAnimSpritePal_GigavoltHavocSpear[] = INCBIN_U32("graphics/battl
 const u32 gBattleAnimSpriteGfx_GoldenApple[] = INCBIN_U32("graphics/battle_anims/sprites/new/golden_apple.4bpp.lz");
 const u32 gBattleAnimSpritePal_GoldenApple[] = INCBIN_U32("graphics/battle_anims/sprites/new/golden_apple.gbapal.lz");
 
-const u32 gBattleAnimSpritePal_GreenRay[] = INCBIN_U32("graphics/battle_anims/sprites/new/green_Ray.gbapal.lz");
+const u32 gBattleAnimSpritePal_GreenDrake[] = INCBIN_U32("graphics/battle_anims/sprites/new/green_drake.gbapal.lz");
 
 const u32 gBattleAnimSpriteGfx_NewGreenStar[] = INCBIN_U32("graphics/battle_anims/sprites/new/green_star.4bpp.lz");
 const u32 gBattleAnimSpritePal_NewGreenStar[] = INCBIN_U32("graphics/battle_anims/sprites/new/green_star.gbapal.lz");
@@ -231,8 +231,8 @@ const u32 gBattleAnimSpritePal_PoisonColumn[] = INCBIN_U32("graphics/battle_anim
 const u32 gBattleAnimSpriteGfx_PowerTrick[] = INCBIN_U32("graphics/battle_anims/sprites/new/power_trick.4bpp.lz");
 const u32 gBattleAnimSpritePal_PowerTrick[] = INCBIN_U32("graphics/battle_anims/sprites/new/power_trick.gbapal.lz");
 
-const u32 gBattleAnimSpriteGfx_PurpleRay[] = INCBIN_U32("graphics/battle_anims/sprites/new/purple_Ray.4bpp.lz");
-const u32 gBattleAnimSpritePal_PurpleRay[] = INCBIN_U32("graphics/battle_anims/sprites/new/purple_Ray.gbapal.lz");
+const u32 gBattleAnimSpriteGfx_PurpleDrake[] = INCBIN_U32("graphics/battle_anims/sprites/new/purple_drake.4bpp.lz");
+const u32 gBattleAnimSpritePal_PurpleDrake[] = INCBIN_U32("graphics/battle_anims/sprites/new/purple_drake.gbapal.lz");
 
 const u32 gBattleAnimSpriteGfx_RazorShell[] = INCBIN_U32("graphics/battle_anims/sprites/new/razor_shell.4bpp.lz");
 const u32 gBattleAnimSpritePal_RazorShell[] = INCBIN_U32("graphics/battle_anims/sprites/new/razor_shell.gbapal.lz");

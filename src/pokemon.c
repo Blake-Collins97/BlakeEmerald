@@ -3090,12 +3090,12 @@ static const struct SpriteTemplate sTrainerBackSpriteTemplates[] =
         .affineAnims = gAffineAnims_BattleSpritePlayerSide,
         .callback = SpriteCB_BattleSpriteStartSlideLeft,
     },
-    [TRAINER_BACK_PIC_Guy] = {
+    [TRAINER_BACK_PIC_WALLY] = {
         .tileTag = 0xFFFF,
         .paletteTag = 0,
         .oam = &gOamData_BattleSpritePlayerSide,
         .anims = NULL,
-        .images = gTrainerBackPicTable_Guy,
+        .images = gTrainerBackPicTable_Wally,
         .affineAnims = gAffineAnims_BattleSpritePlayerSide,
         .callback = SpriteCB_BattleSpriteStartSlideLeft,
     },
@@ -3421,7 +3421,7 @@ void CreateMonWithGenderNatureLetter(struct Pokemon *mon, u16 species, u8 level,
     CalculateMonStats(mon);
 }
 
-// This is only used to create Guy's Ralts.
+// This is only used to create Wally's Ralts.
 void CreateMaleMon(struct Pokemon *mon, u16 species, u8 level)
 {
     u32 personality;

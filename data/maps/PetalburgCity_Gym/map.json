@@ -15,7 +15,7 @@
   "connections": 0,
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_Grub",
+      "graphics_id": "OBJ_EVENT_GFX_NORMAN",
       "x": 4,
       "y": 2,
       "elevation": 0,
@@ -24,8 +24,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "PetalburgCity_Gym_EventScript_Grub",
-      "flag": "FLAG_HIDE_PETALBURG_GYM_Grub"
+      "script": "PetalburgCity_Gym_EventScript_Norman",
+      "flag": "FLAG_HIDE_PETALBURG_GYM_NORMAN"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_5",
@@ -132,7 +132,7 @@
       "flag": "FLAG_HIDE_PETALBURG_GYM_GREETER"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_Guy",
+      "graphics_id": "OBJ_EVENT_GFX_WALLY",
       "x": 4,
       "y": 111,
       "elevation": 3,
@@ -142,7 +142,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
-      "flag": "FLAG_HIDE_PETALBURG_GYM_Guy"
+      "flag": "FLAG_HIDE_PETALBURG_GYM_WALLY"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKEFAN_M",
@@ -155,7 +155,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
-      "flag": "FLAG_HIDE_PETALBURG_GYM_GuyS_DAD"
+      "flag": "FLAG_HIDE_PETALBURG_GYM_WALLYS_DAD"
     }
   ],
   "warp_events": [

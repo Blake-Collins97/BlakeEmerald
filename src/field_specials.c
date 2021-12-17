@@ -365,9 +365,9 @@ u8 GetSSTidalLocation(s8 *mapGroup, s8 *mapNum, s16 *x, s16 *y)
     return SS_TIDAL_LOCATION_CURRENTS;
 }
 
-bool32 ShouldDoGuyCall(void)
+bool32 ShouldDoWallyCall(void)
 {
-    if (FlagGet(FLAG_ENABLE_FIRST_Guy_POKENAV_CALL))
+    if (FlagGet(FLAG_ENABLE_FIRST_WALLY_POKENAV_CALL))
     {
         switch (gMapHeader.mapType)
         {
@@ -375,7 +375,7 @@ bool32 ShouldDoGuyCall(void)
             case MAP_TYPE_CITY:
             case MAP_TYPE_ROUTE:
             case MAP_TYPE_OCEAN_ROUTE:
-                if (++(*GetVarPointer(VAR_Guy_CALL_STEP_COUNTER)) < 250)
+                if (++(*GetVarPointer(VAR_WALLY_CALL_STEP_COUNTER)) < 250)
                 {
                     return FALSE;
                 }
@@ -4825,13 +4825,13 @@ void UpdateTrainerFanClubGameClear(void)
 }
 
 // If the player has < 3 fans, gain a new fan whenever the counter reaches 20+
-// Defeating Ray or participating in a Contest increments the counter by 2 
+// Defeating Drake or participating in a Contest increments the counter by 2 
 // Participating at Battle Tower or in a Secret Base battle increments the counter by 1
 u8 TryGainNewFanFromCounter(u8 incrementId)
 {
     static const u8 sCounterIncrements[] = 
     { 
-        [FANCOUNTER_DEFEATED_Ray]    = 2, 
+        [FANCOUNTER_DEFEATED_DRAKE]    = 2, 
         [FANCOUNTER_BATTLED_AT_BASE]   = 1, 
         [FANCOUNTER_FINISHED_CONTEST]  = 2, 
         [FANCOUNTER_USED_BATTLE_TOWER] = 1 
@@ -5042,7 +5042,7 @@ static void BufferFanClubTrainerName_(struct LinkBattleRecords *linkRecords, u8 
         switch (whichNPCTrainer)
         {
             case 0:
-                StringCopy(gStringVar1, gText_Blake);
+                StringCopy(gStringVar1, gText_Wallace);
                 break;
             case 1:
                 StringCopy(gStringVar1, gText_Steven);
@@ -5054,13 +5054,13 @@ static void BufferFanClubTrainerName_(struct LinkBattleRecords *linkRecords, u8 
                 StringCopy(gStringVar1, gText_Winona);
                 break;
             case 4:
-                StringCopy(gStringVar1, gText_Sharni);
+                StringCopy(gStringVar1, gText_Phoebe);
                 break;
             case 5:
-                StringCopy(gStringVar1, gText_Chelsea);
+                StringCopy(gStringVar1, gText_Glacia);
                 break;
             default:
-                StringCopy(gStringVar1, gText_Blake);
+                StringCopy(gStringVar1, gText_Wallace);
                 break;
         }
     }

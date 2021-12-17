@@ -158,7 +158,7 @@
     "PacifidlogTown_House5"
   ],
   "gMapGroup_IndoorPetalburg": [
-    "PetalburgCity_GuysHouse",
+    "PetalburgCity_WallysHouse",
     "PetalburgCity_Gym",
     "PetalburgCity_House1",
     "PetalburgCity_House2",
@@ -281,10 +281,10 @@
     "SootopolisCity_MysteryEventsHouse_B1F"
   ],
   "gMapGroup_IndoorEverGrande": [
-    "EverGrandeCity_DansRoom",
-    "EverGrandeCity_SharnisRoom",
-    "EverGrandeCity_ChelseasRoom",
-    "EverGrandeCity_RaysRoom",
+    "EverGrandeCity_SidneysRoom",
+    "EverGrandeCity_PhoebesRoom",
+    "EverGrandeCity_GlaciasRoom",
+    "EverGrandeCity_DrakesRoom",
     "EverGrandeCity_ChampionsRoom",
     "EverGrandeCity_Hall1",
     "EverGrandeCity_Hall2",
