@@ -1565,7 +1565,7 @@ static const struct LevelUpMove sRapidashLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_FURY_ATTACK),
     LEVEL_UP_MOVE( 1, MOVE_POISON_JAB),
     LEVEL_UP_MOVE( 1, MOVE_MEGAHORN),
-    LEVEL_UP_MOVE( 1, MOVE_GROWL),
+    LEVEL_UP_MOVE( 1, MOVE_PLAY_ROUGH),
     LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 1, MOVE_EMBER),
@@ -1579,7 +1579,7 @@ static const struct LevelUpMove sRapidashLevelUpLearnset[] = {
         LEVEL_UP_MOVE(27, MOVE_BLAZE_KICK),
     #endif
     LEVEL_UP_MOVE(29, MOVE_TAKE_DOWN),
-    LEVEL_UP_MOVE(33, MOVE_INFERNO),
+    LEVEL_UP_MOVE(33, MOVE_HIGH_HORSEPOWER),
     #ifdef REBALANCED_VERSION
         LEVEL_UP_MOVE(35, MOVE_JUMP_KICK),
     #endif

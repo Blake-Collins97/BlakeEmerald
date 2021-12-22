@@ -2475,9 +2475,9 @@ static const struct TrainerMonItemCustomMoves sParty_Marc[] = { // Rustboro Gym
 static const struct TrainerMonItemCustomMoves sParty_Roxanne1[] = {
     {
     .lvl = -3,
-    .species = SPECIES_ARON,
+    .species = SPECIES_GEODUDE,
     .heldItem = ITEM_CHESTO_BERRY,
-    .ability = 0, // Sturdy
+    .ability = 1, // Sturdy
     .spread = SPREAD_ROXANNE_ONE_MON,
     .moves = MOVE_ROCK_TOMB, MOVE_STEALTH_ROCK, MOVE_METAL_CLAW, MOVE_REST
     },
@@ -6735,7 +6735,7 @@ static const struct TrainerMonItemCustomMoves sParty_Wattson1[] = {
     .ability = 1, // Lightning Rod
     .heldItem = ITEM_SITRUS_BERRY,
     .spread = SPREAD_31_IV_SPATK_SPEED_MODEST,
-    .moves = MOVE_VOLT_SWITCH, MOVE_FLAMETHROWER, MOVE_AURORA_BEAM, MOVE_SIGNAL_BEAM
+    .moves = MOVE_VOLT_SWITCH, MOVE_FLAME_BURST, MOVE_AURORA_BEAM, MOVE_SIGNAL_BEAM
     }
 };
 
@@ -9331,11 +9331,11 @@ static const struct TrainerMonItemCustomMoves sParty_Flannery1[] = {
     },
     {
     .lvl = 0,
-    .species = SPECIES_HOUNDOOM,
+    .species = SPECIES_RAPIDASH,
     .heldItem = ITEM_FIRE_GEM,
     .ability = 1, // Flash Fire
     .spread = SPREAD_31_IV_SPATK_SPEED_HASTY,
-    .moves = MOVE_OVERHEAT, MOVE_DARK_PULSE, MOVE_SOLAR_BEAM, MOVE_SUCKER_PUNCH
+    .moves = MOVE_BLAZE_KICK, MOVE_MEGAHORN, MOVE_HIGH_HORSEPOWER, MOVE_PLAY_ROUGH
     },
     {
     .lvl = 0,
