@@ -259,7 +259,7 @@ EverGrandeCity_ChampionsRoom_Movement_BirchArrives: @ 8228C43
 	step_end
 
 EverGrandeCity_ChampionsRoom_Text_IntroSpeech: @ 8228C4C
-	.string "Wallace: Welcome, {PLAYER}{KUN}.\p"
+	.string "Blake: Welcome, {PLAYER}{KUN}.\p"
 	.string "That incident in Sootopolis City…\n"
 	.string "That was superb work, putting an end\l"
 	.string "to that crisis all by yourself.\p"
@@ -277,21 +277,21 @@ EverGrandeCity_ChampionsRoom_Text_IntroSpeech: @ 8228C4C
 	.string "are put to the test against what\l"
 	.string "others like you have achieved.\p"
 	.string "Now!\p"
-	.string "Who can most elegantly dance with\n"
-	.string "their Pokémon in Hoenn?\p"
+	.string "It is time to see, who can wield\n"
+	.string "their Pokémon best?\p"
 	.string "Show me right here and now!$"
 
 EverGrandeCity_ChampionsRoom_Text_Defeat: @ 8228EAC
 	.string "I, the Champion, fall in defeat…\p"
 	.string "That was wonderful work.\n"
-	.string "You were elegant, infuriatingly so.\l"
+	.string "You were stong and adaptable\n"
+	.string "infuriatingly so.\l"
 	.string "And yet it was utterly glorious!\p"
 	.string "Kudos to you, {PLAYER}{KUN}!\p"
-	.string "You are a truly noble Pokémon\n"
-	.string "Trainer!$"
+	.string "You are a  Pokémon Master!$"
 
 EverGrandeCity_ChampionsRoom_Text_PostBattleSpeech: @ 8228F66
-	.string "Wallace: The Pokémon you sent into\n"
+	.string "Blake: The Pokémon you sent into\n"
 	.string "battle…\p"
 	.string "At times they danced like a spring\n"
 	.string "breeze, and at times they struck\l"
@@ -349,13 +349,13 @@ EverGrandeCity_ChampionsRoom_Text_BirchCongratulations: @ 822934D
 	.string "Now, go proudly into the final room!$"
 
 EverGrandeCity_ChampionsRoom_Text_WallaceComeWithMe: @ 8229399
-	.string "Wallace: {PLAYER}{KUN}…\p"
+	.string "Blake: {PLAYER}{KUN}…\p"
 	.string "No, let me rephrase that properly.\p"
 	.string "The new Champion!\p"
 	.string "Come with me.$"
 
 EverGrandeCity_ChampionsRoom_Text_WallaceWaitOutside: @ 82293EB
-	.string "Wallace: I'm sorry, but…\p"
+	.string "Blake: I'm sorry, but…\p"
 	.string "From here on, only those Trainers who\n"
 	.string "have become Champions may enter.\p"
 	.string "You'll have to wait outside with\n"

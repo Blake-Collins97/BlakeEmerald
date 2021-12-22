@@ -2228,9 +2228,9 @@ MatchCall_Text_Juan1:: @ 82B3249
 	.string "{PLAYER}{KUN}… Was it?\p"
 	.string "Our battle together--it brought\n"
 	.string "to me memories of when I first\l"
-	.string "encountered Wallace.\p"
+	.string "battled Blake.\p"
 	.string "Perhaps you are a genius who may\n"
-	.string "yet surpass Wallace!$"
+	.string "yet surpass Blake!$"
 
 MatchCall_Text_Juan2:: @ 82B32EC
 	.string "Cody: Fufu… {PLAYER}{KUN}…\n"

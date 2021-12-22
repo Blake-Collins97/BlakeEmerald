@@ -282,7 +282,7 @@ SootopolisCity_Gym_1F_Text_JuanDefeat: @ 8225432
 	.string "From you, I sense the brilliant shine\n"
 	.string "of skill that will overcome all.\p"
 	.string "However, compared with me or even\n"
-	.string "Wallace, you are lacking in elegance.\p"
+	.string "Blake, you are lacking in elegance.\p"
 	.string "Perhaps I should make you a loan\n"
 	.string "of my outfit?\p"
 	.string "… … … … … …\n"
