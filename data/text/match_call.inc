@@ -2224,7 +2224,7 @@ MatchCall_Text_TateLiza4:: @ 82B31CD
 	.string "Liza: We could all battle again!$"
 
 MatchCall_Text_Juan1:: @ 82B3249
-	.string "Juan: Hmm…\n"
+	.string "Cody: Hmm…\n"
 	.string "{PLAYER}{KUN}… Was it?\p"
 	.string "Our battle together--it brought\n"
 	.string "to me memories of when I first\l"
@@ -2233,7 +2233,7 @@ MatchCall_Text_Juan1:: @ 82B3249
 	.string "yet surpass Wallace!$"
 
 MatchCall_Text_Juan2:: @ 82B32EC
-	.string "Juan: Fufu… {PLAYER}{KUN}…\n"
+	.string "Cody: Fufu… {PLAYER}{KUN}…\n"
 	.string "You've finally achieved your goal.\p"
 	.string "My eye for appraising talent wasn't\n"
 	.string "mistaken…\p"
@@ -2242,14 +2242,14 @@ MatchCall_Text_Juan2:: @ 82B32EC
 	.string "of power and prestige.$"
 
 MatchCall_Text_Juan3:: @ 82B33AA
-	.string "Juan: Hoho… {PLAYER}{KUN}…\p"
+	.string "Cody: Hoho… {PLAYER}{KUN}…\p"
 	.string "Our Sootopolis Gym has finally\n"
 	.string "reopened.\p"
 	.string "If you wish to see me, you are\n"
 	.string "welcome to visit anytime.$"
 
 MatchCall_Text_Juan4:: @ 82B341E
-	.string "Juan: {PLAYER}{KUN}…\p"
+	.string "Cody: {PLAYER}{KUN}…\p"
 	.string "Like the finest music, the battles\n"
 	.string "we wage together strike chords\l"
 	.string "of inspiration in my heart…\p"
@@ -2257,7 +2257,7 @@ MatchCall_Text_Juan4:: @ 82B341E
 	.string "of you soaring with the melody…$"
 
 MatchCall_Text_Sidney:: @ 82B34CC
-	.string "Sidney: Yo, {PLAYER}!\p"
+	.string "Dan: Yo, {PLAYER}!\p"
 	.string "If you want to battle with me\n"
 	.string "again, you come on back whenever\l"
 	.string "you like to the Pokémon League.\p"
@@ -2265,7 +2265,7 @@ MatchCall_Text_Sidney:: @ 82B34CC
 	.string "I'll be waiting!$"
 
 MatchCall_Text_Phoebe:: @ 82B3561
-	.string "Phoebe: Hi, {PLAYER}!\p"
+	.string "Sharni: Hi, {PLAYER}!\p"
 	.string "How about coming back here again\n"
 	.string "sometime?\p"
 	.string "I'd like to see how much tighter\n"
@@ -2273,7 +2273,7 @@ MatchCall_Text_Phoebe:: @ 82B3561
 	.string "Pokémon.$"
 
 MatchCall_Text_Glacia:: @ 82B35E4
-	.string "Glacia: Hello, {PLAYER}.\p"
+	.string "Chelsea: Hello, {PLAYER}.\p"
 	.string "I trust you haven't become\n"
 	.string "complacent with your power?\p"
 	.string "If you feel the need to cool your\n"
@@ -2281,7 +2281,7 @@ MatchCall_Text_Glacia:: @ 82B35E4
 	.string "to the Pokémon League…$"
 
 MatchCall_Text_Drake:: @ 82B368B
-	.string "Drake: That voice… {PLAYER}, is it?\n"
+	.string "Ray: That voice… {PLAYER}, is it?\n"
 	.string "You sound well…\p"
 	.string "I understand that there is now\n"
 	.string "a facility called the Battle\l"
@@ -2293,7 +2293,7 @@ MatchCall_Text_Drake:: @ 82B368B
 	.string "Don't you agree, {PLAYER}?$"
 
 MatchCall_Text_Wallace:: @ 82B3790
-	.string "Wallace: Hello, {PLAYER}{KUN}.\n"
+	.string "Blake: Hello, {PLAYER}{KUN}.\n"
 	.string "Have you met Steven?\p"
 	.string "He is…\n"
 	.string "Actually incredibly skilled.\p"
