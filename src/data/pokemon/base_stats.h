@@ -6509,11 +6509,7 @@ const struct BaseStats gBaseStats[] =
         .baseSpeed     = 100,
         .baseSpAttack  = 40,
         .baseSpDefense = 70,
-        #ifdef REBALANCED_VERSION
-            .baseAttack    = 80,
-        #else
-            .baseAttack    = 100,
-        #endif
+        .baseAttack    = 100,
         .type1 = TYPE_NORMAL,
         .type2 = TYPE_NORMAL,
         .catchRate = 45,
@@ -7133,7 +7129,7 @@ const struct BaseStats gBaseStats[] =
         .baseSpAttack  = 50,
         .baseSpDefense = 61,
         #ifdef REBALANCED_VERSION
-            .baseAttack    = 100,
+            .baseAttack    = 90,
             .baseSpeed     = 110,
         #else
             .baseAttack    = 70,
@@ -9737,11 +9733,7 @@ const struct BaseStats gBaseStats[] =
         .growthRate = GROWTH_FAST,
         .eggGroup1 = EGG_GROUP_MONSTER,
         .eggGroup2 = EGG_GROUP_GRASS,
-        #ifdef REBALANCED_VERSION
-            .abilities = {ABILITY_CHLOROPHYLL, ABILITY_AERILATE, ABILITY_HARVEST},
-        #else
-            .abilities = {ABILITY_CHLOROPHYLL, ABILITY_SOLAR_POWER, ABILITY_HARVEST},
-        #endif
+        .abilities = {ABILITY_CHLOROPHYLL, ABILITY_SOLAR_POWER, ABILITY_HARVEST},
         .bodyColor = BODY_COLOR_GREEN,
         .noFlip = FALSE,
     },
@@ -10602,12 +10594,13 @@ const struct BaseStats gBaseStats[] =
         .baseHP        = 95,
         .baseAttack    = 109,
         .baseSpeed     = 56,
-        .baseSpAttack  = 75,
         .baseSpDefense = 85,
         #ifdef REBALANCED_VERSION
-            .baseDefense   = 114,
+            .baseDefense   = 115,
+            .baseSpAttack  = 65,
         #else
             .baseDefense   = 105,
+            .baseSpAttack  = 75,
         #endif
         .type1 = TYPE_GRASS,
         .type2 = TYPE_GROUND,
@@ -10857,13 +10850,8 @@ const struct BaseStats gBaseStats[] =
         .baseSpeed     = 100,
         .baseSpAttack  = 50,
         .baseSpDefense = 60,
-        #ifdef REBALANCED_VERSION
-            .type1 = TYPE_FLYING,
-            .type2 = TYPE_FIGHTING,
-        #else
-            .type1 = TYPE_NORMAL,
-            .type2 = TYPE_FLYING,
-        #endif
+        .type1 = TYPE_NORMAL,
+        .type2 = TYPE_FLYING,
         .catchRate = 45,
         .expYield = 218,
         .evYield_Attack    = 3,
@@ -12745,7 +12733,7 @@ const struct BaseStats gBaseStats[] =
             .baseSpDefense = 85,
             .type1 = TYPE_FIRE,
             .type2 = TYPE_DARK,
-            .abilities = {ABILITY_FLAME_BODY, ABILITY_MEGA_LAUNCHER, ABILITY_VITAL_SPIRIT},
+            .abilities = {ABILITY_FLASH_FIRE, ABILITY_MEGA_LAUNCHER, ABILITY_VITAL_SPIRIT},
         #else
             .baseSpeed     = 83,
             .baseSpDefense = 95,
@@ -13275,7 +13263,7 @@ const struct BaseStats gBaseStats[] =
         .baseSpAttack  = 80,
         .baseSpDefense = 110,
         #ifdef REBALANCED_VERSION
-            .baseSpeed     = 10,
+            .baseSpeed     = 20,
             .abilities = {ABILITY_SPEED_BOOST, ABILITY_SPEED_BOOST, ABILITY_CLEAR_BODY},
         #else
             .baseSpeed     = 100,
@@ -15931,16 +15919,11 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_SAWSBUCK] =
     {
         .baseHP        = 80,
+        .baseAttack    = 110,
         .baseDefense   = 70,
         .baseSpAttack  = 60,
         .baseSpDefense = 70,
-        #ifdef REBALANCED_VERSION
-            .baseAttack    = 100,
-            .baseSpeed     = 95,
-        #else
-            .baseAttack    = 110,
-            .baseSpeed     = 105,
-        #endif
+        .baseSpeed     = 105,
         .type1 = TYPE_NORMAL,
         .type2 = TYPE_GRASS,
         .catchRate = 75,
@@ -16555,7 +16538,7 @@ const struct BaseStats gBaseStats[] =
         .eggGroup1 = EGG_GROUP_AMORPHOUS,
         .eggGroup2 = EGG_GROUP_AMORPHOUS,
         #ifdef REBALANCED_VERSION
-            .abilities = {ABILITY_FLASH_FIRE, ABILITY_FLAME_BODY, ABILITY_MOLD_BREAKER},
+            .abilities = {ABILITY_FLASH_FIRE, ABILITY_INFILTRATOR, ABILITY_MOLD_BREAKER},
         #else
             .abilities = {ABILITY_FLASH_FIRE, ABILITY_FLAME_BODY, ABILITY_INFILTRATOR},
         #endif
