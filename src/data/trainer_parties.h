@@ -19967,11 +19967,11 @@ static const struct TrainerMonItemCustomMoves sParty_Phoebe[] = {
     },
     {
     .lvl = 1,
-    .species = SPECIES_GOLURK,
+    .species = SPECIES_TSAREENA,
     .heldItem = ITEM_ASSAULT_VEST,
-    .ability = 0, // Iron Fist
+    .ability = 1, // Queenly Majesty
     .spread = SPREAD_31_IV_HP_ATK_ADAMANT,
-    .moves = MOVE_SHADOW_PUNCH, MOVE_EARTHQUAKE, MOVE_METEOR_MASH, MOVE_DRAIN_PUNCH
+    .moves = MOVE_TROP_KICK, MOVE_BOUNCE, MOVE_HIGH_JUMP_KICK, MOVE_ICE_PUNCH
     },
     {
     .lvl = 1,
@@ -19987,21 +19987,21 @@ static const struct TrainerMonItemCustomMoves sParty_Phoebe[] = {
     .heldItem = ITEM_SHELL_BELL,
     .ability = 1, // Iron Fist
     .spread = SPREAD_31_IV_HP_ATK_ADAMANT,
-    .moves = MOVE_SHADOW_PUNCH, MOVE_ICE_PUNCH, MOVE_THUNDER_PUNCH, MOVE_EARTHQUAKE
+    .moves = MOVE_SHADOW_PUNCH, MOVE_ICE_PUNCH, MOVE_THUNDER_PUNCH, MOVE_TRICK_ROOM
     },
     {
     .lvl = 1,
-    .species = SPECIES_AEGISLASH,
-    .heldItem = ITEM_SPELL_TAG,
-    .spread = SPREAD_31_IV_HP_SPATK_QUIET,
-    .moves = MOVE_FLASH_CANNON, MOVE_SHADOW_BALL, MOVE_SHADOW_SNEAK, MOVE_KINGS_SHIELD
+    .species = SPECIES_CLEFABLE,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .spread = SPREAD_31_IV_HP_SPDEF_CALM
+    .moves = MOVE_DAZZLING_GLEAM, MOVE_FOLLOW_ME, MOVE_THUNDER_WAVE, MOVE_SOFT_BOILED
     },
     {
-    .lvl = 2,
-    .species = SPECIES_BANETTE,
-    .heldItem = ITEM_BANETTITE,
+    .lvl = 1, // Intimidate -> Huge Power
+    .species = SPECIES_MAWILE,
+    .heldItem = ITEM_MAWILITE,
     .spread = SPREAD_31_IV_ATK_SPEED_JOLLY,
-    .moves = MOVE_SHADOW_CLAW, MOVE_RETURN, MOVE_PLAY_ROUGH, MOVE_COTTON_GUARD
+    .moves = MOVE_SWORDS_DANCE, MOVE_IRON_HEAD, MOVE_PLAY_ROUGH, MOVE_SUCKER_PUNCH
     }
 };
 
@@ -20032,11 +20032,11 @@ static const struct TrainerMonItemCustomMoves sParty_Glacia[] = {
     },
     {
     .lvl = 1,
-    .species = SPECIES_MAMOSWINE,
-    .heldItem = ITEM_ASSAULT_VEST,
-    .ability = 2, // Thick Fat
-    .spread = SPREAD_31_IV_ATK_SPEED_JOLLY,
-    .moves = MOVE_EARTHQUAKE, MOVE_ICICLE_CRASH, MOVE_SUPERPOWER, MOVE_ICE_SHARD
+    .species = SPECIES_BEARTIC,
+    .heldItem = ITEM_LIFE_ORB,
+    .ability = 1, // Slush Rush
+    .spread = SPREAD_31_IV_ATK_SPEED_ADAMANT,
+    .moves = MOVE_LIQUIDATION, MOVE_ICICLE_CRASH, MOVE_SUPERPOWER, MOVE_ROCK_SLIDE
     },
     {
     .lvl = 1,
