@@ -6159,7 +6159,7 @@ const struct Trainer gTrainers[] = {
         .party = {.ItemCustomMoves = sParty_Madeline4},
     },
 
-    [TRAINER_LEAF_ALTERING_CAVE] =
+    [TRAINER_GREEN_ALTERING_CAVE] =
     {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM | F_TRAINER_PARTY_CUSTOM_MOVESET,
         .trainerClass = TRAINER_CLASS_JOHTO_CHAMP,
@@ -6169,8 +6169,8 @@ const struct Trainer gTrainers[] = {
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_CHECK_FOE,
-        .partySize = ARRAY_COUNT(sParty_LeafAlteringCave),
-        .party = {.ItemCustomMoves = sParty_LeafAlteringCave},
+        .partySize = ARRAY_COUNT(sParty_GreenAlteringCave),
+        .party = {.ItemCustomMoves = sParty_GreenAlteringCave},
     },
 
     [TRAINER_BEVERLY] =
@@ -11927,21 +11927,21 @@ const struct Trainer gTrainers[] = {
         .party = {.ItemCustomMoves = sParty_Red},
     },
 
-    [TRAINER_LEAF] =
+    [TRAINER_GREEN] =
     {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM | F_TRAINER_PARTY_CUSTOM_MOVESET,
         .trainerClass = TRAINER_CLASS_PKMN_TRAINER_3,
         .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MALE,
         .trainerPic = TRAINER_PIC_LEAF,
-        .trainerName = _("Leaf"),
+        .trainerName = _("Green"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_CHECK_FOE,
-        .partySize = ARRAY_COUNT(sParty_Leaf),
-        .party = {.ItemCustomMoves = sParty_Leaf},
+        .partySize = ARRAY_COUNT(sParty_Green),
+        .party = {.ItemCustomMoves = sParty_Green},
     },
 
-    [TRAINER_BRENDAN_PLACEHOLDER] =
+    [TRAINER_BLUE] =
     {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM | F_TRAINER_PARTY_CUSTOM_MOVESET,
         .trainerClass = TRAINER_CLASS_RS_PROTAG,
@@ -11951,8 +11951,8 @@ const struct Trainer gTrainers[] = {
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_CHECK_FOE,
-        .partySize = ARRAY_COUNT(sParty_BrendanLinkPlaceholder),
-        .party = {.ItemCustomMoves = sParty_BrendanLinkPlaceholder},
+        .partySize = ARRAY_COUNT(sParty_Blue),
+        .party = {.ItemCustomMoves = sParty_Blue},
     },
 
     [TRAINER_MAY_PLACEHOLDER] =

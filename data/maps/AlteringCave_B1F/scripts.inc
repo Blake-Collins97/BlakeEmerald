@@ -52,7 +52,7 @@ AlteringCave_B1F_EventScript_Leaf::
 	applymovement LOCALID_LEAF, AlteringCave_Movement_Leaf
 	applymovement OBJ_EVENT_ID_PLAYER, AlteringCave_Movement_Player
 	waitmovement 0
-	trainerbattle_no_intro TRAINER_LEAF_ALTERING_CAVE, AlteringCave_Text_LeafDefeated
+	trainerbattle_no_intro TRAINER_GREEN_ALTERING_CAVE, AlteringCave_Text_LeafDefeated
 	setvar VAR_LEAF_STATE, 1
 	msgbox AlteringCave_Text_LeafGift, MSGBOX_DEFAULT
 	giveitem ITEM_BOTTLE_CAP, 30

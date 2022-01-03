@@ -441,7 +441,7 @@
 #define TRAINER_MADELINE_2                  437
 #define TRAINER_MADELINE_3                  438
 #define TRAINER_MADELINE_4                  439
-#define TRAINER_LEAF_ALTERING_CAVE          440
+#define TRAINER_GREEN_ALTERING_CAVE          440
 #define TRAINER_BEVERLY                     441
 #define TRAINER_IMANI                       442
 #define TRAINER_KYLA                        443
@@ -853,8 +853,8 @@
 #define TRAINER_ALVARO                      849
 #define TRAINER_EVERETT                     850
 #define TRAINER_RED                         851
-#define TRAINER_LEAF                        852
-#define TRAINER_BRENDAN_PLACEHOLDER         853
+#define TRAINER_GREEN                       852
+#define TRAINER_BLUE                        853
 #define TRAINER_MAY_PLACEHOLDER             854
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
