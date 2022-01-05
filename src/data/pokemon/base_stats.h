@@ -4550,15 +4550,17 @@ const struct BaseStats gBaseStats[] =
             .baseDefense   = 80,
             .baseSpDefense = 80,
             .abilities = {ABILITY_MERCILESS, ABILITY_INSOMNIA, ABILITY_SNIPER},
+            .type1 = TYPE_BUG,
+            .type2 = TYPE_DARK,
         #else
             .baseHP        = 70,
             .baseAttack    = 90,
             .baseDefense   = 70,
             .baseSpDefense = 70,
             .abilities = {ABILITY_SWARM, ABILITY_INSOMNIA, ABILITY_SNIPER},
+            .type1 = TYPE_BUG,
+            .type2 = TYPE_POISON,
         #endif
-        .type1 = TYPE_BUG,
-        .type2 = TYPE_POISON,
         .catchRate = 90,
         .expYield = 140,
         .evYield_Attack    = 2,
@@ -9323,8 +9325,13 @@ const struct BaseStats gBaseStats[] =
         .baseSpeed     = 55,
         .baseSpAttack  = 40,
         .baseSpDefense = 70,
+        #ifdef REBALANCED_VERSION
+        .type1 = TYPE_GROUND,
+        .type2 = TYPE_FAIRY,
+        #else
         .type1 = TYPE_GROUND,
         .type2 = TYPE_PSYCHIC,
+        #endif
         .catchRate = 255,
         .expYield = 60,
         .evYield_SpDefense = 1,
@@ -17854,8 +17861,13 @@ const struct BaseStats gBaseStats[] =
         .baseSpeed     = 78,
         .baseSpAttack  = 50,
         .baseSpDefense = 77,
+        #if REBALANCED_VERSION
+        .type1 = TYPE_FIGHTING,
+        .type2 = TYPE_GROUND,
+        #else
         .type1 = TYPE_NORMAL,
         .type2 = TYPE_GROUND,
+        #endif
         .catchRate = 127,
         .expYield = 148,
         .evYield_HP        = 2,
