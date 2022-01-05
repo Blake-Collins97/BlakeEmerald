@@ -20154,7 +20154,7 @@ static const struct TrainerMonItemCustomMoves sParty_Wallace[] = {
     .ability = 0, // Speed Boost
     .spread = SPREAD_31_IV_ATK_SPEED_ADAMANT,
     .moves = MOVE_POWER_UP_PUNCH, MOVE_EARTHQUAKE, MOVE_DRAIN_PUNCH, MOVE_BODY_SLAM
-    },
+    }
 };
 
 // Placeholders
@@ -21261,7 +21261,6 @@ static const struct TrainerMonItemCustomMoves sParty_WallaceLegends[] = { // Leg
 };
 
 static const struct TrainerMonItemCustomMoves sParty_WallaceDoublesLegends[] = { // Legendaries doubles
-    {
    {
     .lvl = 2,
     .species = SPECIES_REGIROCK,
@@ -21360,7 +21359,7 @@ static const struct TrainerMonItemCustomMoves sParty_Cynthia1[] = {
     .ability = 2, // Rough Skin -> Sand Force
     .spread = SPREAD_31_IV_ATK_SPEED_NAIVE,
     .moves = MOVE_EARTHQUAKE, MOVE_DRACO_METEOR, MOVE_STONE_EDGE, MOVE_FIRE_BLAST
-    }
+    },
 };
 
 // Post Game
@@ -21983,7 +21982,7 @@ static const struct TrainerMonItemCustomMoves sParty_Thalia5[] = {
     {
     .lvl = 40,
     .species = SPECIES_KINGDRA,
-    }
+    },
 };
 
 static const struct TrainerMonItemCustomMoves sParty_Cory5[] = {
@@ -21998,7 +21997,7 @@ static const struct TrainerMonItemCustomMoves sParty_Cory5[] = {
     {
     .lvl = 36,
     .species = SPECIES_TENTACRUEL,
-    }
+    },
 };
 
 // Unused Trainers
@@ -22008,7 +22007,7 @@ static const struct TrainerMonItemCustomMoves sParty_Cindy6[] = { // Unused
     .species = SPECIES_LINOONE,
     .heldItem = ITEM_NUGGET,
     .moves = MOVE_FURY_SWIPES, MOVE_MUD_SPORT, MOVE_ODOR_SLEUTH, MOVE_SAND_ATTACK
-    }
+    },
 };
 
 static const struct TrainerMonItemCustomMoves sParty_Kaylee[] = { // Unused
@@ -22019,5 +22018,5 @@ static const struct TrainerMonItemCustomMoves sParty_Kaylee[] = { // Unused
     {
     .lvl = 34,
     .species = SPECIES_PELIPPER,
-    }
+    },
 };
