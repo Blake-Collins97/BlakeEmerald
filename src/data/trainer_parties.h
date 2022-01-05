@@ -19993,7 +19993,7 @@ static const struct TrainerMonItemCustomMoves sParty_Phoebe[] = {
     .lvl = 1,
     .species = SPECIES_CLEFABLE,
     .heldItem = ITEM_SITRUS_BERRY,
-    .spread = SPREAD_31_IV_HP_SPDEF_CALM
+    .spread = SPREAD_31_IV_HP_SPDEF_CALM,
     .moves = MOVE_DAZZLING_GLEAM, MOVE_FOLLOW_ME, MOVE_THUNDER_WAVE, MOVE_SOFT_BOILED
     },
     {
