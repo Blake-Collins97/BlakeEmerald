@@ -9361,7 +9361,7 @@ const struct BaseStats gBaseStats[] =
             .baseSpAttack  = 70,
         #endif
         .type1 = TYPE_GROUND,
-        .type2 = TYPE_PSYCHIC,
+        .type2 = TYPE_FAIRY,
         .catchRate = 90,
         .expYield = 175,
         .evYield_SpDefense = 2,
@@ -17861,7 +17861,7 @@ const struct BaseStats gBaseStats[] =
         .baseSpeed     = 78,
         .baseSpAttack  = 50,
         .baseSpDefense = 77,
-        #if REBALANCED_VERSION
+        #ifdef REBALANCED_VERSION
         .type1 = TYPE_FIGHTING,
         .type2 = TYPE_GROUND,
         #else
