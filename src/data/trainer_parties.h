@@ -21206,7 +21206,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallaceDoubles[] = { // Dou
     .ability = 0, // Speed Boost
     .spread = SPREAD_31_IV_ATK_SPEED_ADAMANT,
     .moves = MOVE_POWER_UP_PUNCH, MOVE_EARTHQUAKE, MOVE_DRAIN_PUNCH, MOVE_BODY_SLAM
-    },
+    }
 };
 
 static const struct TrainerMonItemCustomMoves sParty_WallaceLegends[] = { // Legendaries
@@ -21257,7 +21257,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallaceLegends[] = { // Leg
     .ability = 0, // Speed Boost
     .spread = SPREAD_31_IV_ATK_SPEED_ADAMANT,
     .moves = MOVE_POWER_UP_PUNCH, MOVE_EARTHQUAKE, MOVE_DRAIN_PUNCH, MOVE_BODY_SLAM
-    },
+    }
 };
 
 static const struct TrainerMonItemCustomMoves sParty_WallaceDoublesLegends[] = { // Legendaries doubles
@@ -21280,7 +21280,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallaceDoublesLegends[] = {
     {
     .lvl = 2,
     .species = SPECIES_REGICE,
-    .heldItem = ITEM_CHOICE_SPECS,
+    .heldItem = ITEM_LEFTOVERS,
     .ability = 2, // Snow Warning
     .spread = SPREAD_31_IV_HP_SPDEF_CALM,
     .moves = MOVE_FREEZE_DRY, MOVE_THUNDERBOLT, MOVE_ANCIENT_POWER, MOVE_WATER_PULSE
@@ -21288,7 +21288,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallaceDoublesLegends[] = {
     {
     .lvl = 2,
     .species = SPECIES_SANDSLASH_ALOLAN,
-    .heldItem = ITEM_LEFTOVERS,
+    .heldItem = ITEM_LIFE_ORB,
     .ability = 2, // Slush Rush
     .spread = SPREAD_31_IV_ATK_SPEED_ADAMANT,
     .moves = MOVE_ICICLE_CRASH, MOVE_EARTHQUAKE, MOVE_SPIKY_SHIELD, MOVE_POISON_JAB
@@ -21298,7 +21298,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallaceDoublesLegends[] = {
     .species = SPECIES_ALAKAZAM,
     .heldItem = ITEM_ALAKAZITE,
     .ability = 2, // Magic Guard
-    .spread = SPREAD_31_IV_HP_DEF_SPDEF_SASSY,
+    .spread = SPREAD_31_IV_SPATK_SPEED_TIMID,
     .moves = MOVE_TRICK_ROOM, MOVE_PSYCHIC, MOVE_SHADOW_BALL, MOVE_FOCUS_BLAST
     },
     {
@@ -21308,7 +21308,7 @@ static const struct TrainerMonItemCustomMoves sParty_WallaceDoublesLegends[] = {
     .ability = 0, // Speed Boost
     .spread = SPREAD_31_IV_ATK_SPEED_ADAMANT,
     .moves = MOVE_POWER_UP_PUNCH, MOVE_EARTHQUAKE, MOVE_DRAIN_PUNCH, MOVE_BODY_SLAM
-    },
+    }
 };
 
 // Post Game
