@@ -19926,7 +19926,7 @@ static const struct TrainerMonItemCustomMoves sParty_Sidney[] = {
     {
     .lvl = 1,
     .species = SPECIES_DECIDUEYE,
-    .heldItem = ITEM_ASSAULT_VEST,
+    .heldItem = ITEM_SAFETY_GOGGLES,
     .ability = 2, // Tinted Lens
     .spread = SPREAD_31_IV_HP_ATK_ADAMANT,
     .moves = MOVE_LEAF_BLADE, MOVE_SUCKER_PUNCH, MOVE_BRAVE_BIRD, MOVE_SWORDS_DANCE
@@ -19943,8 +19943,8 @@ static const struct TrainerMonItemCustomMoves sParty_Sidney[] = {
     .lvl = 1,
     .species = SPECIES_LATIAS,
     .heldItem = ITEM_LEFTOVERS,
-    .ability = 1, // Overcoat
-    .spread = SPREAD_31_IV_HP_DEF_IMPISH,
+    .ability = 1, // Levitate
+    .spread = SPREAD_31_IV_SPATK_SPEED_MODEST,
     .moves = MOVE_MIST_BALL, MOVE_DRACO_METEOR, MOVE_ICE_BEAM, MOVE_THUNDERBOLT
     },
     {
@@ -20028,7 +20028,7 @@ static const struct TrainerMonItemCustomMoves sParty_Glacia[] = {
     .heldItem = ITEM_LEFTOVERS,
     .ability = 1, // Ice Body
     .spread = SPREAD_31_IV_HP_DEF_BOLD,
-    .moves = MOVE_PROTECT, MOVE_SUBSTITUTE, MOVE_TOXIC, MOVE_SUPER_FANG
+    .moves = MOVE_SLACK_OFF, MOVE_HAIL, MOVE_WATERFALL, MOVE_SUPER_FANG
     },
     {
     .lvl = 1,
@@ -20048,10 +20048,10 @@ static const struct TrainerMonItemCustomMoves sParty_Glacia[] = {
     },
     {
     .lvl = 2,
-    .species = SPECIES_GLALIE,
-    .heldItem = ITEM_GLALITITE,
+    .species = SPECIES_ARTICUNO,
+    .heldItem = ITEM_LIFE_ORB,
     .spread = SPREAD_31_IV_ATK_SPEED_JOLLY,
-    .moves = MOVE_DOUBLE_EDGE, MOVE_STONE_EDGE, MOVE_EARTHQUAKE, MOVE_ICE_SHARD
+    .moves = MOVE_BLIZZARD, MOVE_AIR_SLASH, MOVE_HYDRO_PUMP, MOVE_ANCIENT_POWER
     }
 };
 
