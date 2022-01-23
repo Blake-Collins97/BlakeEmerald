@@ -55,6 +55,7 @@ const struct MonCoords gTrainerFrontPicCoords[] =
     [TRAINER_PIC_POKEFAN_F] = {.size = 8, .y_offset = 1},
     [TRAINER_PIC_YOUNGSTER] = {.size = 8, .y_offset = 1},
     [TRAINER_PIC_STEVEN] = {.size = 8, .y_offset = 2},
+    [TRAINER_PIC_CHAMPION_WALLACE] = {.size = 8, .y_offset = 2},
     [TRAINER_PIC_FISHERMAN] = {.size = 8, .y_offset = 1},
     [TRAINER_PIC_CYCLING_TRIATHLETE_M] = {.size = 8, .y_offset = 2},
     [TRAINER_PIC_CYCLING_TRIATHLETE_F] = {.size = 8, .y_offset = 1},
