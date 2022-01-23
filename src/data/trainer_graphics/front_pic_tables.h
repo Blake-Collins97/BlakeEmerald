@@ -56,9 +56,12 @@ const struct MonCoords gTrainerFrontPicCoords[] =
     [TRAINER_PIC_YOUNGSTER] = {.size = 8, .y_offset = 1},
 <<<<<<< HEAD
     [TRAINER_PIC_STEVEN] = {.size = 8, .y_offset = 2},
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 994af904 (Update Big 1)
     [TRAINER_PIC_CHAMPION_WALLACE] = {.size = 8, .y_offset = 2},
+=======
+>>>>>>> parent of c1f7cc25 (Update front_pic_tables.h)
     [TRAINER_PIC_FISHERMAN] = {.size = 8, .y_offset = 1},
     [TRAINER_PIC_CYCLING_TRIATHLETE_M] = {.size = 8, .y_offset = 2},
     [TRAINER_PIC_CYCLING_TRIATHLETE_F] = {.size = 8, .y_offset = 1},
