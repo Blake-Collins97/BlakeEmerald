@@ -254,21 +254,27 @@ SootopolisCity_Gym_1F_Text_GymGuidePostVictory: @ 82251AF
 	.string "set for the Pokémon League challenge!$"
 
 SootopolisCity_Gym_1F_Text_JuanIntro: @ 8225268
+<<<<<<< HEAD
 	.string "Let me ask you {PLAYER}.\n"
+=======
+	.string "Let me ask you.\n"
+>>>>>>> parent of 994af904 (Update Big 1)
 	.string "Did you know?\l"
 	.string "Ah, I should not be so coy.\p"
-	.string "I was taugt by my brother Blake, everything\n"
+	.string "It was I who taught Wallace everything\n"
 	.string "there is to know about Pokémon.\p"
-	.string "He gave up his position as\n"
+	.string "Once, I had given up my position as\n"
 	.string "the Gym Leader.\p"
-	.string "And entrusted, its leadership\n"
-	.string "with me.\p"
+	.string "In my place, I had entrusted Wallace\n"
+	.string "with the Gym.\p"
+	.string "However, a compelling reason arose for\n"
+	.string "me to make a comeback.\p"
 	.string "Ah, but enough chatter.\n"
 	.string "Let us begin our match, shall we?\p"
 	.string "Please, you shall bear witness to\n"
 	.string "our artistry.\p"
-	.string "A grand illusion sculpted\n"
-	.string "by us and our Pokémon!$"
+	.string "A grand illusion of water sculpted\n"
+	.string "by Pokémon and myself!$"
 
 @ NOTE: This defeat text actually causes a buffer overflow. It's about 50 bytes too long for
 @ the gDisplayedStringBattle buffer that it's put into, and it stomps all over the gBattleTextBuffs
