@@ -254,14 +254,10 @@ SootopolisCity_Gym_1F_Text_GymGuidePostVictory: @ 82251AF
 	.string "set for the Pokémon League challenge!$"
 
 SootopolisCity_Gym_1F_Text_JuanIntro: @ 8225268
-<<<<<<< HEAD
 	.string "Let me ask you {PLAYER}.\n"
-=======
-	.string "Let me ask you.\n"
->>>>>>> parent of 994af904 (Update Big 1)
 	.string "Did you know?\l"
 	.string "Ah, I should not be so coy.\p"
-	.string "It was I who taught Wallace everything\n"
+	.string "It was taught by Blake everything\n"
 	.string "there is to know about Pokémon.\p"
 	.string "Once, I had given up my position as\n"
 	.string "the Gym Leader.\p"
