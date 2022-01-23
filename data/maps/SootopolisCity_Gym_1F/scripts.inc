@@ -254,7 +254,7 @@ SootopolisCity_Gym_1F_Text_GymGuidePostVictory: @ 82251AF
 	.string "set for the Pokémon League challenge!$"
 
 SootopolisCity_Gym_1F_Text_JuanIntro: @ 8225268
-	.string "Let me ask you {Player}.\n"
+	.string "Let me ask you {PLAYER}.\n"
 	.string "Did you know?\l"
 	.string "Ah, I should not be so coy.\p"
 	.string "I was taugt by my brother Blake, everything\n"
