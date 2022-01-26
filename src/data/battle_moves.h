@@ -2378,27 +2378,16 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_FLASH] =
     {
-        #if B_UPDATED_MOVE_DATA >= GEN_4
-            .accuracy = 100,
-        #else
-            .accuracy = 70,
-        #endif
-        #ifdef REBALANCED_VERSION
-            .effect = EFFECT_ACCURACY_DOWN,
-            .power = 60,
-            .type = TYPE_ELECTRIC,
-            .split = SPLIT_SPECIAL,
-        #else
-            .effect = EFFECT_ACCURACY_DOWN,
-            .power = 0,
-            .type = TYPE_NORMAL,
-            .split = SPLIT_STATUS,
-        #endif
+        .accuracy = 100,
+        .power = 60,
+        .type = TYPE_ELECTRIC,
+        .split = SPLIT_SPECIAL,
+        .effect = EFFECT_ACCURACY_DOWN,
         .pp = 20,
-        .secondaryEffectChance = 0,
+        .secondaryEffectChance = 50,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
-        .flags = FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
     },
 
     [MOVE_PSYWAVE] =
